@@ -9,12 +9,24 @@
 	padding-bottom: 0px;
 	margin-bottom: 0px;	
 }
-.btn-group .btn{
+.btn-group-menu .btn{
 	border-radius: 0px;
 	color: black;
 	transition: 0.3s;
 }
-.btn-group .btn:hover{
+.btn-group-menu .btn:hover{
+	border-style: solid;
+    border-bottom-color: #0080ff;
+    color: #0080ff;
+}
+.btn-viewdetail{
+	background-color: transparent;
+	border-color: transparent;
+	color: black;
+	padding-left:0px;
+	transition: 0.3s;
+}
+.btn-viewdetail:hover{
 	border-style: solid;
     border-bottom-color: #0080ff;
     color: #0080ff;
