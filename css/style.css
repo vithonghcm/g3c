@@ -1,3 +1,9 @@
+.navbar-color-sky{
+	background-color: #0080ff;
+}
+.navbar-color-sky a{
+	color:white;
+}
 .jumbotron{
 	background-color: white;
 	padding-bottom: 0px;
