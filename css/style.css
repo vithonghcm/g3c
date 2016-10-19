@@ -1,33 +1,42 @@
-.navbar-color-sky{
-	background-color: #0080ff;
-}
-.navbar-color-sky a{
-	color:white;
-}
-.jumbotron{
+body { padding-top: 70px; }
+.navbar-default{
 	background-color: white;
-	padding-bottom: 0px;
-	margin-bottom: 0px;	
+	border-color: transparent;
 }
-.btn-group-menu .btn{
-	border-radius: 0px;
-	color: black;
-	transition: 0.3s;
+.navbar-default .navbar-nav>li>a{
+	color: black;	
+	border-bottom: 1px solid;
+	border-bottom-color: transparent;
+	transition: 0.5s;
 }
-.btn-group-menu .btn:hover{
-	border-style: solid;
-    border-bottom-color: #0080ff;
-    color: #0080ff;
+.navbar-default .navbar-nav>li>a:hover{
+	border-bottom-color: #0080ff;
+	color: #0080ff;
+
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: white;
+	color: #0080ff;
+
+}
+
 .btn-viewdetail{
 	background-color: transparent;
 	border-color: transparent;
+	border-radius: 0px;
 	color: black;
 	padding-left:0px;
 	transition: 0.3s;
 }
 .btn-viewdetail:hover{
 	border-style: solid;
-    border-bottom-color: #0080ff;
-    color: #0080ff;
+	border-bottom-color: #0080ff;
+	color: #0080ff;
 }
+.user-top-month{
+	
+	display: block;
+	height: 350px;
+	overflow-y:scroll;
+}
+

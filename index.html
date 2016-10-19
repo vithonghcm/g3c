@@ -8,93 +8,126 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-color-sky navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">G3C.Club</a>
+				<a class="navbar-brand" href="#">G3C.Club</a>
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<form class="navbar-form navbar-right">
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Xu hướng</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Cá nhân</a></li>
+				</ul>
+				<form class="navbar-form navbar-left">
 					<div class="form-group">
-						<input type="text" placeholder="Email" class="form-control">
+						<input type="text" class="form-control" placeholder="Search">
 					</div>
-					<div class="form-group">
-						<input type="password" placeholder="Password" class="form-control">
-					</div>
-					<button type="submit" class="btn btn-success">Sign in</button>
+					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
-			</div><!--/.navbar-collapse -->
-		</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><img src="img/google-brand-logo.gif" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook-brand-logo.png" alt=""></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tên người dùng<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Thông tin</a></li>
+							<li><a href="#">Hoạt động</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Đăng xuất</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
 	</nav>
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
-		<div class="container text-center">        
-			<p>
-				<div class="btn-group btn-group-menu">
-					<a class="btn btn-lg" href="index.html" role="button">Trang chủ</a>
-					<a class="btn btn-lg" href="#" role="button">Thịnh hành</a>
-					<a class="btn btn-lg" href="#" role="button">Chủ đề</a>
-					<a class="btn btn-lg" href="#" role="button">Cá nhân</a>
-				</div>
-			</p>
-		</div>
-	</div>
-
 	<div class="container">
 		<!-- Example row of columns -->
-		<div class="section">
-			<h1 class="page-header">Chủ đề HOT</h1>
-			<div class="row">        
-				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+		<div class="row">
+			<div class="section">
+				<div class="col-md-8">
+					<h1 class="page-header">Xu hướng nổi bật</h1>
+					<div class="row">        
+						<div class="col-md-6">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+						</div>
+						<div class="col-md-6">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+						</div>						
+					</div>
+					<div class="row">        
+						<div class="col-md-6">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+						</div>
+						<div class="col-md-6">
+							<h2>Heading</h2>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+						</div>
+						<p><a class="" href="#">Xem thêm</a></p>						
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
+					<h1 class="page-header">Thành viên nổi bật</h1>
+					<div class="user-top-month">
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>
+						<div class="col-md-12 text-center">
+							<img src="img/user-128.png" alt="">								
+							<p><a class="btn btn-viewdetail" href="#" role="button">Tên user</a></p>
+						</div>								
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
-				</div>
-			</div>
-			<div class="text-right">
-				<a class="" href="#">Xem thêm</a>
 			</div>
 		</div>
-
-		<div class="section">
-			<h1 class="page-header">Thành viên của tháng</h1>
-			<div class="row">        
-				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
-				</div>
-				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
-				</div>
-				<div class="col-md-4">
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<p><a class="btn btn-viewdetail" href="#" role="button">Xem chi tiết</a></p>
-				</div>
-			</div>
-			
-		</div>
-
 		<div class="section">
 			<h1 class="page-header">Danh mục ngẫu nhiên 1</h1>
 			<div class="row">        
