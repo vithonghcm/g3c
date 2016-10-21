@@ -10,16 +10,20 @@ body { padding-top: 70px; }
 	transition: 0.5s;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	border-bottom-color: #0080ff;
-	color: #0080ff;
+	border-bottom-color: #9ECB3C;
+	color: #9ECB3C;
 
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
 	background-color: white;
-	color: #0080ff;
+	color: #9ECB3C;
 
 }
-
+.btn-default:hover {
+    color: white;
+    background-color: #9ECB3C;
+    border-color: #ccc;
+}
 .btn-viewdetail{
 	background-color: transparent;
 	border-color: transparent;
@@ -30,8 +34,8 @@ body { padding-top: 70px; }
 }
 .btn-viewdetail:hover{
 	border-style: solid;
-	border-bottom-color: #0080ff;
-	color: #0080ff;
+	border-bottom-color: #9ECB3C;
+	color: #9ECB3C;
 }
 .user-top-month{
 	
