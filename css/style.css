@@ -1,4 +1,4 @@
-body { padding-top: 70px; }
+body { padding-top: 150px; }
 
 .navbar-default{
 	background-color: white;
@@ -88,4 +88,15 @@ body { padding-top: 70px; }
 footer{
 	
 	color: #ff7f7f;
+}
+.search-input{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px; 
+	border-right:none;
+	width:500px;
+}
+.btn-search-submit{
+	border-left:none;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
