@@ -93,10 +93,14 @@ footer{
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px; 
 	border-right:none;
-	width:500px;
 }
 .btn-search-submit{
 	border-left:none;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
+	height:34px;
+}
+.form-control.search-input{
+	width:500px;
+
 }
