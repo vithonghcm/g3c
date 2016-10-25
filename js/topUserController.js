@@ -1,0 +1,1 @@
+var topUserController = angular.module('topUserController', []);
