@@ -124,20 +124,20 @@
 						</div>						
 					</div>
 				</div>
-				<div class="col-md-4" ng-controller="getTopUserController as gtu">
+				<div class="col-md-4">
 					<h1 class="page-header text-center">TOP 3 Thành viên</h1>
-					<div class="user-top-month">
+					<div class="user-top-month" ng-controller="getTopUserController as gtu">
 						<div class="col-md-12 text-center">
 							<img src="img/user-128.png" alt="">								
-							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.users[0].name}}</a></p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.top1}}</a></p>
 						</div>
 						<div class="col-md-12 text-center">
 							<img src="img/user-128.png" alt="">								
-							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.users[1].name}}</a></p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.top2}}</a></p>
 						</div>
 						<div class="col-md-12 text-center">
 							<img src="img/user-128.png" alt="">								
-							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.users[2].name}}</a></p>
+							<p><a class="btn btn-viewdetail" href="#" role="button">{{gtu.top3}}</a></p>
 						</div>
 						
 						<div class="col-md-12 text-center">

@@ -1,19 +1,18 @@
 var topUserController = angular.module('topUserController', []);
 
-topUserController.controller('getTopUserController', function($scope) {
-	/* body... */
-	var getTopUsers = this;
-	getTopUsers.users = {};
-	getTopUsers.sortTopUsers = function () {
-		/* body... */
-		this.users.rating.sort().reverse();		
-	}
-	getTopUsers.users = [
-		{name: 'Donald J. Trump', rating: 7},
-		{name: 'Hillary Clinton', rating: 8},
-		{name: 'Barrack Obama', rating: 9},
-		{name: 'Vladimir Putin', rating: 6},
-		{name: 'Nguyễn Phú Trọng', rating: 10}
-	];
+topUserController.controller('getTopUserController', function($scope){
+    this.users = [
+    	{username: 'Donald J. Trump', rating: 7},
+    	{username: 'Hillary Clinton', rating: 8},
+    	{username: 'Barrack Obama', rating: 9},
+    	{username: 'Vladimir Putin', rating: 6},
+    	{username: 'Jackie Chan', rating: 10},
+    ];
+
+    this.users.sort().reverse();
+
+    this.top1 = this.users[0].username;
+    this.top2 = this.users[1].username;
+    this.top3 = this.users[2].username;
 });
 
