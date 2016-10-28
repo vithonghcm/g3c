@@ -5,8 +5,9 @@
 	<title>G3C - Green Creative Cute Crafts.</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=vietnamese" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="js/userManController.js"></script>
     <script src="js/topUserController.js"></script>
 	<script src="js/catCraftController.js"></script>
@@ -26,12 +27,12 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">
-					<img src="img/logo.png"></img>
+					<img src="img/logo.png">
 				</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-right" ng-controller="getUserManController as userMan">
 					<li class="active"><a href="index.html">G3C.Club<span class="sr-only">(current)</span></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vật phẩm<span class="caret"></span></a>
@@ -47,9 +48,7 @@
 					</li>
 					<li><a href="#">Trao đổi</a></li>
 					<li><a href="#">Hướng dẫn</a></li>
-					<li><a href="#">Cộng đồng</a></li>					
-				</ul>
-				<ul class="nav navbar-nav navbar-right" ng-controller="getUserManController as userMan">
+					<li><a href="#">Cộng đồng</a></li>				
 					<li><a href="#"><img src="img/google-brand-logo.gif" alt=""></a></li>
 					<li><a href="#"><img src="img/facebook-brand-logo.png" alt=""></a></li>
 					<li class="dropdown">
