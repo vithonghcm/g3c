@@ -1,4 +1,7 @@
-body { padding-top: 150px; }
+body {
+	padding-top: 150px;
+	font-family: 'Open Sans', sans-serif !important;
+}
 
 .navbar-default{
 	background-color: white;
@@ -14,16 +17,18 @@ body { padding-top: 150px; }
 .nav >li >a{
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .navbar-form{
 	padding-top: 22px;
-  padding-bottom: 22px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  	padding-bottom: 22px;
+  	margin-top: 0px;
+  	margin-bottom: 0px;
 }
 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
+  	padding: 10px;
+  	margin: 25px 15px 25px 0;
   
 }
 .navbar-default .navbar-nav>li>a{
@@ -101,6 +106,7 @@ footer{
 }
 .form-inline {
 	float: right;
+	padding-top: 5px;
 }
 .form-group {
 	display: inline-block;
@@ -110,11 +116,29 @@ footer{
 }
 #bs-example-navbar-collapse-1 {
 	font-family: 'Lemonada', cursive;
-	font-size: 25px;
+	font-size: 15px;
+}
+.user-icon {
+	padding-top: 24px !important;
+	padding-bottom: 24px !important;
+}
+.fa-facebook-official {
+	color: #3b5998;
+}
+.fa-google-plus-official {
+	color: #d34836;
+}
+@media screen and (min-width: 992px) {
+	#bs-example-navbar-collapse-1 {
+		font-size: 18px !important;
+	}
+	.nav>li>a {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
 }
 @media screen and (min-width: 768px) {
 	.form-control.search-input{
 		width:500px !important;
 	}
-
 }
