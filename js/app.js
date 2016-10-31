@@ -1,1 +1,1 @@
-var g3cApp = angular.module('g3cApp', ['userManController','catCraftController']);
+var g3c = angular.module('g3cApp', ['catCraftController', 'userManController', 'topUserController'])
