@@ -160,8 +160,24 @@ footer{
 	margin-top: 40px;
 }
 .status-box {
-	height: 200px;
 	border: 1px solid #eee;
+	width: 585px;
+	height: 145px;
+}
+.status {
+	border: none;
+}
+.post-status {
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-right: 3px;
+	background-color: #9ECB3C;
+	border: none;
+	color: #fff;
+}
+.post-status:hover {
+	background-color: #148749;
 }
 @media screen and (min-width: 992px) {
 	#bs-example-navbar-collapse-1 {
