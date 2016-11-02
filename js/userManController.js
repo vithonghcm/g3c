@@ -1,6 +1,6 @@
 var userManController = angular.module('userManController', []);
 
-userManController.controller('getUserManController', function($scope){
+userManController.controller('getUserManController', function($scope,$http){
     var getUserMan  = this;
     
     getUserMan.user = {};
@@ -10,21 +10,25 @@ userManController.controller('getUserManController', function($scope){
         var username = getUserMan.user.username;
         var password = getUserMan.user.password;
         var currentUser = {};
-        angular.forEach(getUserMan.users, function(user){
-            if(username == user.username && password == user.password){
-                getUserMan.message = "Xin chào " + username;
-                currentUser = user;
-                currentUser.loggedIn = true;
+
+        $http.get("../data/userLogin/userList.json")
+        .then(function(response) {
+            //First function handles success
+            getUserMan.users = response.data.userList;
+            console.log(getUserMan.users);
+            angular.forEach(getUserMan.users, function(user){
+                if(username == user.userID && password == user.userPassword){
+                    getUserMan.message = "Xin chào " + username;
+                    currentUser = user;
+                    currentUser.loggedIn = true;                    
+                    console.log(currentUser.loggedIn);
+                }
             }
-        }
-        );
+            );    
+        }, function(response) {
+            //Second function handles error
+            getUserMan.message = "Something went wrong";
+        });
     }
     
-    getUserMan.users = [
-        {username:'vthong',password:'123456'},
-        {username:'thuong',password:'123456'},
-        {username:'hloc',password:'123456'},
-        {username:'banh',password:'123456'},
-        {username:'nhung',password:'123456'}
-        ];
 });
