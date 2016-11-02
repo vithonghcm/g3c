@@ -161,11 +161,21 @@ footer{
 }
 .status-box {
 	border: 1px solid #eee;
-	width: 585px;
-	height: 145px;
+	width: 660px;
+	height: 137px;
+}
+.status-box>.col-md-1, .status-box>.col-md-10 {
+	padding: 0px;
+	padding-top: 10px;
+}
+.status-box>.col-md-1 {
+	width: 70px;
 }
 .status {
 	border: none;
+}
+.status:focus {
+	outline: none;
 }
 .post-status {
 	float: right;
