@@ -59,6 +59,9 @@ body {
 	border-bottom-color: #9ECB3C;
 	color: #9ECB3C;
 }
+.dropdown-menu>li>form{
+	padding: 3px 20px;
+}
 .btn-default:hover {
     color: white;
     background-color: #9ECB3C;
@@ -90,21 +93,6 @@ body {
 footer{
 	
 	color: #ff7f7f;
-}
-.search-input{
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px; 
-	border-right:none;
-}
-.btn-search-submit{
-	border-left:none;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	height:34px;
-}
-.form-inline {
-	float: right;
-	padding-top: 5px;
 }
 .form-group {
 	display: inline-block;
