@@ -11,10 +11,15 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/sly.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
     <script src="js/userManController.js"></script>
     <script src="js/topUserController.js"></script>
 	<script src="js/catCraftController.js"></script>
     <script src="js/app.js"></script>
+    
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -114,7 +119,7 @@
 				<a href="#">
 					<div class="col-md-12 course">
 						<div class="col-md-3">
-							<img src="img/128-block.png" width="64px" height="64px">
+							<img src="img/128-block.png" width="80px" height="80px">
 						</div>
 						<div class="col-md-8">
 							<h4><b>Tên khoá học</b></h4>
@@ -126,7 +131,7 @@
 				<a href="#">
 					<div class="col-md-12 course">
 						<div class="col-md-3">
-							<img src="img/128-block.png" width="64px" height="64px">
+							<img src="img/128-block.png" width="80px" height="80px">
 						</div>
 						<div class="col-md-8">
 							<h4><b>Tên khoá học</b></h4>
@@ -138,7 +143,7 @@
 				<a href="#">
 					<div class="col-md-12 course">
 						<div class="col-md-3">
-							<img src="img/128-block.png" width="64px" height="64px">
+							<img src="img/128-block.png" width="80px" height="80px">
 						</div>
 						<div class="col-md-8">
 							<h4><b>Tên khoá học</b></h4>
@@ -150,7 +155,7 @@
 				<a href="#">
 					<div class="col-md-12 course">
 						<div class="col-md-3">
-							<img src="img/128-block.png" width="64px" height="64px">
+							<img src="img/128-block.png" width="80px" height="80px">
 						</div>
 						<div class="col-md-8">
 							<h4><b>Tên khoá học</b></h4>
@@ -168,9 +173,190 @@
 						<img src="img/user-128.png" width="50" height="50">	
 					</div>
 					<div class="col-md-10">
-						<textarea class="status" rows="5" cols="80" placeholder="Share your status" onfocus="focus()"></textarea>	
+						<textarea class="status" placeholder="Share your status"></textarea>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								// body...
+								$('.status').focusin(function() {
+									/* Act on the event */
+									$('.status-box').css('outline', 'solid 1px #9ECB3C');
+								});
+								$('.status').focusout(function(event) {
+									/* Act on the event */
+									$('.status-box').css('outline', 'none');
+								});
+							})
+						</script>
+
 					</div>
 					<button class="post-status">Post</button>
+				</div>
+			</div>
+			<hr>
+			<div class="row news-feed">
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Jackie Chan</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">10 phút trước <i class="fa fa-globe"></i></p>
+							<p>Chào các bạn! Đoán xem tôi đang ở đâu nào! :x :x :x</p>
+							<hr>
+							<i class="fa fa-heart"></i> 24K <i class="fa fa-comments"></i> 1.2K <i class="fa fa-share"></i> 372
+						</div>
+					</div>
+				</div>
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Barack Obama</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">15 phút trước <i class="fa fa-globe"></i></p>
+							<p>Đang ăn tối cùng gia đình ở nhà hàng của @Beckham !!! Tuyệt vời!!! 
+								<br>
+								<a href="">#dinner</a> <a href="">#dinnerwithfamily</a> <a href="">#beckhamrestaurant</a> <a href="">#happymoment</a>
+							</p>
+							<hr>
+							<i class="fa fa-heart"></i> 598K <i class="fa fa-comments"></i> 62K <i class="fa fa-share"></i> 154K
+						</div>
+					</div>
+				</div>
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Donald J. Trump</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">20 phút trước <i class="fa fa-globe"></i></p>
+							<p>Chào các bạn! Dù gì thì tôi cũng sẽ thắng thôi! Và nước Mỹ sẽ tiếp tục phát triển thăng hoa. Cảm ơn các cử tri đã ủng hộ cho tôi!
+								<br>
+								<a href="">#iamgonnawin</a> <a href="">#hailamerica</a>
+							</p>
+							<hr>
+							<i class="fa fa-heart"></i> 124K <i class="fa fa-comments"></i> 32K <i class="fa fa-share"></i> 3K
+						</div>
+					</div>
+				</div>
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Donnie Yen</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">30 phút trước <i class="fa fa-globe"></i></p>
+							<p>Tôi sẽ gặp lại các bạn trên màn ảnh sớm thôi! Chờ xem nhé :x sắp có trailer rồi đấy! Stay tuned for tonight!</p>
+							<hr>
+							<i class="fa fa-heart"></i> 224K <i class="fa fa-comments"></i> 18K <i class="fa fa-share"></i> 6K
+						</div>
+					</div>
+				</div>
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Trường Giang</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">45 phút trước <i class="fa fa-globe"></i></p>
+							<p>Tôi là ai trong cuộc đời này và ai là tôi trong cuộc đời sau...</p>
+							<hr>
+							<i class="fa fa-heart"></i> 94K <i class="fa fa-comments"></i> 22K <i class="fa fa-share"></i> 2K
+						</div>
+					</div>
+				</div>
+				<div class="post">
+					<div class="row text-center post-pic">
+						<img src="img/128-block.png">
+					</div>
+					<div class="row post-content">
+						<div class="col-md-2">
+							<img src="img/user-32.png">
+						</div>
+						<div class="col-md-10">
+							<h4><b>Hoài Linh</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<p class="small text-muted">50 phút trước <i class="fa fa-globe"></i></p>
+							<p>Ai muốn live stream cùng tui không :)) có thì like đi nha, tối về tính!</p>
+							<hr>
+							<i class="fa fa-heart"></i> 224K <i class="fa fa-comments"></i> 35K <i class="fa fa-share"></i> 9K
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- col-md-6 -->
+		<div class="col-md-3 product">
+			<h1 class="page-header text-center">Sản phẩm nổi bật</h1>
+			<div class="frame" id="centered">
+				<ul class="slidee text-center">
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+					<li>
+						<img src="img/user-128.png" alt="">
+						<p><a class="btn btn-viewdetail" href="#" role="button">Tên Sản phẩm</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"></div>
 				</div>
 			</div>
 		</div>
