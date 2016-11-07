@@ -49,13 +49,13 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle user-icon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/user-32.png"></img><span class="caret"></span></a>
 						<ul class="dropdown-menu" >
-							<li><a href="#">{{userMan.message}}</a></li>
-							<li><a href="#">Thông tin</a></li>
-							<li><a href="#">Hoạt động</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li ng-hide="userMan.loggedIn">{{userMan.message}}</li>
+							<li ng-show="userMan.loggedIn"><a href="#">Thông tin</a></li>
+							<li ng-show="userMan.loggedIn"><a href="#">Hoạt động</a></li>
+							<li ng-show="userMan.loggedIn"><a href="#">Something else here</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">Đăng xuất</a></li>
-							<li>
+							<li ng-show="userMan.loggedIn"><a href="#">Đăng xuất</a></li>
+							<li ng-hide="userMan.loggedIn">
 								<form>
 									<div class="form-group">
 										<label class="control-label" for="email">Username:</label>

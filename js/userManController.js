@@ -4,7 +4,8 @@ userManController.controller('getUserManController', function($scope,$http){
     var getUserMan  = this;
     
     getUserMan.user = {};
-    getUserMan.message = "Chưa đăng nhập";
+    getUserMan.message = "Bạn chưa đăng nhập";
+    getUserMan.loggedIn = false;
     
     getUserMan.checkLogin = function(){
         var username = getUserMan.user.username;
@@ -20,7 +21,7 @@ userManController.controller('getUserManController', function($scope,$http){
                 if(username == user.userID && password == user.userPassword){
                     getUserMan.message = "Xin chào " + username;
                     currentUser = user;
-                    currentUser.loggedIn = true;                    
+                    getUserMan.loggedIn = true;                    
                     console.log(currentUser.loggedIn);
                 }
             }
