@@ -31,16 +31,5 @@ userManController.controller('getUserManController', function($scope,$http){
             getUserMan.message = "Something went wrong";
         });
     }
-    
-<<<<<<< HEAD
-    getUserMan.users = [
-        {username:'vthong',password:'123456'},
-        {username:'thuong',password:'123456'},
-        {username:'hloc',password:'123456'},
-        {username:'banh',password:'123456'},
-        {username:'nhung',password:'123456'}
-        ];
 });
-=======
-});
->>>>>>> cc31cc98e77ac6dcd09cc9f3a7af4d097f589ed7
+
