@@ -1,4 +1,4 @@
-var userManController = angular.module('userManController', []);
+var userManController = angular.module('g3cApp.userManController', []);
 
 userManController.controller('getUserManController', function($scope){
     var getUserMan  = this;

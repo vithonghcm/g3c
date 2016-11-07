@@ -1,4 +1,7 @@
-body { padding-top: 150px; }
+body { padding-top: 150px; 
+	background-repeat: no-repeat;
+	background-size: auto;
+}
 
 .navbar-default{
 	background-color: white;

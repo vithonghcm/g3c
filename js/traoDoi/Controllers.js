@@ -1,4 +1,9 @@
-var catCraftController = angular.module('catCraftController',[])
+'user strict';
+
+angular.module('g3cApp.traoDoi')
+	.controller('traoDoiCtrl', function traoDoiCtrl($scope, $http){
+		
+	})
 	.controller('getCatCraftController', function($scope){
 		var getCatCraftController = this;
 		getCatCraftController.categories =

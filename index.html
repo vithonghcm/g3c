@@ -3,15 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>G3C - Green Creative Cute Crafts.</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
-    <script src="js/userManController.js"></script>
-    <script src="js/topUserController.js"></script>
-	<script src="js/catCraftController.js"></script>
-    <script src="js/app.js"></script>
-    
 </head>
 <body>
 
@@ -45,11 +36,11 @@
 							<li><a href="#">One more separated link</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Trao đổi</a></li>
+					<li><a href="#/traodoi">Trao đổi</a></li>
 					<li><a href="#">Hướng dẫn</a></li>
 					<li><a href="#">Cộng đồng</a></li>					
 				</ul>
-				<ul class="nav navbar-nav navbar-right" ng-controller="getUserManController as userMan">
+				<ul class="nav navbar-nav navbar-right" ng-controller="getUserManController">
 					<li><a href="#"><img src="img/google-brand-logo.gif" alt=""></a></li>
 					<li><a href="#"><img src="img/facebook-brand-logo.png" alt=""></a></li>
 					<li class="dropdown">
@@ -89,7 +80,7 @@
 	</nav>
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="container">
+	<div class="container" ng-view>
 		<!-- Example row of columns -->
 		
 		<div class="row">
@@ -208,7 +199,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" ng-controller="getCatCraftController as catCraft">
+		<div class="section">
 			<h1 class="page-header" >Danh mục ngẫu nhiên 1</h1>
 			<div class="row">        
 				<div class="col-md-4" ng-repeat="category in catCraft.categories">
@@ -251,10 +242,29 @@
 		</div>	
 	</footer>
 	
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<!-- <script src="js/traoDoi/jquery.vm-carousel.js"></script> -->
+
+    <script src="lib/angular/angular.min.js"></script>  
+	<script src="lib/angular/angular-route.js"></script>
+
+	<script src="js/app.js"></script>
+    <script src="js/userManController.js"></script>
+    <script src="js/topUserController.js"></script>
+	<script src="js/traoDoi/module.js"></script>
+	<script src="js/traoDoi/Controllers.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/sly.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	
+
+	
+	
 </body>
 </html>
