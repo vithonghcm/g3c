@@ -31,7 +31,6 @@ userManController.controller('getUserManController', function($scope,$http){
             getUserMan.message = "Something went wrong";
         });
     }
-
     getUserMan.users = [
         {username:'vthong',password:'123456'},
         {username:'thuong',password:'123456'},
@@ -39,5 +38,6 @@ userManController.controller('getUserManController', function($scope,$http){
         {username:'banh',password:'123456'},
         {username:'nhung',password:'123456'}
         ];
+
 });
 
