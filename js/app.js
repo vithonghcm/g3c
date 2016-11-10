@@ -12,7 +12,7 @@ angular.module('g3cApp', ['g3cApp.Home','g3cApp.traoDoi', 'g3cApp.congDong', 'ng
         restrict: 'A', //This menas that it will be used as an attribute and NOT as an element. I don't like creating custom HTML elements
         //replace: true,
         //scope: {user: '='}, // This is one of the cool things :). Will be explained in post.
-        //templateUrl: "/js/directives/header.html",
+        templateUrl: '/html/header/header.html',
         controller: ['$scope', '$filter' ,'$http', function ($scope, $filter, $http) {
             // Your behaviour goes here :)
 		    $scope.user = {};
