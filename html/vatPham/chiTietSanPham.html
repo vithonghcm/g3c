@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    
+    <link rel="stylesheet" href="/css/VatPham/vatPham.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/vatPham/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vatPham/chitietsanpham.css">
+	
+    <!-- Resource style -->
+</head>
+<body>
+<main class="cd-main-content sub-nav-hero" style="padding-top:40px;">
+	<div>
+		<div class="container con-link">
+      		<div class="row">
+		      	<ul class="breadcrumb">
+		          <li><a href="#/home">TRANG CHỦ</a></li>
+		          <li><a href="#/vatPham" >VẬT PHẨM</a></li>
+		          <li><a href="" >Thiệp</a></li>
+		          <li><a href="" class="activity">Bookmark Fairy Corner</a></li>
+		        </ul>
+			  </div>
+			</div>
+	</div>
+
+	<div><!-- chi tiết sản phẩm -->
+	<div class="container">
+		<div class="col-sm-4">
+			<!-- hiển thị hình -->
+           
+            <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script src="/js/vatPham/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+
+            //var jssor_1_SlideshowTransitions = [
+            //  {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+            //  {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            //];
+
+            //var jssor_1_options = {
+            //  $AutoPlay: true,
+            //  $SlideshowOptions: {
+            //    $Class: $JssorSlideshowRunner$,
+            //    $Transitions: jssor_1_SlideshowTransitions,
+            //    $TransitionsOrder: 1
+            //  },
+            //  $ArrowNavigatorOptions: {
+            //    $Class: $JssorArrowNavigator$
+            //  },
+            //  $ThumbnailNavigatorOptions: {
+            //    $Class: $JssorThumbnailNavigator$,
+            //    $Cols: 10,
+            //    $SpacingX: 8,
+            //    $SpacingY: 8,
+            //    $Align: 360
+            //  }
+            //};
+
+            //var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            ///*responsive code begin*/
+            ///*you can remove responsive code if you don't want the slider scales while window resizing*/
+            //function ScaleSlider() {
+            //    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            //    if (refSize) {
+            //        refSize = Math.min(refSize, 800);
+            //        jssor_1_slider.$ScaleWidth(refSize);
+            //    }
+            //    else {
+            //        window.setTimeout(ScaleSlider, 30);
+            //    }
+            //}
+            //ScaleSlider();
+            //$(window).bind("load", ScaleSlider);
+            //$(window).bind("resize", ScaleSlider);
+            //$(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        
+    </style>
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 900px; overflow: hidden; visibility: hidden; background-color: #FFFFFF;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 900px; overflow: hidden;">
+            <div data-p="144.50">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+            
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="/img/h1.jpg" />
+                <img data-u="thumb" src="/img/h1.jpg" />
+            </div>
+           
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+		</div>	
+		<div class="col-sm-8" style="padding-left:50px;">
+      <div class="row" id="soluoc_sanpham">
+        <div class="col-sm-6">
+          <h1 id="sanPham_ten">Bookmark Fairy Corner</h1>
+      <p></p>
+          <p>
+            Giá thị trường:<span id="gia_goc" >7000<sup>đ</sup></span>
+          </p>
+          <p>
+            Giá tại G3C:<span id="gia_ban">6000<sup>đ</sup> </span>
+          </p>
+          
+          <p>
+            Tiết kiệm: <span id="tietkiem">1000<sup>đ</sup></span> (<span id="phantram">20</span>%)
+          </p>
+        </div>
+        <div class="col-sm-6 thaotac">
+          <ul>
+            <!--<li>
+              <button class="btn-success btn btn-thaotac" id="so_sanh"><i class="fa">&#xf24e;</i></button>
+            </li>-->
+             <li>
+              <button class="btn-success btn btn-thaotac"id="trao_doi"><i class="fa">&#xf2a7;</i></button>
+            </li>
+            <!--<li>
+              <button class="btn-success btn btn-thaotac" id="nhan_tin"><i class="fa">&#xf0e6;</i></button>
+            </li>-->
+            <li>
+              <button class="btn-success btn btn-thaotac" id="yeuthich"><i class="fa">&#xf004;</i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+			<!-- thêm sản phẩm -->
+          <div class="row">
+            <form action="">
+            <input id="soluong" type="number" value="1">
+            <input type="button" class="btn btn-success" id="btn-themhang"value="THÊM VÀO GIỎ HÀNG" ng-click="themHang()">
+                <span ng-show="hoanTat" style="color:#0d6212;font-size:1.5em;"><i class="fa">&#xf00c;</i></span>
+          </form>
+
+          </div>
+          <div class="row" id="thongtin_shop">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 text-right">
+                <img src="/img/user-32.png" alt="Người bán" id="img-nguoiban">
+            </div>
+            <div class="col-sm-8">
+              <h3>Thu Hương shop</h3>
+              <p id="mota_shop">Chuyên cung cấp các sản phẩm quà tặng thủ công vô cùng tỉ mỉ tinh tế. Với đội ngũ những người đầy nhiệt huyết yêu cuộc sống và công viêc tuyệt vời của mình, sản phẩm của chúng tôi đã chiếm được lòng tin của đông đảo khách hàng mọi lứa tuổi</p>
+            </div>
+          </div>
+    </div>
+	</div>
+  
+  <div class="container-fluid">
+    <h5>Mô Tả Sản Phẩm</h5>
+    <hr>
+    <h6>Bookmark Fairy Corner - From… To…</h6>
+    <p> - Với ý tưởng sẽ tạo ra những đồ vật, món quà mang lại những điều kỳ diệu, đội ngũ sản xuất chiếc bookmard này quả thật đã đem đến cho chúng ta một thành phẩm vô cùng tuyệt vời cả về chất lượng lẫn phong cách. Giờ đây, bookmark Fairy Corner không phải chỉ để “đánh dấu trang sách” nữa, chúng còn khơi dậy niềm cảm hứng say mê đọc sách trong bản thân mỗi chúng ta.</p>
+    <p>
+      <b>Phong cách tinh tế, cổ điển</b>
+
+      Với chất liệu giấy mộc mạc cùng thiết kế mang nhiều cảm xúc về cuộc sống, bookmark Fairy Corner được khách hàng rất yêu thích bởi phong cách tinh tế, cổ điển.<br>
+
+      Từng chất liệu, màu sắc, kiểu dáng được cân nhắc kỹ lưỡng để tạo ra những sản phẩm đạt được yêu cầu cao về thẩm mỹ cũng như về chất lượng.<br>
+
+      Bookmark được làm từ giấy bìa cứng cao cấp, dày dặn. Chất liệu tốt giúp hạn chế tình trạng gãy hay cong vênh trong quá trình sử dụng.<br>
+
+      <b>Quà tặng tuyệt vời</b>
+
+      Vì “đằng sau mỗi sản phẩm đều có một câu chuyện”, chiếc bookmard cực xinh xắn này không những đem lại cho bạn niềm vui khi đọc sách, mà còn là món quà tuyệt vời mà bạn có thể chọn lựa để dành tặng cho những người thân yêu.<br>
+
+      Bookmark có dây treo, kích thước phù hợp với nhiều khổ sách nên dễ dàng mang theo bên mình.<br>
+
+      <b>Thương hiệu uy tín</b>
+
+      Fairy Corner là một thương hiệu Việt Nam, chuyên cung cấp các sản phẩm quà tặng thủ công vô cùng tỉ mỉ và tinh tế.<br>
+
+      Với một đội ngũ những người đầy nhiệt huyết, yêu cuộc sống và yêu công việc tuyệt vời của mình, những sản phẩm từ Fairy Corner từng bước chiếm được sự tin yêu của đông đảo khách hàng trên mọi lứa tuổi.<br>
+          </p>
+  </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <!-- sản phẩm liên quan -->
+        <script src="/js/VatPham/main.js"></script> <!-- Resource jQuery -->
+        
+  <div class="container-fluid">
+    <h5>Sản phẩm liên quan</h5>
+    <hr>
+    <div class="col-md-12">
+            <div id="news-slider" class="owl-carousel">
+               
+               <div class="post-slide ">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="/img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                        
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="image/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="/img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                       
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="/img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                        
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="/img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="/img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                       
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                 <div class="post-slide">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                       
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                 <div class="post-slide">
+                    <div class="post-img">
+                        <img src="/img/h1.jpg" alt="">
+                        <span class="icons">
+                            <img src="img/user-32.png" alt="">
+                        </span>
+                    </div>
+                    <div class="post-review">
+                        <ul class="post-bar">
+                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
+                            <li><i class="fa fa-user"></i> Thu Hương</li>
+                        </ul>
+                        <h3 class="post-title">Bookmark Fairy Corner</h3>
+                        <p class="price">
+                            <span class="discount">6000đ </span>
+                            <span class="basis_price">7000đ</span>
+                        </p>
+                       
+                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+
+	</div>
+</main> <!-- .cd-main-content -->
+
+
+
+</body>
+</html>

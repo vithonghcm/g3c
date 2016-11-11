@@ -1,0 +1,31 @@
+﻿<div ng-controller="vatPhamItemController">
+    <div ng-repeat="vatPham in vatPhams">
+        <div id="news-slider" class="owl-carousel">
+            <div class="post-slide col-sm-3">
+
+                <div class="post-img">
+                    <img src="{{vatPham.imgSanPham}}" alt="">
+                    <span class="icons">
+                        <img src="{{vatPham.imgNguoiBan}}" alt="">
+                    </span>
+
+
+                </div>
+                <div class="post-review">
+                    <ul class="post-bar">
+                        <li><i class="fa fa-calendar"></i>{{vatPham.ngayDang}}</li>
+                        <li><i class="fa fa-user"></i>{{vatPham.nguoiBan}}</li>
+                    </ul>
+                    <h3 class="post-title">{{vatPham.tenVatPham}}</h3>
+                    <p class="price">
+                        <span class="discount">{{vatPham.giaGoc}}đ </span>
+                        <span class="basis_price">{{vatPham.giaGiam}}đ </span>
+                    </p>
+                    <p class="post-description">{{vatPham.description}}</p>
+                    <a href="{{'#/vatPham/'+vatPham.idVatPham}}" class="read">Xem chi tiết<i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
