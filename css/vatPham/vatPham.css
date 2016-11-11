@@ -200,15 +200,12 @@ body {
            text-align: center;
        }
 
-       a:hover, a:focus, a:visited {
+       a:hover, a:focus {
            outline: 0;
-          
-       }
-       .item-menu :hover{
-           color:#e1e1e1;
+           color:#e1e1e1;  
            text-decoration:none;
        }
-
+     
        .btn-bangchon2 {
            background: transparent url(/img/button_nguyenlieu.png) no-repeat top left;
            cursor: pointer;
