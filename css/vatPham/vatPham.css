@@ -15,6 +15,7 @@ body {
 }
 .pagination>li>a,.pagination>li>span{
   color:#148749; 
+
 }
   .pagination>.active>a:hover{
   background-color: #9ebc3c;
@@ -175,7 +176,7 @@ body {
        }
 
        .menu1 {
-           position: absolute;
+           position: fixed;
            top: 137px;
            padding: 20px 20px 20px 3px;
            text-align: center;
@@ -216,7 +217,7 @@ body {
        }
 
        .menu2 {
-           position: absolute;
+           position: fixed;
            top: 405px;
            padding: 20px 20px 20px 3px;
            text-align: center;
@@ -251,7 +252,7 @@ body {
        }
 
        .menu3 {
-           position: absolute;
+           position: fixed;
            top: 642px;
            padding: 20px 20px 20px 3px;
            text-align: center;
