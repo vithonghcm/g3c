@@ -514,9 +514,15 @@
 })(jQuery, window, document);
 
 $(document).ready(function() {
+	$(".soLuong").hide();
 	$('.vmcarousel-normal').vmcarousel({
 		autoplay: false,
 	});
+	$('.checked').click(function() {
+		console.log('checked');
+		$(this).parent().next(".soLuong").toggle();
+	});
+
 });
 
 

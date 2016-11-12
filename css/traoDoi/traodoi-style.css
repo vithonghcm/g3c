@@ -1,5 +1,6 @@
 body{
-	background-image: url("../../img/nen-ver2.jpg");
+	background-image: url("../../img/bg.png");
+    background-repeat: repeat;
 }
 
 .card {
@@ -23,8 +24,104 @@ body{
 .acc-info{
 	margin: 20px 30px;
 }
-.checkSp{
-	width: 18px;
-	height: 18px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 31px;
+}
+.soLuong{
+    height: 30px !important;
+    width: 84px;
+    margin-bottom: -8px !important;
+    margin-left: 39px;
+}
+/* Hide default HTML checkbox */
+/*.switch input {display:none;}*/
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #148749;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.button {
+  border-radius: 4px;
+  background-color: #148749;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 21px;
+  padding: 9px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 24px;
+  float: right;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
