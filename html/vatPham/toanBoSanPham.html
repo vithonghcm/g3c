@@ -50,6 +50,11 @@
                 } else {
                     $("#menuDanhMuc").css("left", "-110px");
                     flagDM = true;
+
+                    $("#menuNguyenLieu").css("left", "-295px");
+                    flagNL = false;
+                    $("#menuDoiTuong").css("left", "-295px");
+                    flagDT = false;
                 }
             });
             $("#btnNguyenLieu").click(function () {
@@ -59,6 +64,11 @@
                 } else {
                     $("#menuNguyenLieu").css("left", "-110px");
                     flagNL = true;
+
+                    $("#menuDanhMuc").css("left", "-295px");
+                    flagDM = false;
+                    $("#menuDoiTuong").css("left", "-295px");
+                    flagDT = false;
                 }
             });
             $("#btnDoiTuong").click(function () {
@@ -68,6 +78,11 @@
                 } else {
                     $("#menuDoiTuong").css("left", "-110px");
                     flagDT = true;
+
+                    $("#menuDanhMuc").css("left", "-295px");
+                    flagDM = false;
+                    $("#menuNguyenLieu").css("left", "-295px");
+                    flagNL = false;
                 }
             });
 
