@@ -5,8 +5,7 @@
 	<title>Document</title>
     
     <link rel="stylesheet" href="/css/VatPham/vatPham.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/vatPham/owl.carousel.min.css">
     <link rel="stylesheet" href="css/vatPham/chitietsanpham.css">
 	
@@ -31,13 +30,8 @@
 	<div class="container">
 		<div class="col-sm-4">
 			<!-- hiển thị hình -->
-           
-            <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
             <script src="/js/vatPham/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     
-    <style>
-        
-    </style>
     <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 900px; overflow: hidden; visibility: hidden; background-color: #FFFFFF;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -115,21 +109,18 @@
             Tiết kiệm: <span id="tietkiem">1000<sup>đ</sup></span> (<span id="phantram">20</span>%)
           </p>
         </div>
-        <div class="col-sm-6 thaotac">
-          <ul>
-            <!--<li>
-              <button class="btn-success btn btn-thaotac" id="so_sanh"><i class="fa">&#xf24e;</i></button>
-            </li>-->
-             <li>
-              <button class="btn-success btn btn-thaotac"id="trao_doi"><i class="fa">&#xf2a7;</i></button>
-            </li>
-            <!--<li>
-              <button class="btn-success btn btn-thaotac" id="nhan_tin"><i class="fa">&#xf0e6;</i></button>
-            </li>-->
-            <li>
-              <button class="btn-success btn btn-thaotac" id="yeuthich"><i class="fa">&#xf004;</i></button>
-            </li>
-          </ul>
+        <div class="col-sm-6">
+          
+            <div class="row" id="thongtin_shop">
+              
+                <div class="col-sm-2">
+                    <img src="/img/user-32.png" alt="Người bán" id="img-nguoiban">
+                </div>
+                <div class="col-sm-10">
+                    <h3>Thu Hương shop</h3>
+                    <p id="mota_shop">Chuyên cung cấp các sản phẩm quà tặng thủ công vô cùng tỉ mỉ tinh tế. Với đội ngũ những người đầy nhiệt huyết yêu cuộc sống và công viêc tuyệt vời của mình, sản phẩm của chúng tôi đã chiếm được lòng tin của đông đảo khách hàng mọi lứa tuổi</p>
+                </div>
+            </div>
         </div>
       </div>
       <hr>
@@ -138,9 +129,20 @@
             <form action="">
             <input id="soluong" type="number" value="1">
                 <input type="button" class="btn btn-success" id="btn-themhang" value="THÊM VÀO GIỎ HÀNG" onclick="themHang()">
-                <!--<span ng-show="hoanTat" style="color:#0d6212;font-size:1.5em;"><i class="fa">&#xf00c;</i></span>-->
+                
+                <button class="btn btn-thaotac" data-toggle="tooltip" title="Trao đổi" id="trao_doi"><i class="fa">&#xf2a7;</i></button>
+                <button class="btn btn-thaotac" data-toggle="tooltip" title="Yêu thích" id="yeuthich"><i class="fa">&#xf004;</i></button>
+                <button class="btn btn-thaotac" data-toggle="tooltip" title="Học" id="hoc"><i class="fa">&#xf19d;</i></button>
+                <button class="btn btn-thaotac" data-toggle="tooltip" title="Nhắn tin" id="nhan_tin"><i class="fa">&#xf0e6;</i></button>
+                
+
                 <div id="snackbar">Thêm hàng thành công</div>
           </form>
+              <script>
+                  $(document).ready(function () {
+                      $('[data-toggle="tooltip"]').tooltip();
+                  });
+              </script>
               <script>
                   function themHang() {
                       var x = document.getElementById("snackbar")
@@ -150,23 +152,14 @@
               </script>
 
           </div>
-          <div class="row" id="thongtin_shop">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2 text-right">
-                <img src="/img/user-32.png" alt="Người bán" id="img-nguoiban">
-            </div>
-            <div class="col-sm-8">
-              <h3>Thu Hương shop</h3>
-              <p id="mota_shop">Chuyên cung cấp các sản phẩm quà tặng thủ công vô cùng tỉ mỉ tinh tế. Với đội ngũ những người đầy nhiệt huyết yêu cuộc sống và công viêc tuyệt vời của mình, sản phẩm của chúng tôi đã chiếm được lòng tin của đông đảo khách hàng mọi lứa tuổi</p>
-            </div>
-          </div>
+          
     </div>
 	</div>
   
   <div class="container-fluid">
     <h5>Mô Tả Sản Phẩm</h5>
     <hr>
-    <h6>Bookmark Fairy Corner - From… To…</h6>
+    <h5>Bookmark Fairy Corner - From… To…</h5>
     <p> - Với ý tưởng sẽ tạo ra những đồ vật, món quà mang lại những điều kỳ diệu, đội ngũ sản xuất chiếc bookmard này quả thật đã đem đến cho chúng ta một thành phẩm vô cùng tuyệt vời cả về chất lượng lẫn phong cách. Giờ đây, bookmark Fairy Corner không phải chỉ để “đánh dấu trang sách” nữa, chúng còn khơi dậy niềm cảm hứng say mê đọc sách trong bản thân mỗi chúng ta.</p>
     <p>
       <b>Phong cách tinh tế, cổ điển</b>
@@ -259,7 +252,7 @@
                             <span class="discount">6000đ </span>
                             <span class="basis_price">7000đ</span>
                         </p>
-                        
+
                         <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -280,6 +273,7 @@
                             <span class="discount">6000đ </span>
                             <span class="basis_price">7000đ</span>
                         </p>
+
                         <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -300,15 +294,15 @@
                             <span class="discount">6000đ </span>
                             <span class="basis_price">7000đ</span>
                         </p>
-                       
+
                         <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
-                 <div class="post-slide">
+                <div class="post-slide">
                     <div class="post-img">
                         <img src="/img/h1.jpg" alt="">
                         <span class="icons">
-                            <img src="img/user-32.png" alt="">
+                            <img src="/img/user-32.png" alt="">
                         </span>
                     </div>
                     <div class="post-review">
@@ -321,31 +315,13 @@
                             <span class="discount">6000đ </span>
                             <span class="basis_price">7000đ</span>
                         </p>
-                       
+
                         <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
-                 <div class="post-slide">
-                    <div class="post-img">
-                        <img src="/img/h1.jpg" alt="">
-                        <span class="icons">
-                            <img src="img/user-32.png" alt="">
-                        </span>
-                    </div>
-                    <div class="post-review">
-                        <ul class="post-bar">
-                            <li><i class="fa fa-calendar"></i>Apr 2, 2016</li>
-                            <li><i class="fa fa-user"></i> Thu Hương</li>
-                        </ul>
-                        <h3 class="post-title">Bookmark Fairy Corner</h3>
-                        <p class="price">
-                            <span class="discount">6000đ </span>
-                            <span class="basis_price">7000đ</span>
-                        </p>
-                       
-                        <a href="chitietsanpham.html" class="read">Read more<i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
+              
+                
+                 
             </div>
         </div>
   </div>
