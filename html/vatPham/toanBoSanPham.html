@@ -11,30 +11,33 @@
     
 </head>
 <body id="bodyy">
-  
-    <div class="menu1" id="menuDanhMuc" style="left: -195px;">
-        <div class="btn-bangchon1" id="btnDanhMuc">
-        </div>
-        <div>
-            
-            <div ng-include="'/html/vatPham/itemDanhMuc.html'"></div>
-        </div>
-    </div>
+    <div style="position: fixed; top: 10px; z-index:9999;">
+        <div class="menu1" id="menuDanhMuc" style="left: -295px;">
+            <div class="btn-bangchon1" id="btnDanhMuc">
+            </div>
+            <div>
 
-    <div class="menu2" id="menuNguyenLieu" style="left: -195px;">
-        <div class="btn-bangchon2" id="btnNguyenLieu">
+                <div ng-include="'/html/vatPham/itemDanhMuc.html'"></div>
+            </div>
         </div>
-        <div>
-            <div ng-include="'/html/vatPham/itemNguyenLieu.html'"></div>
+
+        <div class="menu2" id="menuNguyenLieu" style="left: -295px; top: 280px;">
+            <div class="btn-bangchon2" id="btnNguyenLieu">
+            </div>
+            <div>
+                <div ng-include="'/html/vatPham/itemNguyenLieu.html'"></div>
+            </div>
+        </div>
+        <div class="menu3" id="menuDoiTuong" style="left: -295px; top: 410px;">
+            <div class="btn-bangchon3" id="btnDoiTuong">
+            </div>
+            <div>
+                <div ng-include="'/html/vatPham/itemDoiTuong.html'"></div>
+            </div>
         </div>
     </div>
-    <div class="menu3" id="menuDoiTuong" style="left: -195px;">
-        <div class="btn-bangchon3" id="btnDoiTuong">
-        </div>
-        <div>
-            <div ng-include="'/html/vatPham/itemDoiTuong.html'"></div>
-        </div>
-    </div>
+  
+   
     <script>
         $(document).ready(function () {
             var flagDM = false;
@@ -42,28 +45,28 @@
             var flagDT = false;
             $("#btnDanhMuc").click(function () {
                 if (flagDM) {
-                    $("#menuDanhMuc").css("left", "-195px");
+                    $("#menuDanhMuc").css("left", "-295px");
                     flagDM = false;
                 } else {
-                    $("#menuDanhMuc").css("left", "-3px");
+                    $("#menuDanhMuc").css("left", "-110px");
                     flagDM = true;
                 }
             });
             $("#btnNguyenLieu").click(function () {
                 if (flagNL) {
-                    $("#menuNguyenLieu").css("left", "-195px");
+                    $("#menuNguyenLieu").css("left", "-295px");
                     flagNL = false;
                 } else {
-                    $("#menuNguyenLieu").css("left", "-3px");
+                    $("#menuNguyenLieu").css("left", "-110px");
                     flagNL = true;
                 }
             });
             $("#btnDoiTuong").click(function () {
                 if (flagDT) {
-                    $("#menuDoiTuong").css("left", "-195px");
+                    $("#menuDoiTuong").css("left", "-295px");
                     flagDT = false;
                 } else {
-                    $("#menuDoiTuong").css("left", "-3px");
+                    $("#menuDoiTuong").css("left", "-110px");
                     flagDT = true;
                 }
             });
