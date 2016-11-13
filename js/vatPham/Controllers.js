@@ -114,9 +114,11 @@
       }])
 .controller('vatPhamChiTietController', ['$scope', '$http', '$location', function vatPhamChiTietController($scope, $http, $location) {
     $scope.myUrl = $location.absUrl();
-    
-    $scope.hoanTat = false;
-    $scope.themHang = function () {
-        $scope.hoanTat = true;
-    }
-}]);
+ 
+}])
+
+.controller('gioHangController', ['$scope', '$http', function gioHangController($scope, $http) {
+
+   
+}])
+;

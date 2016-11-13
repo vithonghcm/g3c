@@ -11,6 +11,11 @@ angular.module('g3cApp.vatPham', [])
 	        controller: 'vatPhamChiTietController',
 
 	        templateUrl: 'html/vatPham/chiTietSanPham.html'
+	    })
+	    .when('/taiKhoan/gioHang', {
+	        controller: 'gioHangController',
+
+	        templateUrl: 'html/vatPham/xemgiohang.html'
 	    });
 	}]);
 	
