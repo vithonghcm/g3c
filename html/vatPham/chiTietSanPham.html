@@ -13,6 +13,83 @@
 <body>
 
 <main >
+    <div class="container-fluid" style="position: fixed; z-index:9999;">
+        <div class="menu1" id="menuDanhMuc" style="left: -190px;">
+            <div class="btn-bangchon1" id="btnDanhMuc">
+            </div>
+            <div>
+
+                <div ng-include="'/html/vatPham/itemDanhMuc.html'"></div>
+            </div>
+        </div>
+
+        <div class="menu2" id="menuNguyenLieu" style="left: -190px; top: 280px;">
+            <div class="btn-bangchon2" id="btnNguyenLieu">
+            </div>
+            <div>
+                <div ng-include="'/html/vatPham/itemNguyenLieu.html'"></div>
+            </div>
+        </div>
+        <div class="menu3" id="menuDoiTuong" style="left: -190px; top: 410px;">
+            <div class="btn-bangchon3" id="btnDoiTuong">
+            </div>
+            <div>
+                <div ng-include="'/html/vatPham/itemDoiTuong.html'"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var flagDM = false;
+            var flagNL = false;
+            var flagDT = false;
+            $("#btnDanhMuc").click(function () {
+                if (flagDM) {
+                    $("#menuDanhMuc").css("left", "-190px");
+                    flagDM = false;
+                } else {
+                    $("#menuDanhMuc").css("left", "-3px");
+                    flagDM = true;
+
+                    $("#menuNguyenLieu").css("left", "-190px");
+                    flagNL = false;
+                    $("#menuDoiTuong").css("left", "-190px");
+                    flagDT = false;
+                }
+            });
+            $("#btnNguyenLieu").click(function () {
+                if (flagNL) {
+                    $("#menuNguyenLieu").css("left", "-190px");
+                    flagNL = false;
+                } else {
+                    $("#menuNguyenLieu").css("left", "-3px");
+                    flagNL = true;
+
+                    $("#menuDanhMuc").css("left", "-190px");
+                    flagDM = false;
+                    $("#menuDoiTuong").css("left", "-190px");
+                    flagDT = false;
+                }
+            });
+            $("#btnDoiTuong").click(function () {
+                if (flagDT) {
+                    $("#menuDoiTuong").css("left", "-190px");
+                    flagDT = false;
+                } else {
+                    $("#menuDoiTuong").css("left", "-3px");
+                    flagDT = true;
+
+                    $("#menuDanhMuc").css("left", "-190px");
+                    flagDM = false;
+                    $("#menuNguyenLieu").css("left", "-190px");
+                    flagNL = false;
+                }
+            });
+
+        });
+    </script>
 	<div>
 		<div class="container con-link">
       		<div class="row">

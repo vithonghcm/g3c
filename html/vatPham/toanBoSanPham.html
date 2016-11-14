@@ -85,10 +85,13 @@
                     flagNL = false;
                 }
             });
-
+            $(".pagination").click(function () {
+                //alert("hh");
+                $('body,html').animate({ scrollTop: 0 }, 400);
+            })
         });
     </script>
-<main>
+<main id="top">
 
             <div class="container-fluid">
                 <section>
@@ -137,6 +140,14 @@
 
     <!--//-->
     <div ng-include="'/html/vatPham/itemTungVP.html'"></div>
+    <!--<script>
+        $(document).ready(function () {
+            $(".pagination").click(function () {
+                //alert("hh");
+                $('body,html').animate({ scrollTop: 0 }, 400);
+            })
+        });
+    </script>-->
     
 </main> <!-- .cd-main-content -->
 
