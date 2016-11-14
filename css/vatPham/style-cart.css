@@ -249,16 +249,16 @@ Main Components
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.17);
   pointer-events: auto;
 }
-.cd-cart header, .cd-cart footer {
+.cd-cart #header-cart, .cd-cart #footer-cart {
   position: absolute;
   z-index: 2;
   left: 0;
   width: 100%;
 }
-.cd-cart header, .cd-cart .body {
+.cd-cart #header-cart, .cd-cart .body {
   opacity: 0;
 }
-.cd-cart header {
+.cd-cart #header-cart {
   top: 0;
   border-radius: 6px 6px 0 0;
   padding: 0 1.4em;
@@ -269,12 +269,12 @@ Main Components
   transition: opacity .2s 0s;
   border-bottom: 1px solid #e6e6e6;
 }
-.cd-cart header::after {
+.cd-cart #header-cart::after {
   clear: both;
   content: "";
   display: block;
 }
-.cd-cart footer {
+.cd-cart #footer-cart {
   bottom: 0;
   border-radius: 0 0 6px 6px;
   box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.15);
@@ -529,10 +529,10 @@ Main Components
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.cart-open .cd-cart header, .cart-open .cd-cart .body {
+.cart-open .cd-cart #header-cart, .cart-open .cd-cart .body {
   opacity: 1;
 }
-.cart-open .cd-cart header {
+.cart-open .cd-cart #header-cart {
   -webkit-transition: opacity .2s .2s;
   transition: opacity .2s .2s;
 }
