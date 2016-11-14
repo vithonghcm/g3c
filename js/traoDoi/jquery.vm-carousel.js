@@ -525,4 +525,12 @@ $(document).ready(function() {
 
 });
 
-
+//delete item in cart in Trao Doi page
+var close = document.getElementsByClassName("xoa");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement.parentElement;
+    div.style.display = "none";
+  }
+}

@@ -1,6 +1,7 @@
 body{
 	background-image: url("../../img/bg.png");
-    background-repeat: repeat;
+  background-repeat: repeat;
+  padding-top: 139px;
 }
 
 .card {
@@ -10,7 +11,14 @@ body{
     width: 185px;
     background-color: #fff;
 }
-
+.card img{
+  width: 184px;
+  height: 164px;
+}
+.card h4{
+  width: 157px;
+  font-size: 17px;
+}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -22,7 +30,11 @@ body{
 }
 
 .acc-info{
-	margin: 20px 30px;
+	margin: 6px 0px;
+}
+.acc-info img{
+  width: 16%;
+  margin-right: 10px;
 }
 .switch {
   position: relative;
@@ -36,8 +48,6 @@ body{
     margin-bottom: -8px !important;
     margin-left: 39px;
 }
-/* Hide default HTML checkbox */
-/*.switch input {display:none;}*/
 
 /* The slider */
 .slider {
@@ -124,4 +134,55 @@ input:checked + .slider:before {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+.checked{
+  margin-top: 10px !important;
+  margin-left: 3px !important;
+}
+.cart{
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+.cart input[type='number']{
+  display: inline !important;
+  width: 100%;
+  margin: 0px !important;
+}
+.cart tr{
+  height: 38px;
+}
+.cart th{
+  text-align: center;
+  background-color: #fff;
+}
+.cart td{
+  width: 150px;
+}
+.cart td,th{
+  height: 25px;
+  font-size: 13px;
+  padding: 8px;
+}
+.cart .col1{
+  width: 66% !important;
+}
+.cart .col3{
+  width: auto !important;
+}
+.cart tr:hover:nth-child(odd){
+  background-color: #58C88C;
+}
+.cart tr:hover:nth-child(even){
+  background-color: #4D9F73;
+}
+.btn-default{
+  margin-left: 35px;
+  margin-top: 10px;
+}
+.xoa{
+  cursor: pointer;
+}
+.xoa:hover{
+  color: #fff;
 }
