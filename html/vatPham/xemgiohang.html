@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="partial/VatPham/css/bootstrap.min.css">
-    <link rel="stylesheet" href="partial/VatPham/css/vatPham.css">
-    <link rel="stylesheet" href="partial/VatPham/css/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="partial/VatPham/css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="partial/VatPham/css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="/css/VatPham/vatPham.css">
     <style>
     .img-sanpham{
         width: 150px;
@@ -33,6 +25,22 @@
     .col-thanhtien{
         font-size: 0.9em;   
     }
+    a:hover{
+        color:#148749;
+    }
+    tr:hover {
+        background-color: rgba(250,250,240, 0.9);
+    }
+    .tb-sp {
+        background-color: rgba(250,250,240, 0.5);
+    }
+        .thum-thanhtien{
+            background-color:rgba(250,250,240, 0.9);
+            padding:20px;
+            font-size:1.2em;
+            margin-top:50px;
+            line-height:25px;
+        }
     </style>
 </head>
 <body id="bodyy">
@@ -40,35 +48,11 @@
     <!-- Menu -->
 
     
-<!-- -------------- -->
-<header class="cd-auto-hide-header">
-    <div class="logo"><a href="#0"><img src="image/logo.png" height="50"alt="Logo"></a></div>
-
-    <nav class="cd-primary-nav">
-        <a href="#cd-navigation" class="nav-trigger">
-            <span>
-                <em aria-hidden="true"></em>
-                Menu
-            </span>
-        </a> <!-- .nav-trigger -->
-
-        <ul id="cd-navigation">
-            <li><a href="#">TRANG CHỦ</a></li>
-            <li class="active"><a href="toanBoVatPham.html">VẬT PHẨM</a></li>
-        <li><a href="#">TRAO ĐỔI</a></li>
-        <li><a href="#">HƯỚNG DẪN</a></li>
-        <li><a href="#">CỘNG ĐỒNG</a></li>
-        <li><a href="#">TÀI KHOẢN</a></li>
-         <li><input  class="form-control search-hidden" id="search"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-        </ul>
-    </nav> <!-- .cd-primary-nav -->
-</header> <!-- .cd-auto-hide-header -->
 
 <section class="cd-hero">
     <div class="cd-hero-content">
         <!-- your content here -->
-        <img src="image/head21.png"  width='100%'>
+        <img src="/img/head21.png"  width='100%'>
     </div>
 </section> <!-- .cd-hero -->
 
@@ -79,9 +63,9 @@
         <div class="container con-link">
             <div class="row">
                 <ul class="breadcrumb">
-                  <li><a href="">TRANG CHỦ</a></li>
+                  <li><a href="#/home">TRANG CHỦ</a></li>
                   <li><a href="">TÀI KHOẢN</a></li>
-                  <li><a href="" class="activity">THANH TOÁN</a></li>
+                  <li><a href="#/taiKhoan/gioHang" class="activity">GIỎ HÀNG</a></li>
                 </ul>
               </div>
             </div>
@@ -90,96 +74,70 @@
         <!--  danh sách đẫ chọn sản phẩm-->
         <div class="col-sm-9">
             <h3>Giỏ hàng (1 sản phẩm)</h3>
-            <table class="table table-hover">
-                <thead class="text-center">
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th></th>
-                        <th>Người bán</th>
-                        <th>Giá mua</th>
-                        <th>Số lượng</th>
-                    </tr>
-                </thead>
-                <tbody class="text-center">
-                    <tr>
-                        <td ><img src="image/h1.jpg" class="img-sanpham"></td>
-                        <td class="ten_sp"><a href="chitietsanpham.html">Bookmark Fairy Corner</a></td>
-                        <td class="ten_nguoiban">Thu Hương shop</td>
-                        <td class="tien">6000đ</td>
-                        <td><input class="soluong"type="number" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td ><img src="image/h1.jpg" class="img-sanpham"></td>
-                        <td class="ten_sp"><a href="chitietsanpham.html">Bookmark Fairy Corner</a></td>
-                        <td class="ten_nguoiban">Thu Hương shop</td>
-                        <td class="tien">6000đ</td>
-                        <td><input class="soluong"type="number" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td ><img src="image/h1.jpg" class="img-sanpham"></td>
-                        <td class="ten_sp"><a href="chitietsanpham.html">Bookmark Fairy Corner</a></td>
-                        <td class="ten_nguoiban">Thu Hương shop</td>
-                        <td class="tien">6000đ</td>
-                        <td><input class="soluong"type="number" value="1"></td>
-                    </tr>
+            <div class="table-responsive">
+                    <table class="table tb-sp">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th></th>
+                                <th>Người bán</th>
+                                <th>Giá mua</th>
+                                <th>Số lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td><img src="/img/h1.jpg" class="img-sanpham"></td>
+                                <td class="ten_sp"><a href="#/vatPham/vp4">Bookmark Fairy Corner</a></td>
+                                <td class="ten_nguoiban">Thu Hương shop</td>
+                                <td class="tien">6000đ</td>
+                                <td><input class="soluong" type="number" min="1" max="50" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="/img/h1.jpg" class="img-sanpham"></td>
+                                <td class="ten_sp"><a href="#/vatPham/vp1">Bookmark Fairy Corner</a></td>
+                                <td class="ten_nguoiban">Thu Hương shop</td>
+                                <td class="tien">6000đ</td>
+                                <td><input class="soluong" type="number" min="1" max="50" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="/img/h1.jpg" class="img-sanpham"></td>
+                                <td class="ten_sp"><a href="#/vatPham/vp2">Bookmark Fairy Corner</a></td>
+                                <td class="ten_nguoiban">Thu Hương shop</td>
+                                <td class="tien">6000đ</td>
+                                <td><input class="soluong" type="number" min="1" max="50" value="1"></td>
+                            </tr>
 
-                </tbody>
-            </table>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <div class="container">
-                    <table class="col-thanhtien">
-                        <tr>
-                            <td>Tổng cộng:</td>
-                            <td><span id="tongcong">18000</span><span>đ</span></td>
-                        </tr>
-                        <tr>
-                            <td>Phí vận chuyển:</td>
-                            <td><span id="phivanchuyen">10000</span><span>đ</span></td>
-                        </tr>
-                        <tr>
-                            <td>Thành tiền:</td>
-                            <td><span id="thanhtien">28000</span><span>đ</span></td>
-                        </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-3">
+                <div class="thum-thanhtien">
+                    <div class="container">
+                        <table class="col-thanhtien">
+                            <tr>
+                                <td>Tổng cộng:</td>
+                                <td><span id="tongcong">18000</span><sup>đ</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Phí vận chuyển:</td>
+                                <td><span id="phivanchuyen">10000</span><sup>đ</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Thành tiền:</td>
+                                <td><span id="thanhtien">28000</span><sup>đ</sup></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
     
     </div>
     
 
 </main> <!-- .cd-main-content -->
-    <footer>
-        <hr>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4">
-                    <ul class="list-inline">
-                        <li>G3C.Club - Green Creative Cute Crafts</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-offset-1 col-md-7 text-right">
-
-                    <ul class="list-inline">
-                        <li><a href="">G3C là ai ?</a></li>
-                        <li><a href="">Điều khoản</a></li>
-                        <li><a href="">Câu hỏi thường gặp</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script>
-    if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-</script>
-    <script src="partial/vatPham/js/main.js"></script> <!-- Resource jQuery -->
-
+   
 </body>
 </html>

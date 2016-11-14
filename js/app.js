@@ -1,7 +1,7 @@
 
 'user strict';
 
-angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g3cApp.vatPham', 'ngRoute'])
+angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g3cApp.vatPham', 'g3cApp.aboutUs','ngRoute'])
 	.config(function g3cAppConfig ($routeProvider){
 		$routeProvider.otherwise({
 			redirectTo:'/'
@@ -50,5 +50,11 @@ angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g
 
         }]
     }
-});
+	})
+	.directive('footer', function (){
+		return {
+			restrict: 'E',
+			templateUrl: '/html/footer/footer.html'
+		}
+	});
 

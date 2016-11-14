@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-    
+
     <link rel="stylesheet" href="/css/VatPham/vatPham.css">
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/vatPham/owl.carousel.min.css">
     <link rel="stylesheet" href="css/vatPham/chitietsanpham.css">
+    <link rel="stylesheet" href="css/vatPham/style-cart.css"> <!-- Resource style -->
 	
     <!-- Resource style -->
 </head>
 <body>
-<main class="cd-main-content sub-nav-hero" style="padding-top:40px;">
+
+<main >
 	<div>
 		<div class="container con-link">
       		<div class="row">
@@ -36,7 +36,7 @@
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            <div style="position:absolute;display:block;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 900px; overflow: hidden;">
             <div data-p="144.50">
@@ -127,10 +127,10 @@
 			<!-- thêm sản phẩm -->
           <div class="row">
             <form action="">
-            <input id="soluong" type="number" value="1">
-                <input type="button" class="btn btn-success" id="btn-themhang" value="THÊM VÀO GIỎ HÀNG" onclick="themHang()">
+            <input id="soluong" type="number" min="1" max="50" value="1">
+                <input type="button" class="btn btn-success cd-add-to-cart" id="btn-themhang" value="THÊM VÀO GIỎ HÀNG" data-price="6000" onclick="themHang()">
                 
-                <button class="btn btn-thaotac" data-toggle="tooltip" title="Trao đổi" id="trao_doi"><i class="fa">&#xf2a7;</i></button>
+                <a href="#/traodoi" class="btn btn-thaotac" data-toggle="tooltip" title="Trao đổi" id="trao_doi"><i class="fa">&#xf2a7;</i></a>
                 <button class="btn btn-thaotac" data-toggle="tooltip" title="Yêu thích" id="yeuthich"><i class="fa">&#xf004;</i></button>
                 <button class="btn btn-thaotac" data-toggle="tooltip" title="Học" id="hoc"><i class="fa">&#xf19d;</i></button>
                 <button class="btn btn-thaotac" data-toggle="tooltip" title="Nhắn tin" id="nhan_tin"><i class="fa">&#xf0e6;</i></button>
@@ -329,7 +329,41 @@
 	</div>
 </main> <!-- .cd-main-content -->
 
+    <div class="cd-cart-container empty">
+        <a href="#0" class="cd-cart-trigger">
+            Cart
+            <ul class="count">
+                <!-- cart items count -->
+                <li>0</li>
+                <li>0</li>
+            </ul> <!-- .count -->
+        </a>
+        <div class="cd-cart">
+            <div class="wrapper">
+                <div id="header-cart">
+                    <h2>Giỏ hàng</h2>
+                    <span class="undo">Đã xóa. <a href="#0">Hoàn tác</a></span>
+                </div>
 
+                <div class="body">
+                    <ul>
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+                <div id="footer-cart">
+                    <a href="#/taiKhoan/gioHang" class="checkout btn"><em>Thanh toán - <span>0</span> đ</em></a>
+                </div>
+            </div>
+        </div> <!-- .cd-cart -->
+    </div> <!-- cd-cart-container -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+    </script>
+    <!--<script src="/js/main.js"></script>--> <!-- Resource jQuery -->
+    <script>
+        if (!window.jQuery) document.write('<script src="js/vatPham/main.js"><\/script>');
+    </script>
 </body>
 </html>
