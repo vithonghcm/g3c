@@ -160,9 +160,9 @@ Main Components
   position: absolute;
   top: -10px;
   right: -10px;
-  height: 28px;
+  height: 39px;
   width: 28px;
-  background: #e94b35;
+  background: #f44336;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -778,3 +778,10 @@ Main Components
     opacity: 0;
   }
 }
+@media only screen and (max-width: 850px){
+    .cd-cart h3, .cd-cart .price{
+        font-size:1.2em;
+    }
+}
+
+
