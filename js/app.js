@@ -50,5 +50,11 @@ angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g
 
         }]
     }
-});
+	})
+	.directive('footer', function (){
+		return {
+			restrict: 'E',
+			templateUrl: '/html/footer/footer.html'
+		}
+	});
 
