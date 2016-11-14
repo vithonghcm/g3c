@@ -1,0 +1,40 @@
+{
+	"g3cTeamMemberList" : [
+	{
+		"memberName":"Hoàng Hải",
+		"memberTitle" : "Project Manager",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	},
+	{
+		"memberName":"Hương",
+		"memberTitle" : "Designer & Front-end Developer",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	},
+	{
+		"memberName":"Thụy",
+		"memberTitle" : "Designer & Front-end Developer",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	},
+	{
+		"memberName":"Hưng",
+		"memberTitle" : "Front-end Developer",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	},
+	{
+		"memberName":"Lộc",
+		"memberTitle" : "Front-end & Back-end Developer",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	},
+	{
+		"memberName":"Thông",
+		"memberTitle" : "Front-end & Back-end Developer",
+		"memberDesciption" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?",
+		"memberImage" : "http://placehold.it/200x200"
+	}
+	]
+}
