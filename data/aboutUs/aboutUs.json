@@ -1,12 +1,6 @@
 {
 	"g3cTeamList" : [
 	{
-		"Name":"Hoàng Hải",
-		"Title" : "Project Manager",
-		"Description" : "What does this team member to? Keep it short! This is also a great spot for social links!",
-		"Image" : "http://placehold.it/200x200"
-	},
-	{
 		"Name":"Hương",
 		"Title" : "Designer & Front-end Developer",
 		"Description" : "What does this team member to? Keep it short! This is also a great spot for social links!",

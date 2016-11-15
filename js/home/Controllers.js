@@ -1,7 +1,7 @@
 'user strict';
 
 angular.module('g3cApp.Home').controller('homeCtrl', function($scope,$http){
-
+    
     
     // $scope.user = {};
     // $scope.message = "Bạn chưa đăng nhập";

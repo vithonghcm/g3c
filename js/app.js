@@ -1,7 +1,7 @@
 
 'user strict';
 
-angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g3cApp.vatPham', 'g3cApp.aboutUs','ngRoute'])
+angular.module('g3cApp', ['g3cApp.Home', 'g3cApp.traoDoi', 'g3cApp.congDong', 'g3cApp.vatPham', 'g3cApp.aboutUs','g3cApp.termAndCondition','g3cApp.searchResult','ngRoute', 'ngAnimate'])
 	.config(function g3cAppConfig ($routeProvider){
 		$routeProvider.otherwise({
 			redirectTo:'/'

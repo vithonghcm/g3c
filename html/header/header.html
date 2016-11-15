@@ -15,7 +15,6 @@
                         <li><a href="#/vatPham">Vật phẩm</a></li>
 						<li><a href="#/traodoi">Trao đổi</a></li>
 						<li><a href="#">Hướng dẫn</a></li>
-
 						<li><a href="#/congdong">Cộng đồng</a></li>	
 					</ul>	
 				
@@ -50,10 +49,10 @@
 				</div>
 			<div class="row search-input" id="search">
 				<div class="col-md-6 col-md-offset-3">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Tìm theo tên vật phẩm, danh mục, tên thành viên...">
+					<div class="input-group" ng-controller="searchResultCtrl">
+						<input type="text" class="form-control" placeholder="Tìm theo tên vật phẩm, danh mục, tên thành viên..." ng-model="keywords">
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+							<button class="btn btn-default" type="button" onclick=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 						</span>
 					</div><!-- /input-group -->
 				</div>		
