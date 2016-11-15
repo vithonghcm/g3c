@@ -94,8 +94,11 @@
      
      .filter('pagination', function () {
          return function (input, start) {
+            
              start = parseInt(start, 10);
-             return input.slice(start);
+             if (typeof(input) != 'undefined') {
+                 return input.slice(start);
+             } else return [];
          };
      })
       .controller('danhMucItemController', ['$scope', '$http', function danhMucItemController($scope, $http) {
