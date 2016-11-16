@@ -2,7 +2,14 @@
 
 angular.module('g3cApp.traoDoi')
 	.controller('traoDoiCtrl', function traoDoiCtrl($scope, $http){
-		
+		$http.get('../../data/traoDoi/vatPhamTraoDoi.json')
+		.then(function Success(response){
+			$scope.vpTraoDoi = response.data.vatPhamCuaToi;
+		},
+		function Error(response){
+			console.log(response);
+		});
+
 	})
 	.controller('getCatCraftController', function($scope){
 		var getCatCraftController = this;

@@ -1,5 +1,7 @@
 body{
-	background-image: url("../../img/nen-ver2.jpg");
+	background-image: url("../../img/bg.png");
+  background-repeat: repeat;
+  padding-top: 139px;
 }
 
 .card {
@@ -9,7 +11,14 @@ body{
     width: 185px;
     background-color: #fff;
 }
-
+.card img{
+  width: 184px;
+  height: 164px;
+}
+.card h4{
+  width: 157px;
+  font-size: 17px;
+}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -21,10 +30,159 @@ body{
 }
 
 .acc-info{
-	margin: 20px 30px;
+	margin: 6px 0px;
 }
-.checkSp{
-	width: 18px;
-	height: 18px;
+.acc-info img{
+  width: 16%;
+  margin-right: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 31px;
+}
+.soLuong{
+    height: 30px !important;
+    width: 84px;
+    margin-bottom: -8px !important;
+    margin-left: 39px;
 }
 
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #148749;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.button {
+  border-radius: 4px;
+  background-color: #148749;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 21px;
+  padding: 9px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 24px;
+  float: right;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.checked{
+  margin-top: 10px !important;
+  margin-left: 3px !important;
+}
+.cart{
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+.cart input[type='number']{
+  display: inline !important;
+  width: 100%;
+  margin: 0px !important;
+}
+.cart tr{
+  height: 38px;
+}
+.cart th{
+  text-align: center;
+  background-color: #fff;
+}
+.cart td{
+  width: 150px;
+}
+.cart td,th{
+  height: 25px;
+  font-size: 13px;
+  padding: 8px;
+}
+.cart .col1{
+  width: 66% !important;
+}
+.cart .col3{
+  width: auto !important;
+}
+.cart tr:hover:nth-child(odd){
+  background-color: #58C88C;
+}
+.cart tr:hover:nth-child(even){
+  background-color: #4D9F73;
+}
+.btn-default{
+  margin-left: 35px;
+  margin-top: 10px;
+}
+.xoa{
+  cursor: pointer;
+}
+.xoa:hover{
+  color: #fff;
+}

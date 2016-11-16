@@ -3,12 +3,12 @@
     vmcarousel plugin
 \* ========================================================================= */
 
-.vmc-container{position: relative; padding: 0px 44px}
+.vmc-container{position: relative; padding: 0px 44px; padding-top: 25px;}
 .vmc-viewport{overflow: hidden; width: 100%;}
 
 .vmcarousel{list-style-type: none; padding: 0; margin-left: 40px; margin-right: 40px;}
 .vmcarousel:after{content: ''; display: table; clear: both;}
-.vmcarousel > li{float: left; width: 232px;}
+.vmcarousel > li{float: left; width: 210px;}
 .vmcarousel > li img{ display: block; margin: 0 auto;}
 
 .vmc-container.hide-controls .vmc-arrow-left, .vmc-container.hide-controls .vmc-arrow-right{display: none;}

@@ -514,9 +514,23 @@
 })(jQuery, window, document);
 
 $(document).ready(function() {
+	$(".soLuong").hide();
 	$('.vmcarousel-normal').vmcarousel({
 		autoplay: false,
 	});
+	$('.checked').click(function() {
+		console.log('checked');
+		$(this).parent().next(".soLuong").toggle();
+	});
+
 });
 
-
+//delete item in cart in Trao Doi page
+var close = document.getElementsByClassName("xoa");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement.parentElement;
+    div.style.display = "none";
+  }
+}

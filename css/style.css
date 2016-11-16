@@ -1,5 +1,7 @@
 
 body {
+	background-image: url("../img/bg.jpg");
+	background-repeat: repeat;
 	padding-top: 200px;
 	font-family: 'Open Sans', sans-serif !important;
 }
@@ -19,12 +21,14 @@ body {
   padding: 30px 5px;
  
 }
+
 .navbar-form{
 	padding-top: 22px;
   	padding-bottom: 22px;
   	margin-top: 0px;
   	margin-bottom: 0px;
 }
+
 .navbar-toggle {
   	padding: 10px;
   	margin: 25px 15px 25px 0;
@@ -97,12 +101,14 @@ footer{
 	
 	color: #ff7f7f;
 }
+/*
 .form-group {
 	display: inline-block;
 }
 .form-control.search-input{
 	width:auto;
 }
+*/
 .user-icon {
 	padding-top: 24px !important;
 	padding-bottom: 24px !important;
@@ -211,8 +217,34 @@ footer{
 		padding-right: 15px !important;
 	}
 }
+
+.page.ng-leave 	{ z-index:9999; }
+.page.ng-enter 	{ z-index:8888; }
+.page.ng-leave        {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+	-moz-animation:slideOutLeft 0.5s both ease-in;
+	animation:slideOutLeft 0.5s both ease-in;   
+}
+.page.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+
+/*
 @media screen and (min-width: 768px) {
 	.form-control.search-input{
 		width:500px !important;
 	}
 }
+*/
