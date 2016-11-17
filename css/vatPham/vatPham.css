@@ -125,6 +125,9 @@ body {
 }
 .post-slide .post-bar li{
     display:inline-block;
+    width:93px;
+    overflow:hidden;
+
     font-size:16px;
     font-family: serif,Arial;
     color:#555;

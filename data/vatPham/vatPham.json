@@ -1,5 +1,4 @@
-﻿{
-  "vatPham": [
+﻿[
 			{
 				"idVatPham":"vp1",
 				"idNguoiBan":"nb1",
@@ -14,11 +13,11 @@
 			},
 			{
 				"idVatPham":"vp2",
-				"idNguoiBan":"nb1",
-			    "nguoiBan": "ThuHuong",
+				"idNguoiBan":"nb2",
+			    "nguoiBan": "Shop Minny House",
 			    "imgNguoiBan": "img/user-32.png",
 			    "tenVatPham": "Bookmark Fairy Corner",
-			    "giaGoc": 7000,
+			    "giaGoc": 10000,
 			    "giaGiam": 6000,
 			    "ngayDang": "Apr 2, 2016",
 			    "imgSanPham": "img/h3.jpg",
@@ -26,14 +25,14 @@
 			},
 			{
 				"idVatPham":"vp3",
-				"idNguoiBan":"nb1",
-			    "nguoiBan": "ThuHuong",
+				"idNguoiBan":"nb2",
+			    "nguoiBan": "Shop Minny House",
 			    "imgNguoiBan": "img/user-32.png",
 			    "tenVatPham": "Bookmark Fairy Corner",
-			    "giaGoc": 7000,
+			    "giaGoc": 10000,
 			    "giaGiam": 6000,
 			    "ngayDang": "Apr 2, 2016",
-			    "imgSanPham": "img/h5.jpg",
+			    "imgSanPham": "img/h1.jpg",
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
@@ -97,7 +96,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp1",
+				"idVatPham":"vp9",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -109,7 +108,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp2",
+				"idVatPham":"vp10",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -121,7 +120,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp3",
+				"idVatPham":"vp11",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -133,7 +132,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp4",
+				"idVatPham":"vp12",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -145,7 +144,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp5",
+				"idVatPham":"vp13",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -157,7 +156,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp6",
+				"idVatPham":"vp14",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -169,7 +168,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp7",
+				"idVatPham":"vp15",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -181,7 +180,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp8",
+				"idVatPham":"vp16",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -193,7 +192,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp1",
+				"idVatPham":"vp17",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -205,7 +204,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp2",
+				"idVatPham":"vp18",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -217,7 +216,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp3",
+				"idVatPham":"vp19",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -229,7 +228,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp4",
+				"idVatPham":"vp20",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -241,7 +240,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp5",
+				"idVatPham":"vp21",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -253,7 +252,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp6",
+				"idVatPham":"vp22",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -265,7 +264,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp7",
+				"idVatPham":"vp23",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -277,7 +276,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp8",
+				"idVatPham":"vp24",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -289,7 +288,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp1",
+				"idVatPham":"vp25",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -301,7 +300,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp2",
+				"idVatPham":"vp26",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -313,7 +312,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp3",
+				"idVatPham":"vp27",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -325,7 +324,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp4",
+				"idVatPham":"vp28",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -337,7 +336,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp5",
+				"idVatPham":"vp29",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -349,7 +348,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp6",
+				"idVatPham":"vp30",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -361,7 +360,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp7",
+				"idVatPham":"vp31",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -373,7 +372,7 @@
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			},
 			{
-				"idVatPham":"vp8",
+				"idVatPham":"vp32",
 				"idNguoiBan":"nb1",
 			    "nguoiBan": "ThuHuong",
 			    "imgNguoiBan": "img/user-32.png",
@@ -384,8 +383,4 @@
 			    "imgSanPham": "img/h1.jpg",
 			    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum hic officia quaerat sapiente, vitae."
 			}
-
-
-
-        ]
-		}
+]

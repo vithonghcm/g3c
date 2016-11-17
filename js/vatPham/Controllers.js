@@ -4,7 +4,17 @@
 	  
 
 	}])
-  
+
+//    .controller('vatPhamChiTietController', ['$scope', '$http', '$location', ' $routeParams', function vatPhamChiTietController($scope, $http, $routeParams, $location, vatPhams) {
+//        $scope.myUrl = $location.absUrl();
+
+ 
+//}])
+    .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
+        vatPhams.find($routeParams.idVatPham, function (vatPham) {
+            $scope.vatPham = vatPham;
+        });
+    })
     //.controller('vatPhamItemController', ['$scope', '$http', function vatPhamItemController($scope, $http) {
          
     //    $http.get("/data/vatPham/itemVatPham.json")
@@ -19,12 +29,12 @@
     //}])
     .controller('vatPhamItemControllerDemo', ['$scope', '$http', function vatPhamItemController($scope, $http) {
 
-        $http.get("/data/vatPham/itemVatPham.json")
+        $http.get("/data/vatPham/vatPham.json")
              .then(function (response) {
                  //First function handles success
                  $scope.itemsPerPage = 8;
                  $scope.currentPage = 0;
-                 $scope.vatPhams = response.data.vatPham;
+                 $scope.vatPhams = response.data;
                  $scope.range = function () {
 
                      var rangeSize = 10;
@@ -115,10 +125,7 @@
                    console.log(error);
                });
       }])
-.controller('vatPhamChiTietController', ['$scope', '$http', '$location', function vatPhamChiTietController($scope, $http, $location) {
-    $scope.myUrl = $location.absUrl();
- 
-}])
+
 
 .controller('gioHangController', ['$scope', '$http', function gioHangController($scope, $http) {
 

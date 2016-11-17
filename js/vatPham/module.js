@@ -11,6 +11,7 @@ angular.module('g3cApp.vatPham', [])
 	        controller: 'vatPhamChiTietController',
 
 	        templateUrl: 'html/vatPham/chiTietSanPham.html'
+
 	    }).when('/vatPham/product_list/:idDanhMuc', {
 	        controller: 'vatPhamLocController',
 	        templateUrl: 'html/vatPham/vatPhamTheoDanhMuc.html'
@@ -20,6 +21,26 @@ angular.module('g3cApp.vatPham', [])
 
 	        templateUrl: 'html/vatPham/xemgiohang.html'
 	    });
-	}]);
+	}])
+    .factory('vatPhams', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: 'vatPham.json',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: 'data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+
+;
 	
 	
