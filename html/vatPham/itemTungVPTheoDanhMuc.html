@@ -1,9 +1,20 @@
-﻿<div ng-controller ="vatPhamItemControllerDemo">
-    <ul>
-        <li class="paginationclass" ng-repeat="vatPham in vatPhams| pagination : currentPage*itemsPerPage | limitTo: itemsPerPage">
+﻿<div ng-controller="vatPhamLocController">
+    <div class="container-fluid con-link">
+        <div class="row">
 
-            <div id="news-slider" class="owl-carousel">
-                <div class="post-slide col-sm-3">
+            <ul class="breadcrumb">
+
+                <li><a href="#/home">TRANG CHỦ</a></li>
+                <li><a href="#/vatPham">VẬT PHẨM</a></li>
+                <li><a href="#/vatPham" class="activity">{{danhMuc.tenDM}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<ul>
+        <li class="paginationclass" ng-repeat="vatPham in vatPhams| pagination : currentPage*itemsPerPage | limitTo: itemsPerPage">-->
+
+            <div  id="news-slider" class="owl-carousel">
+                <div ng-repeat="vatPham in vatPhams" class=" post-slide col-sm-3">
 
                     <div class="post-img">
                         <img ng-src="{{vatPham.imgSanPham}}" alt="">
@@ -28,7 +39,7 @@
                     </div>
                 </div>
             </div>
-        </li>
+        <!--</li>
     </ul>
     <div class="pagination-div text-center">
 
@@ -57,4 +68,4 @@
         </ul>
 
     </div>
-</div>
+</div>-->

@@ -7,10 +7,13 @@ angular.module('g3cApp.vatPham', [])
 	    $routeProvider.when('/vatPham', {
 	        controller: 'vatPhamController',
 	        templateUrl: 'html/vatPham/vatPham.html'
-	    }).when('/vatPham/:idVatPham', {
+	    }).when('/vatPham/chiTiet/:idVatPham', {
 	        controller: 'vatPhamChiTietController',
 
 	        templateUrl: 'html/vatPham/chiTietSanPham.html'
+	    }).when('/vatPham/product_list/:idDanhMuc', {
+	        controller: 'vatPhamLocController',
+	        templateUrl: 'html/vatPham/vatPhamTheoDanhMuc.html'
 	    })
 	    .when('/taiKhoan/gioHang', {
 	        controller: 'gioHangController',

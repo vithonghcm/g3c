@@ -124,4 +124,45 @@
 
    
 }])
+.controller('vatPhamLocController', ['$scope', '$http', '$location', function gioHangController($scope, $http, $location) {
+    //$scope.id = idDanhMuc;
+    myUrl = $location.absUrl();
+
+    //alert(myUrl);
+    $http.get("/data/vatPham/dmThiep.json")
+              .then(function (response) {
+                  $scope.vatPhams = response.data.vatPham;
+                  $scope.danhMuc = response.data.danhMuc;
+              }, function (error) {
+                  //Second function handles error
+                  console.log("Something went wrong:");
+                  console.log(error);
+              });
+
+}])
+.directive('menuDm', function () {
+    var html = '<link rel="stylesheet" href="/css/VatPham/vatPham.css">';
+    html += '<div class="container-fluid"style="position: fixed; z-index:9999;">';
+    html += ' <div class="menu1" id="menuDanhMuc" style="left: -190px;">';
+    html += '<div class="btn-bangchon1" id="btnDanhMuc">';
+    html += '</div><div>';
+    html += '<div ng-include="' + "'/html/vatPham/itemDanhMuc.html'" + '"></div>';
+    html += '</div></div>';
+
+    html += ' <div class="menu2" id="menuNguyenLieu" style="left: -190px;top:281px">';
+    html += '<div class="btn-bangchon2" id="btnNguyenLieu">';
+    html += '</div><div>';
+    html += '<div ng-include="' + "'/html/vatPham/itemNguyenLieu.html'" + '"></div>';
+    html += '</div></div>';
+
+    html += ' <div class="menu3" id="menuDoiTuong" style="left: -190px;top:411px;">';
+    html += '<div class="btn-bangchon3" id="btnDoiTuong">';
+    html += '</div><div>';
+    html += '<div ng-include="' + "'/html/vatPham/itemDoiTuong.html'" + '"></div>';
+    html += '</div></div>';
+    html += '</div>';
+    return {
+        template: html
+    };
+})
 ;
