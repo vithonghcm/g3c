@@ -1,5 +1,5 @@
 <div class="container">
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top g3c-navbar-default">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
@@ -26,11 +26,17 @@
 				</ul>	
 				
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-google fa-lg "></i></a></li>
-					<li><a href="#" class="social-button facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
+					<li>
+						<a href="#" class="hvr-radial-out g3c-hvr-radial-out">
+							<i class="fa fa-google fa-lg g3c-fa-google"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="fa fa-facebook fa-lg"></a>
+					</li>
 					<!-- <li><a href="" class="hvr-radial-in">TEST</a></li> -->
 					<li class="dropdown">
-						<a href="javascript:void(0)"  class="dropdown-toggle user-icon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"> </i><span class="caret"></span></a>
+						<a href="javascript:void(0)"  class="dropdown-toggle user-icon fa fa-user fa-lg" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
 						<ul class="dropdown-menu" >
 							<li ng-hide="loggedIn">{{message}}</li>
 							<li ng-show="loggedIn"><a href="#">Thông tin</a></li>
