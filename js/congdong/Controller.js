@@ -4,18 +4,18 @@ angular.module('g3cApp.congDong')
 	.controller('congDongCtrl', function congDongCtrl($scope, $http){
 		
 	})
-	.controller('getTopUserController', function($scope){
-    this.users = [
-    	{username: 'Donald J. Trump', rating: 7},
-    	{username: 'Hillary Clinton', rating: 8},
-    	{username: 'Barrack Obama', rating: 9},
-    	{username: 'Vladimir Putin', rating: 6},
-    	{username: 'Jackie Chan', rating: 10},
-    ];
+	.controller('getTopUserCtrl', function getTopUserCtrl($scope, $http){
+        $http.get('../../data/congDong/congDong.json')
+        .then (function Success(response) {
+            $scope.users = response.data.usersList;
+            $scope.users.sort();
+            $scope.usersTop = $scope.users.slice(0, 3);
+        },
+        function Error (response) {
+            console.log(response);
+        });
 
-    this.users.sort().reverse();
-
-    this.top1 = this.users[0].username;
+/*    this.top1 = this.users[0].username;
     this.top2 = this.users[1].username;
-    this.top3 = this.users[2].username;
+    this.top3 = this.users[2].username;*/
 	});

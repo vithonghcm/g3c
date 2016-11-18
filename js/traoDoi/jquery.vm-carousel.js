@@ -518,10 +518,6 @@ $(document).ready(function() {
 	$('.vmcarousel-normal').vmcarousel({
 		autoplay: false,
 	});
-	$('.checked').click(function() {
-		console.log('checked');
-		$(this).parent().next(".soLuong").toggle();
-	});
 
 });
 

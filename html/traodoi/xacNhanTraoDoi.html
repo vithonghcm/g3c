@@ -1,23 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../css/traoDoi/xacNhan.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row text-center">
-			<div class="col-md-6 col-sm-6 col-xs-6 user1">
-				<span>Hộp đựng quà</span>
-				<img src="../../img/hmade.jpg" alt="">
-			</div>
-			<div class="col-md-6 col-sm-6 col-xs-6 user2">
-				<span>Hộp đựng quà</span>
-				<img src="../../img/hmade.jpg" alt="">
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+<div>
+	<form action="#" class="form">
+	  <div class="form__line">
+	    <label class="form__label">
+	      <span class="form__label-name">Name</span>
+	      <input type="text" class="form__field" name="name" required />
+	    </label>
+	  </div>
+	  <div class="form__line">
+	    <label class="form__label">
+	      <span class="form__label-name">Е-mail</span>
+	      <input type="email" class="form__field" name="email" required />
+	    </label>
+	  </div>
+	  <div class="form__line">
+	    <label class="form__label">
+	      <span class="form__label-name">Phone number</span>
+	      <input type="tel" class="form__field form__field--phone" name="phone" placeholder="(0__) ___-__-__" required />
+	    </label>
+	  </div>
+	  <div class="form__submit">
+	    <button type="submit">Submit form</button>
+	  </div>
+	</form>
+
+	<link rel="stylesheet" href="../../css/traoDoi/jquery.validateme.css">
+	<script>
+	  $.holdReady(true);                              //set hold
+	  function releaseHold() { $.holdReady(false); }  //callback to release hold
+	  $.getScript('../../js/traoDoi/jquery.validateme.js', releaseHold);  
+ 	</script>
+</div>
+
+
