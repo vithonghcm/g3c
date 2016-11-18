@@ -17,7 +17,9 @@
         <div ng-repeat="vatPham in vatPhams" class=" post-slide col-sm-3">
 
             <div class="post-img">
-                <img ng-src="{{vatPham.imgSanPham}}" alt="">
+                <div style="height: 263px; overflow: hidden; vertical-align: middle;">
+                    <img ng-src="{{vatPham.imgSanPham}}" alt="">
+                </div>
                 <span class="icons">
                     <img ng-src="{{vatPham.imgNguoiBan}}" alt="">
                 </span>

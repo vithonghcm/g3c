@@ -2,7 +2,7 @@
     var flagDM = false;
     var flagNL = false;
     var flagDT = false;
-    $("#btnDanhMuc").click(function () {
+    $(document).on('click', '#btnDanhMuc',function () {
         if (flagDM) {
             $("#menuDanhMuc").css("left", "-190px");
             flagDM = false;
@@ -16,7 +16,7 @@
             flagDT = false;
         }
     });
-    $("#btnNguyenLieu").click(function () {
+    $(document).on('click', '#btnNguyenLieu', function () {
         if (flagNL) {
             $("#menuNguyenLieu").css("left", "-190px");
             flagNL = false;
@@ -30,7 +30,7 @@
             flagDT = false;
         }
     });
-    $("#btnDoiTuong").click(function () {
+    $(document).on('click', '#btnDoiTuong', function () {
         if (flagDT) {
             $("#menuDoiTuong").css("left", "-190px");
             flagDT = false;
