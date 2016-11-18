@@ -1,19 +1,13 @@
+.navbar-brand>.g3c-logo{
+  height: 80px;
+  width: auto;
+}
+
+
 /* Reset */
 @import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
-
-// variables
-$transition: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
-$size: 90px;
-$colors: (
-  "facebook": "#3B5998",
-  "twitter": "#3CF",
-  "google": "#DC4A38",
-  "dribbble": "#F26798",
-  "skype": "#00AFF0"
-);
-
 .social-buttons {
-  height: $size;
+  height: 90px;
   margin: auto;
   font-size: 0;
   text-align: center;
@@ -24,66 +18,79 @@ $colors: (
   right: 0;
 }
 
-.social-button {  
+.social-button {
   display: inline-block;
   background-color: #fff;
-  width: $size;
-  height: $size;
-  line-height: $size;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
   margin: 0 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  //overflow bug fix
   opacity: .99;
   border-radius: 28%;
-  box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
-  transition: $transition;
-  
-  &:before {
-    content: '';
-    background-color: #000;
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    top: 90%;
-    left: -110%;
-    transform: rotate(45deg);
-    transition: $transition;
-  }
-  
-  .fa {
-    font-size: 38px;
-    vertical-align: middle;
-    transform: scale(.8);
-    transition: $transition;
-  }
-  
-  @each $class,$color in $colors {
-    
-    &.#{$class} {
-      
-      &:before {
-        background-color: #{$color};
-      }
-      
-      .fa {
-        color: #{$color};
-      }
-    }
-  }
-  
-  &:focus,
-  &:hover {
-    
-    &:before {
-      top: -10%;
-      left: -10%;
-    }
-    
-    .fa {
-      color: #fff;
-      transform: scale(1);
-    }
-  }
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: '';
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.facebook:before {
+  background-color: #3B5998;
+}
+.social-button.facebook .fa {
+  color: #3B5998;
+}
+.social-button.twitter:before {
+  background-color: #3CF;
+}
+.social-button.twitter .fa {
+  color: #3CF;
+}
+.social-button.google:before {
+  background-color: #DC4A38;
+}
+.social-button.google .fa {
+  color: #DC4A38;
+}
+.social-button.dribbble:before {
+  background-color: #F26798;
+}
+.social-button.dribbble .fa {
+  color: #F26798;
+}
+.social-button.skype:before {
+  background-color: #00AFF0;
+}
+.social-button.skype .fa {
+  color: #00AFF0;
+}
+.social-button:focus:before, .social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa, .social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
