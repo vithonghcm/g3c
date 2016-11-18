@@ -1,0 +1,104 @@
+.user-icon {
+	padding-top: 24px !important;
+	padding-bottom: 24px !important;
+}
+.fa-facebook-official {
+	color: #3b5998;
+}
+.fa-google-plus-official {
+	color: #d34836;
+}
+.recommended-courses>a {
+	color: black;
+}
+.recommended-courses>a>.course:hover {
+	border: 1px solid;
+	border-bottom-color: #9ECB3C;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #9ECB3C;
+}
+.course {
+	font-size: 13px;
+	padding: 0;
+	margin-bottom: 5px;
+}
+.course>.col-md-3, .course>.col-md-8 {
+	padding: 0;
+}
+.course>.col-md-8>.text-muted {
+	font-size: 10px;
+	font-style: italic;
+}
+.course>.col-md-8>h4, .course>.col-md-8>p {
+	margin: 0;
+}
+.user-status {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+.status-box {
+	border: 1px solid #eee;
+	width: auto;
+	height: 137px;
+}
+.status-box>.col-md-1, .status-box>.col-md-10 {
+	padding: 0px;
+	padding-top: 10px;
+}
+.status-box>.col-md-1 {
+	width: 70px;
+}
+.status {
+	border: none;
+	width: 100%;
+	height: 105px;
+	min-width: 345px;
+}
+.status:focus {
+	outline: none;
+}
+.post-status {
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-right: 3px;
+	background-color: #9ECB3C;
+	border: none;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+.post-status:hover {
+	background-color: #148749;
+}
+.post-status:focus {
+	outline-color: #148749;
+}
+.news-feed {
+	margin-left: -1px;
+	margin-right: -1px;
+}
+.post {
+	width: 45%;
+	background-color: mintcream;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.post-pic>img {
+	width: 90%;
+	height: 160px;
+}
+.post-content>.col-md-2>img {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.user-avatar {
+	width: 128px;
+	height: 128px;
+	border-radius: 100px;
+}
