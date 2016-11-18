@@ -26,17 +26,21 @@
 				</ul>	
 				
 				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#" class="hvr-radial-out g3c-hvr-radial-out">
+					<li class="g3c-square-50 text-center">
+						<a href="#" class="hvr-radial-out g3c-hvr-radial-out g3c-background-google">
 							<i class="fa fa-google fa-lg g3c-fa-google"></i>
 						</a>
 					</li>
-					<li>
-						<a href="#" class="fa fa-facebook fa-lg"></a>
+					<li class="g3c-square-50 text-center">
+						<a href="#" class="hvr-radial-out g3c-hvr-radial-out g3c-background-facebook">
+							<i class="fa fa fa-facebook fa-lg g3c-fa-facebook"></i>
+						</a>
 					</li>
 					<!-- <li><a href="" class="hvr-radial-in">TEST</a></li> -->
 					<li class="dropdown">
-						<a href="javascript:void(0)"  class="dropdown-toggle user-icon fa fa-user fa-lg" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+						<a href="javascript:void(0)"  class="dropdown-toggle hvr-radial-out g3c-hvr-radial-out g3c-background-icon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user fa-lg"></i><span class="caret"></span>
+						</a>
 						<ul class="dropdown-menu" >
 							<li ng-hide="loggedIn">{{message}}</li>
 							<li ng-show="loggedIn"><a href="#">Thông tin</a></li>
