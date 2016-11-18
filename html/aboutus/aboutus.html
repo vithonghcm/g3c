@@ -1,5 +1,5 @@
-<!-- Introduction Row -->
 <div ng-controller="aboutUsCtrl">
+	<!-- Introduction Row -->
 	<div class="row">
 		<div class="col-lg-12">
 			<h1 class="page-header">About Us
@@ -14,13 +14,21 @@
 		<div class="col-lg-12">
 			<h2 class="page-header">Our Team</h2>
 		</div>
-		<div class="col-lg-4 col-sm-6 text-center g3c-team-member" ng-repeat="member in teamMemberList">
+		<div class="col-lg-12 text-center">
+			<img src="img/logo.png">
+		</div>
+		<div class="col-lg-6 col-sm-6 text-center g3c-team-member" ng-repeat="member in teamMemberList | limitTo:2">
+			<img class="img-circle img-responsive img-center" ng-src="{{member.Image}}" alt="">
+			<h3>{{member.Name}}</h3>
+			<p><small>{{member.Title}}</small></p>
+			<p>{{member.Description}}</p>
+		</div>
+		<div class="col-lg-4 col-sm-6 text-center g3c-team-member" ng-repeat="member in teamMemberList" ng-if="$index > 1">
 			<img class="img-circle img-responsive img-center" ng-src="{{member.Image}}" alt="">
 			<h3>{{member.Name}}</h3>
 			<p><small>{{member.Title}}</small></p>
 			<p>{{member.Description}}</p>
 		</div>
 	</div>
-
 	<hr>
 </div>

@@ -1,0 +1,50 @@
+﻿[
+			{
+			    "idVatPham": "vp5",
+			    "idNguoiBan": "nb1",
+			    "nguoiBan": "ThuHuong",
+			    "imgNguoiBan": "img/vatPham/nb1.png",
+			    "tenVatPham": "Kem dưỡng da tay",
+			    "giaGoc": 67000,
+			    "giaGiam": 58000,
+			    "ngayDang": "Apr 2, 2016",
+			    "imgSanPham": "img/vatPham/vp5.png",
+			    "description": "Kem dưỡng da tay chiết xuất tự nhiên đem lại cảm giác..."
+			},
+			{
+			    "idVatPham": "vp6",
+			    "idNguoiBan": "nb2",
+			    "nguoiBan": "Anh Thụy",
+			    "imgNguoiBan": "img/vatPham/nb2.png",
+			    "tenVatPham": "Son dưỡng môi handmade",
+			    "giaGoc": 180000,
+			    "giaGiam": 119.000,
+			    "ngayDang": "Apr 2, 2016",
+			    "imgSanPham": "img/vatPham/vp6.jpg",
+			    "description": "Sở hữu ngay đôi môi căng mọng và gợi cảm với Son dưỡng môi của mỹ phẩm Handmade thiên nhiên PIZKIE"
+			},
+			{
+			    "idVatPham": "vp7",
+			    "idNguoiBan": "nb1",
+			    "nguoiBan": "ThuHương",
+			    "imgNguoiBan": "img/vatPham/nb1.png",
+			    "tenVatPham": "Đường tẩy da chết",
+			    "giaGoc": 180000,
+			    "giaGiam": 119000,
+			    "ngayDang": "Apr 2, 2016",
+			    "imgSanPham": "img/vatPham/vp7.png",
+			    "description": "Sở hữu ngay làn da trắng sáng mịn màn"
+			},
+			{
+			    "idVatPham": "vp8",
+			    "idNguoiBan": "nb1",
+			    "nguoiBan": "ThuHương",
+			    "imgNguoiBan": "img/vatPham/nb1.png",
+			    "tenVatPham": "Son dưỡng",
+			    "giaGoc": 60000,
+			    "giaGiam": 58000,
+			    "ngayDang": "Apr 2, 2016",
+			    "imgSanPham": "img/vatPham/vp8.jpg",
+			    "description": "Sở hữu ngay đôi môi căng mọng và gợi cảm với Son dưỡng môi của mỹ phẩm Handmade thiên nhiên PIZKIE"
+			}
+]

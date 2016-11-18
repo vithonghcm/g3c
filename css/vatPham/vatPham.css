@@ -35,7 +35,7 @@ body {
   
   .post-slide{
     overflow:hidden;
-    padding: 0 10px;
+    padding: 0 11px;
     transform: translateY(0);
     transition: all 0.30s ease 0s;
     margin-bottom: 20px;
@@ -48,7 +48,7 @@ body {
     position: relative;
 }.post-slide .post-img img{
     width: 100%;
-    height: auto;
+    height: 263px;
 }
 .post-slide .post-img:after{
     content: "";
@@ -125,6 +125,9 @@ body {
 }
 .post-slide .post-bar li{
     display:inline-block;
+    width:93px;
+    overflow:hidden;
+
     font-size:16px;
     font-family: serif,Arial;
     color:#555;
@@ -140,11 +143,15 @@ body {
     color:#555;
     font-weight:bold;
     font-size:18px;
+    height:18px;
+    overflow:hidden;
 }
 .post-slide .post-description{
     font-size:15px;
     line-height:21px;
     color:#808080;
+    height:84px;
+    overflow:hidden;
 }
 .post-slide .read{
     text-transform: capitalize;

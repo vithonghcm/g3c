@@ -1,5 +1,5 @@
 ﻿<div ng-controller="danhMucItemController">
 
-    <a ng-repeat="doiTuong in doiTuongSPs" href="#" style="background-color: {{ doiTuong .color; }}" class="list-item-dt item-menu">{{doiTuong.tenDM}}</a>
+    <a ng-repeat="doiTuong in doiTuongSPs" href="#/vatPham/product_list/{{doiTuong.idDM}}" style="background-color: {{ doiTuong .color; }}" class="list-item-dt item-menu">{{doiTuong.tenDM}}</a>
 
 </div>

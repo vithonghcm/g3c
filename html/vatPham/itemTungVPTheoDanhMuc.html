@@ -1,0 +1,71 @@
+﻿<div ng-controller="vatPhamDanhMucController">
+    <div class="container-fluid con-link">
+        <div class="row">
+
+            <ul class="breadcrumb">
+
+                <li><a href="#/home">TRANG CHỦ</a></li>
+                <li><a href="#/vatPham">VẬT PHẨM</a></li>
+                <li><a href="#/vatPham/product_list/{{id}}" class="activity">{{tenDM}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<ul>
+        <li class="paginationclass" ng-repeat="vatPham in vatPhams| pagination : currentPage*itemsPerPage | limitTo: itemsPerPage">-->
+
+    <div id="news-slider" class="owl-carousel">
+        <div ng-repeat="vatPham in vatPhams" class=" post-slide col-sm-3">
+
+            <div class="post-img">
+                <img ng-src="{{vatPham.imgSanPham}}" alt="">
+                <span class="icons">
+                    <img ng-src="{{vatPham.imgNguoiBan}}" alt="">
+                </span>
+
+
+            </div>
+            <div class="post-review">
+                <ul class="post-bar">
+                    <li><i class="fa fa-calendar"></i>{{vatPham.ngayDang}}</li>
+                    <li><i class="fa fa-user"></i>{{vatPham.nguoiBan}}</li>
+                </ul>
+                <h3 class="post-title">{{vatPham.tenVatPham}}</h3>
+                <p class="price">
+                    <span class="discount">{{vatPham.giaGoc}}đ </span>
+                    <span class="basis_price">{{vatPham.giaGiam}}đ </span>
+                </p>
+                <p class="post-description">{{vatPham.description}}</p>
+                <a href="{{'#/vatPham/chiTiet/'+vatPham.idVatPham}}" class="read">Xem chi tiết<i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--</li>
+        </ul>
+        <div class="pagination-div text-center">
+
+            <ul class="pagination">
+
+                <li ng-class="DisablePrevPage()">
+
+                    <a href ng-click="prevPage()"> Prev</a>
+
+                </li>
+
+                <li ng-repeat="n in range()"
+                    ng-class="{active: n == currentPage}"
+                    ng-click="setPage(n)">
+
+                    <a href="">{{n+1}}</a>
+
+                </li>
+
+                <li ng-class="DisableNextPage()">
+
+                    <a href ng-click="nextPage()">Next </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </div>-->
