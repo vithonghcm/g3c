@@ -5,7 +5,7 @@
 				<img src="../../img/user-128.png" alt="">
 				<span>My user name</span>
 			</div>
-			<div style="height: 230px; overflow-y: scroll;">
+			<div style="height: 230px; overflow-y: auto;">
 				<table class="cart">
 		            <tr>
 		                <th>Tên vật phẩm</th>
@@ -22,89 +22,65 @@
 		</div>
 		<div class="col-md-8 col-sm-8 col-xs-12">
 			<ul class="vmcarousel-normal">
-			  <li ng-repeat="VP in vpTraoDoi">
+			  <li ng-repeat="VP in vpCanTraoDoi">
 			  	<div class="card">
 				  <img ng-src="{{VP.imgVP}}" alt="Avatar">
-				  <div class="container">
+				  <div class="container cardInfo">
 				    <h4><b>{{VP.tenVP}}</b></h4> 
 				    <p>Architect & Engineer</p> 
 				  </div>
 				</div>
-				<button type="button" class="btn btn-default">Thêm vào giỏ</button>
+				<button type="button" class="btn btn-default" ng-click="addToCart()">Thêm vào giỏ</button>
 			  </li>
 			</ul>
 		</div>
 	</div>
-	<ul class="vmcarousel-normal">
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
+
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12 ">
+			<div class="acc-info">
+				<img src="../../img/user-128.png" alt="">
+				<span>User name</span>
+			</div>
+			<div style="height: 230px; overflow-y: auto;">
+				<table class="cart">
+		            <tr>
+		                <th>Tên vật phẩm</th>
+		                <th>Số lượng</th>
+		                <th></th>
+		            </tr>
+		            <tr>
+		            	<td class="col1">Name 1</td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td class="col3"><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+    			</table>
+			</div>
 		</div>
-	  </li>
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
+		<div class="col-md-8 col-sm-8 col-xs-12">
+			<ul class="vmcarousel-normal">
+			  <li ng-repeat="VPBan in vpDcTraoDoi">
+			  	<div class="card">
+				  <img ng-src="{{VPBan.imgVP}}" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4><b>{{VPBan.tenVP}}</b></h4> 
+				    <p>Architect & Engineer</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default" ng-click="addToCart()">Thêm vào giỏ</button>
+			  </li>
+			</ul>
 		</div>
-	  </li>
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
-		</div>
-	  </li>
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
-		</div>
-	  </li>
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
-		</div>
-	  </li>
-	  <li>
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
-		</div>
-	  </li>
-	  <li>	
-	  	<div class="card">
-		  <img src="../../img/hmade.jpg" alt="Avatar" style="width:100%">
-		  <div class="container">
-		    <h4><b>John Doe</b></h4> 
-		    <p>Architect & Engineer</p> 
-		  </div>
-		</div>
-	  </li>
-	</ul>
-	<button class="button"><span>Trao đổi </span></button>
+	</div>
+	<span><a href="#/traodoi/xacnhan" class="button">Trao đổi</a></span>
 	
 	<link rel="stylesheet" href="../../css/traoDoi/traodoi-style.css">
-	<link rel="stylesheet" href="../../css/traoDoi/jquery.vm-carousel.css">
-	<script src="../../js/traoDoi/jquery.vm-carousel.js"></script>
+	<link rel="stylesheet" href="../../css/traoDoi/jquery.vm-carousel.css">	
+	<script>
+	  $.holdReady(true);                              //set hold
+	  function releaseHold() { $.holdReady(false); }  //callback to release hold
+	  $.getScript('../../js/traoDoi/jquery.vm-carousel.js', releaseHold);  
+ 	</script>
 </div>
 
 
