@@ -13,7 +13,7 @@ angular.module('g3cApp.vatPham', [])
 	        templateUrl: 'html/vatPham/chiTietSanPham.html'
 
 	    }).when('/vatPham/product_list/:idDanhMuc', {
-	        controller: 'vatPhamLocController',
+	        controller: 'vatPhamDanhMucController',
 	        templateUrl: 'html/vatPham/vatPhamTheoDanhMuc.html'
 	    })
 	    .when('/taiKhoan/gioHang', {
@@ -27,14 +27,50 @@ angular.module('g3cApp.vatPham', [])
             list: function (callback) {
                 $http({
                     method: 'GET',
-                    url: 'vatPham.json',
+                    url: '/data/vatPham/vatPham.json',
                     cache: true
                 }).success(callback);
             },
             find: function (id, callback) {
                 $http({
                     method: 'GET',
-                    url: 'data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    url: '/data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+    .factory('vatPhamDMs', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/vatPham.json',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+    .factory('danhMucs', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMuc.json',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
                     cache: true
                 }).success(callback);
             }

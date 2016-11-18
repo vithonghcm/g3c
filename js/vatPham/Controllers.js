@@ -131,22 +131,43 @@
 
    
 }])
-.controller('vatPhamLocController', ['$scope', '$http', '$location', function gioHangController($scope, $http, $location) {
-    //$scope.id = idDanhMuc;
-    myUrl = $location.absUrl();
+//.controller('vatPhamDanhMucController', ['$scope', '$http', '$location', function vatPhamDanhMucController($scope, $http, $location) {
+    
+//    myUrl = $location.absUrl();
 
-    //alert(myUrl);
-    $http.get("/data/vatPham/dmThiep.json")
-              .then(function (response) {
-                  $scope.vatPhams = response.data.vatPham;
-                  $scope.danhMuc = response.data.danhMuc;
-              }, function (error) {
-                  //Second function handles error
-                  console.log("Something went wrong:");
-                  console.log(error);
-              });
+//    $http.get("/data/vatPham/dmThiep.json")
+//              .then(function (response) {
+//                  $scope.vatPhams = response.data.vatPham;
+//                  $scope.danhMuc = response.data.danhMuc;
+//              }, function (error) {
+//                  //Second function handles error
+//                  console.log("Something went wrong:");
+//                  console.log(error);
+//              });
 
-}])
+//}])
+     .controller('vatPhamDanhMucController', function ($scope, $routeParams, vatPhamDMs,$http) {
+         
+         $scope.tenDM = "";
+        
+         vatPhamDMs.find($routeParams.idDanhMuc, function (vatPhams) {
+             $scope.vatPhams = vatPhams;
+         });
+         $http.get("/data/vatPham/danhMuc.json")
+                       .then(function (response) {
+                           
+                          $scope.danhMucs = response.data.all;
+                       }, function (error) {
+                           //Second function handles error
+                           console.log("Something went wrong:");
+                           console.log(error);
+                       });
+         danhMucs = $scope.danhMucs;
+         $scope.id = $routeParams.idDanhMuc;
+         angular.forEach(danhMucs, function (danhMuc) {
+             if (danhMuc.idDM == $routeParams.idDanhMuc) { $scope.tenDM = danhMuc.tenDM; }
+             
+         })})
 .directive('menuDm', function () {
     var html = '<link rel="stylesheet" href="/css/VatPham/vatPham.css">';
     html += '<div class="container-fluid"style="position: fixed; z-index:9999;">';

@@ -1,8 +1,8 @@
 ﻿{
 "idVatPham":"vp4",
 "idNguoiBan":"nb1",
-"nguoiBan": "ThuHUong",
-"imgNguoiBan": "img/user-32.png",
+"nguoiBan": "thu Huong",
+"imgNguoiBan": "img/vatPham/nb1.png",
 "tenVatPham": "Bookmark Fairy Corner 4",
 "giaGoc": 7000,
 "giaGiam": 6000,
