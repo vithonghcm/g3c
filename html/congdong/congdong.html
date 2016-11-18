@@ -91,115 +91,24 @@
 				</div>
 			</div>
 			<hr>
-			<div class="row news-feed">
-				<div class="post">
+			<div class="row news-feed" ng-controller="getUsersPostCtrl as gup">
+				<div class="post" ng-repeat="post in posts">
 					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
+						<img ng-src="{{post.source}}">
 					</div>
 					<div class="row post-content">
 						<div class="col-md-2">
-							<img src="img/user-32.png">
+							<img ng-src="{{post.profilePicture}}" class="post-avatar">
 						</div>
 						<div class="col-md-10">
-							<h4><b>Jackie Chan</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
+							<h4><b>{{post.fullName}}</b> <span class="text-muted">{{post.message}}</span></h4>
 							<p class="small text-muted">10 phút trước <i class="fa fa-globe"></i></p>
-							<p>Chào các bạn! Đoán xem tôi đang ở đâu nào! :x :x :x</p>
+							<p>{{post.content}}</p>
 							<hr>
-							<i class="fa fa-heart"></i> 24K <i class="fa fa-comments"></i> 1.2K <i class="fa fa-share"></i> 372
+							<i class="fa fa-heart"></i> {{post.likes}} <i class="fa fa-comments"></i> {{post.comments}} <i class="fa fa-share"></i> {{post.shares}}
 						</div>
 					</div>
-				</div>
-				<div class="post">
-					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
-					</div>
-					<div class="row post-content">
-						<div class="col-md-2">
-							<img src="img/user-32.png">
-						</div>
-						<div class="col-md-10">
-							<h4><b>Barack Obama</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
-							<p class="small text-muted">15 phút trước <i class="fa fa-globe"></i></p>
-							<p>Đang ăn tối cùng gia đình ở nhà hàng của @Beckham !!! Tuyệt vời!!! 
-								<br>
-								<a href="">#dinner</a> <a href="">#dinnerwithfamily</a> <a href="">#beckhamrestaurant</a> <a href="">#happymoment</a>
-							</p>
-							<hr>
-							<i class="fa fa-heart"></i> 598K <i class="fa fa-comments"></i> 62K <i class="fa fa-share"></i> 154K
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
-					</div>
-					<div class="row post-content">
-						<div class="col-md-2">
-							<img src="img/user-32.png">
-						</div>
-						<div class="col-md-10">
-							<h4><b>Donald J. Trump</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
-							<p class="small text-muted">20 phút trước <i class="fa fa-globe"></i></p>
-							<p>Chào các bạn! Dù gì thì tôi cũng sẽ thắng thôi! Và nước Mỹ sẽ tiếp tục phát triển thăng hoa. Cảm ơn các cử tri đã ủng hộ cho tôi!
-								<br>
-								<a href="">#iamgonnawin</a> <a href="">#hailamerica</a>
-							</p>
-							<hr>
-							<i class="fa fa-heart"></i> 124K <i class="fa fa-comments"></i> 32K <i class="fa fa-share"></i> 3K
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
-					</div>
-					<div class="row post-content">
-						<div class="col-md-2">
-							<img src="img/user-32.png">
-						</div>
-						<div class="col-md-10">
-							<h4><b>Donnie Yen</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
-							<p class="small text-muted">30 phút trước <i class="fa fa-globe"></i></p>
-							<p>Tôi sẽ gặp lại các bạn trên màn ảnh sớm thôi! Chờ xem nhé :x sắp có trailer rồi đấy! Stay tuned for tonight!</p>
-							<hr>
-							<i class="fa fa-heart"></i> 224K <i class="fa fa-comments"></i> 18K <i class="fa fa-share"></i> 6K
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
-					</div>
-					<div class="row post-content">
-						<div class="col-md-2">
-							<img src="img/user-32.png">
-						</div>
-						<div class="col-md-10">
-							<h4><b>Trường Giang</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
-							<p class="small text-muted">45 phút trước <i class="fa fa-globe"></i></p>
-							<p>Tôi là ai trong cuộc đời này và ai là tôi trong cuộc đời sau...</p>
-							<hr>
-							<i class="fa fa-heart"></i> 94K <i class="fa fa-comments"></i> 22K <i class="fa fa-share"></i> 2K
-						</div>
-					</div>
-				</div>
-				<div class="post">
-					<div class="row text-center post-pic">
-						<img src="img/128-block.png">
-					</div>
-					<div class="row post-content">
-						<div class="col-md-2">
-							<img src="img/user-32.png">
-						</div>
-						<div class="col-md-10">
-							<h4><b>Hoài Linh</b> <span class="text-muted">vừa đăng một ảnh</span></h4>
-							<p class="small text-muted">50 phút trước <i class="fa fa-globe"></i></p>
-							<p>Ai muốn live stream cùng tui không :)) có thì like đi nha, tối về tính!</p>
-							<hr>
-							<i class="fa fa-heart"></i> 224K <i class="fa fa-comments"></i> 35K <i class="fa fa-share"></i> 9K
-						</div>
-					</div>
-				</div>
+				</div>				
 			</div>
 		</div> <!-- col-md-6 -->
 		<div class="col-md-3 product">
