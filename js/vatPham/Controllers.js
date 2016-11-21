@@ -4,37 +4,19 @@
 	  
 
 	}])
-
-//    .controller('vatPhamChiTietController', ['$scope', '$http', '$location', ' $routeParams', function vatPhamChiTietController($scope, $http, $routeParams, $location, vatPhams) {
-//        $scope.myUrl = $location.absUrl();
-
- 
-//}])
     .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
         vatPhams.find($routeParams.idVatPham, function (vatPham) {
             $scope.vatPham = vatPham;
         });
     })
-    //.controller('vatPhamItemController', ['$scope', '$http', function vatPhamItemController($scope, $http) {
-         
-    //    $http.get("/data/vatPham/itemVatPham.json")
-    //         .then(function (response) {
-    //             //First function handles success
-    //             $scope.vatPhams = response.data.vatPham;
-    //         }, function (error) {
-    //             //Second function handles error
-    //             console.log("Something went wrong:");
-    //             console.log(error);
-    //         });
-    //}])
-    .controller('vatPhamItemControllerDemo', ['$scope', '$http', function vatPhamItemController($scope, $http) {
 
-        $http.get("/data/vatPham/vatPham.json")
-             .then(function (response) {
-                 //First function handles success
+    .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams', function vatPhamItemController($scope, $http, vatPhams) {
+        vatPhams.list(function (vatPhams) {
+            $scope.vatPhams = vatPhams;
+      
                  $scope.itemsPerPage = 8;
                  $scope.currentPage = 0;
-                 $scope.vatPhams = response.data;
+               
                  $scope.range = function () {
 
                      var rangeSize = 10;
@@ -95,11 +77,7 @@
                      $scope.currentPage = n;
 
                  };
-             }, function (error) {
-                 //Second function handles error
-                 console.log("Something went wrong:");
-                 console.log(error);
-             });
+        })
     }])
      
      .filter('pagination', function () {
@@ -111,19 +89,14 @@
              } else return [];
          };
      })
-      .controller('danhMucItemController', ['$scope', '$http', function danhMucItemController($scope, $http) {
+      .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs) {
+          danhMucs.list(function (danhMucs) {
+              danhMuc = danhMucs;
+          $scope.danhMucSPs = danhMuc.danhMucs;
+          $scope.nguyenLieuSPs = danhMuc.nguyenLieus;
+          $scope.doiTuongSPs = danhMuc.doiTuongs;
+          })
 
-          $http.get("/data/vatPham/danhMuc.json")
-               .then(function (response) {
-                   $scope.danhMucSPs = response.data.danhMucs;
-                   $scope.nguyenLieuSPs = response.data.nguyenLieus;
-                   $scope.doiTuongSPs = response.data.doiTuongs;
-
-               }, function (error) {
-                   //Second function handles error
-                   console.log("Something went wrong:");
-                   console.log(error);
-               });
       }])
 
 
@@ -131,37 +104,17 @@
 
    
 }])
-//.controller('vatPhamDanhMucController', ['$scope', '$http', '$location', function vatPhamDanhMucController($scope, $http, $location) {
-    
-//    myUrl = $location.absUrl();
 
-//    $http.get("/data/vatPham/dmThiep.json")
-//              .then(function (response) {
-//                  $scope.vatPhams = response.data.vatPham;
-//                  $scope.danhMuc = response.data.danhMuc;
-//              }, function (error) {
-//                  //Second function handles error
-//                  console.log("Something went wrong:");
-//                  console.log(error);
-//              });
-
-//}])
-     .controller('vatPhamDanhMucController', function ($scope, $routeParams, vatPhamDMs,$http) {
-         
+     .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http) {
+         danhMucs.list(function (danhMucs) {
+             $scope.danhMucs = danhMucs.all;
+            
+         })
          $scope.tenDM = "";
         
          vatPhamDMs.find($routeParams.idDanhMuc, function (vatPhams) {
              $scope.vatPhams = vatPhams;
          });
-         $http.get("/data/vatPham/danhMuc.json")
-                       .then(function (response) {
-                           
-                          $scope.danhMucs = response.data.all;
-                       }, function (error) {
-                           //Second function handles error
-                           console.log("Something went wrong:");
-                           console.log(error);
-                       });
          danhMucs = $scope.danhMucs;
          $scope.id = $routeParams.idDanhMuc;
          angular.forEach(danhMucs, function (danhMuc) {

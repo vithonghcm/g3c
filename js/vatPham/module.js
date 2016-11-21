@@ -30,6 +30,7 @@ angular.module('g3cApp.vatPham', [])
                     url: '/data/vatPham/vatPham.json',
                     cache: true
                 }).success(callback);
+
             },
             find: function (id, callback) {
                 $http({
