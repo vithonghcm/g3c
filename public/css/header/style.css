@@ -34,3 +34,15 @@
 .g3c-hvr-radial-out:hover>*{
   color: #FFFFFF;
 }
+.g3c-hvr-rectangle-out{
+  background-color: white;
+}
+.g3c-hvr-rectangle-out:before{
+  background-color: #9ECB3C;
+}
+.g3c-nav>li>a:focus, .g3c-nav>li>a:hover{
+  background-color: white;
+}
+.g3c-nav>li>a{
+  color:#9ECB3C;
+}
