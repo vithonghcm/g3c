@@ -46,3 +46,6 @@
 .g3c-nav>li>a{
   color:#9ECB3C;
 }
+.g3c-navbar-toggle > .icon-bar{
+  background-color: #9ECB3C;
+}
