@@ -20,6 +20,10 @@ angular.module('g3cApp.vatPham', [])
             controller: 'thuhuongController',
             templateUrl: 'html/vatPham/thuhuong.html'
         })
+        .when('/vatPham/themVatPham', {
+            controller: 'themVatPhamController',
+            templateUrl: 'html/vatPham/themVatPham.html'
+        })
         .when('/taiKhoan/gioHang', {
             controller: 'gioHangController',
 
