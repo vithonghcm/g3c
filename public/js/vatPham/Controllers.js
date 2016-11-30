@@ -1,9 +1,9 @@
 ﻿angular.module('g3cApp.vatPham')
-	.controller('vatPhamController', ['$scope', function vatPhamController($scope) {
-	    $scope.Title = "This is my VatPham";
-	  
+    .controller('vatPhamController', ['$scope', function vatPhamController($scope) {
+        $scope.Title = "This is my VatPham";
+      
 
-	}])
+    }])
     .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
         vatPhams.find($routeParams.idVatPham, function (vatPham) {
             $scope.vatPham = vatPham;
@@ -12,7 +12,7 @@
 
     .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams', function vatPhamItemController($scope, $http, vatPhams) {
         vatPhams.list(function (vatPhams) {
-            $scope.vatPhams = vatPhams;
+            $scope.vatPhams = vatPhams.data;
       
                  $scope.itemsPerPage = 8;
                  $scope.currentPage = 0;
@@ -91,7 +91,7 @@
      })
       .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs) {
           danhMucs.list(function (danhMucs) {
-              danhMuc = danhMucs;
+              danhMuc = danhMucs.data[0];
           $scope.danhMucSPs = danhMuc.danhMucs;
           $scope.nguyenLieuSPs = danhMuc.nguyenLieus;
           $scope.doiTuongSPs = danhMuc.doiTuongs;
@@ -107,7 +107,7 @@
 
      .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http) {
          danhMucs.list(function (danhMucs) {
-             $scope.danhMucs = danhMucs.all;
+             $scope.danhMucs = danhMucs.data.all;
             
          })
          $scope.tenDM = "";

@@ -10,7 +10,7 @@ module.exports = function() {
   const options = {
     Model: vatPham,
     paginate: {
-      default: 5,
+      default: 25,
       max: 25
     }
   };
