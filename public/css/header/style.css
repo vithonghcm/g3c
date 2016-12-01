@@ -9,8 +9,6 @@
       background-color: white;
       border-color: white
 }
-.g3c-navbar-default .navbar-nav>li>a{
-}
 .g3c-hvr-radial-out{
   border-radius: 100%;
   background-color: #ffffff; 
@@ -40,15 +38,30 @@
 .g3c-hvr-rectangle-out:before{
   background-color: #9ECB3C;
 }
-.g3c-nav>li>a:focus, .g3c-nav>li>a:hover{
+.g3c-navbar-default .g3c-nav>li>a:focus, .g3c-navbar-default .g3c-nav>li>a:hover{
   background-color: #ffffff;
+  color: #ffffff;
 }
-.g3c-nav>li>a{
+.g3c-navbar-default .g3c-nav>li>a{
   color:#9ECB3C;
 }
-.g3c-navbar-toggle > .icon-bar{
+.g3c-navbar-toggle>.icon-bar{
   background-color: #9ECB3C;
 }
-.g3c-navbar-toggle:hover > .icon-bar{
+.g3c-navbar-toggle:hover>.icon-bar{
   background-color: #ffffff;
 }
+.g3c-form-control{
+  border-right-style:none;
+  border-radius: 20px 0px 0px 20px;
+}
+.g3c-search-btn-default{
+  border-left-style: none;
+  border-radius: 0px 20px 20px 0px;
+}
+@media (min-width: 768px){
+  .g3c-navbar-form .g3c-form-control{
+    width: 400px;
+  }
+}
+
