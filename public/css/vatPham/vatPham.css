@@ -287,4 +287,16 @@ body {
        .item-big {
            width: 161px;
        }
- 
+ .btn-themVP{
+  border-radius: 10px;
+  position: fixed;
+  top: 100px;
+  background: #fff;
+  right: -45px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 1px 1px 7px #686666;
+  height: 40px;
+  width: 80px;
+  padding-top: 9px;
+text-align: left;
+ }

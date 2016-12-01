@@ -67,7 +67,7 @@ angular.module('g3cApp.vatPham', [])
             }
         };
     })
-    .factory('danhMucs', function ($http) {
+    .factory('allDanhMucs', function ($http) {
         return {
             list: function (callback) {
                 $http({
@@ -85,7 +85,60 @@ angular.module('g3cApp.vatPham', [])
             }
         };
     })
-
+ .factory('doiTuongs', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/doiTuongs/',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+ .factory('danhMucs', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/dMucs/',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+ .factory('nguyenLieus', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/nguyenLieus/',
+                    cache: true
+                }).success(callback);
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
 ;
     
     

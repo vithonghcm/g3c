@@ -31,11 +31,18 @@
                             <li><a href="#/vatPham" >VẬT PHẨM</a></li>
                             <li><a href="#/vatPham" class="activity">Toàn bộ vật phẩm</a></li>
                         </ul>
+
                     </div>
                 </div>
 
             </div>
+            <a href="#/vatPham/themVatPham"class="btn btn-themVP" data-toggle="tooltip" title="Thêm vật phẩm" data-placement="left" id="themVp"><span class="glyphicon glyphicon-plus"></span></a>
 
+<script>
+                            $(document).ready(function () {
+                                $('[data-toggle="tooltip"]').tooltip();
+                            });
+                        </script>
     <div ng-include="'/html/vatPham/itemTungVP.html'"></div>
    
 </main> <!-- .cd-main-content -->

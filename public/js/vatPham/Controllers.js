@@ -21,11 +21,17 @@
         transclude: true,
         scope: false,
         template:
-            '<div class="input-prepend extended-date-picker">'+
-                '<input type="button" class="btn" value="browse...">'+
-                '<input type="text" readonly class="override">'+
+            '<form class="form-inline">'+
+            '<div class="input-prepend extended-date-picker input-group">'+
+            '<input type="text" readonly class="override form-control">'+
+            '<div class="input-group-btn">'+
+                '<input type="button" class="btn btn-default" value="Tải ảnh">'+
+            '</div>'+
+                
                 '<div class="proxied-field-wrap" ng-transclude></div>'+
-            '</div>',
+            '</div>'+
+            '</form>'
+            ,
         link: function($scope, $element, $attrs, $controller) {
             var button, fileField, proxy;
             fileField = $element.find('[type="file"]').on('change', function() {
@@ -119,17 +125,43 @@
              } else return [];
          };
      })
-      .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs) {
+      .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs,doiTuongs) {
           danhMucs.list(function (danhMucs) {
-              danhMuc = danhMucs.data[0];
-          $scope.danhMucSPs = danhMuc.danhMucs;
+              danhMuc = danhMucs.data;
+          $scope.danhMucSPs = danhMuc;
           $scope.nguyenLieuSPs = danhMuc.nguyenLieus;
           $scope.doiTuongSPs = danhMuc.doiTuongs;
-          })
+          });
+
 
       }])
+.controller('doiTuongItemController', ['$scope', '$http', 'doiTuongs', function doiTuongItemController($scope, $http,doiTuongs) {
+          doiTuongs.list(function (doiTuongs) {
+              doiTuong = doiTuongs.data;
+         
+          $scope.doiTuongSPs = doiTuong;
+          });
 
 
+      }])
+.controller('nguyenLieuItemController', ['$scope', '$http', 'nguyenLieus', function nguyenLieuItemController($scope, $http,nguyenLieus) {
+          nguyenLieus.list(function (nguyenLieus) {
+              nguyenLieu = nguyenLieus.data;
+         
+          $scope.nguyenLieuSPs = nguyenLieu;
+          });
+
+
+      }])
+.controller('dMucItemController', ['$scope', '$http', 'danhMucs', function dMucItemController($scope, $http,danhMucs) {
+          danhMucs.list(function (danhMucs) {
+              danhMuc = danhMucs.data;
+         
+          $scope.danhMucSPs = danhMuc;
+          });
+
+
+      }])
 .controller('gioHangController', ['$scope', '$http', function gioHangController($scope, $http) {
 
    
