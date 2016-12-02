@@ -6,15 +6,18 @@
     }])
     .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
         vatPhams.find($routeParams.idVatPham, function (vatPham) {
-            $scope.vatPham = vatPham;
+            $scope.vatPham = vatPham.data[0];
         });
     })
-.controller('themVatPhamController', function ($scope, $routeParams) {
+.controller('themVatPhamController', ["$scope", function($scope) {
         $scope.load = function(tpl) {
         $scope.tpl = tpl;
     };
+
+  $scope.content = "<p> this is custom directive </p>";
+  $scope.content_two = "<p> this is ng-ckeditor directive </p>";
     $scope.load('one.tpl');
-    }).directive('fileBrowser', function() {
+    }]).directive('fileBrowser', function() {
     return {
         restrict: 'A',
         replace: true,
@@ -43,6 +46,30 @@
             button = $element.find('[type="button"]').on('click', function() {
                 fileField.trigger('click');
             });
+        }
+    };
+})
+.directive('ckEditor', function () {
+    return {
+        require: '?ngModel',
+        link: function (scope, elm, attr, ngModel) {
+            var ck = CKEDITOR.replace(elm[0]);
+            if (!ngModel) return;
+            ck.on('instanceReady', function () {
+                ck.setData(ngModel.$viewValue);
+            });
+            function updateModel() {
+                scope.$apply(function () {
+                    ngModel.$setViewValue(ck.getData());
+                });
+            }
+            ck.on('change', updateModel);
+            ck.on('key', updateModel);
+            ck.on('dataReady', updateModel);
+
+            ngModel.$render = function (value) {
+                ck.setData(ngModel.$viewValue);
+            };
         }
     };
 })
@@ -125,12 +152,10 @@
              } else return [];
          };
      })
-      .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs,doiTuongs) {
-          danhMucs.list(function (danhMucs) {
-              danhMuc = danhMucs.data;
-          $scope.danhMucSPs = danhMuc;
-          $scope.nguyenLieuSPs = danhMuc.nguyenLieus;
-          $scope.doiTuongSPs = danhMuc.doiTuongs;
+      .controller('danhMucItemController', ['$scope', '$http', 'allDanhMucs', function danhMucItemController($scope, $http, allDanhMucs) {
+          allDanhMucs.list(function (allDanhMucs) {
+              danhMuc = allDanhMucs.data;
+          $scope.danhMuc = danhMuc;
           });
 
 
@@ -175,7 +200,7 @@
          $scope.tenDM = "";
         
          vatPhamDMs.find($routeParams.idDanhMuc, function (vatPhams) {
-             $scope.vatPhams = vatPhams;
+             $scope.vatPhams = vatPhams.data;
          });
          danhMucs = $scope.danhMucs;
          $scope.id = $routeParams.idDanhMuc;

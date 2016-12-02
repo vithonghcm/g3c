@@ -44,8 +44,8 @@
             flagNL = false;
         }
     });
-    $(".pagination").click(function () {
-        //alert("hh");
+    $(document).on('click', '.pagination', function () {
+    
         $('body,html').animate({ scrollTop: 0 }, 400);
     })
 });

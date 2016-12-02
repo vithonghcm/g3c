@@ -143,14 +143,14 @@ body {
     color:#555;
     font-weight:bold;
     font-size:18px;
-    height:18px;
+    height:20px;
     overflow:hidden;
 }
 .post-slide .post-description{
     font-size:15px;
     line-height:21px;
     color:#808080;
-    height:84px;
+    height:44px;
     overflow:hidden;
 }
 .post-slide .read{

@@ -1,0 +1,9 @@
+<div ng-controller="danhMucItemController">
+    
+   <!-- <a ng-repeat="muc in danhMuc" href="#/vatPham/product_list/{{muc.idDM}}" style="background-color: {{muc.color}}" class="item-menu list-item-dm">{{muc.tenDM}}</a>-->
+   <ul>
+   	<li ng-repeat="muc in danhMuc">
+   		<input type="checkbox"> {{muc.tenDM}}
+   	</li>
+   </ul>
+</div>

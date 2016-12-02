@@ -43,7 +43,8 @@ angular.module('g3cApp.vatPham', [])
             find: function (id, callback) {
                 $http({
                     method: 'GET',
-                    url: '/data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    //url: '/data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    url: '/vatPhams?idVatPham=' + id ,
                     cache: true
                 }).success(callback);
             }
