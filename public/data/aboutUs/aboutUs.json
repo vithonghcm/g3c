@@ -1,0 +1,33 @@
+{"g3cTeamList":[
+	{
+		"name":"Hương", 
+		"role":"Desinger, Front-end developer",
+		"inChargeOf":"",
+		"image":"img/user-128.png"
+	},
+	{
+		"name":"Thụy", 
+		"role":"Desinger, Front-end developer",
+		"inChargeOf":"",
+		"image":"img/user-128.png"
+	},
+	{
+		"name":"Hưng", 
+		"role":"Front-end developer",
+		"inChargeOf":"",
+		"image":"img/user-128.png"
+	},
+	{
+		"name":"Lộc", 
+		"role":"Front-end & Back-end developer",
+		"inChargeOf":"",
+		"image":"img/user-128.png"
+	},
+	{
+		"name":"Thông", 
+		"role":"Front-end & Back-end developer",
+		"inChargeOf":"",
+		"image":"img/user-128.png"
+	}
+
+]}
