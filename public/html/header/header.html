@@ -11,9 +11,8 @@
 
 				<a class="navbar-brand" href="#/" id="logo"><img class="g3c-logo" src="img/logo.png"></a>
 
-				<form class="navbar-left visible-xs" id="search-Small">
-					<input type="text" placeholder="Search">
-					<button type="submit" class="btn btn-default">Submit</button>
+				<form class="navbar-left visible-xs g3c-navbar-small-form" id="search-Small" ng-controller="searchResultCtrl">
+					<input type="text" class="g3c-navbar-small-form-control" placeholder="Search" ng-model="searchInput"><button type="submit" class="btn btn-default g3c-search-btn-default" ng-click="search()"><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
 				</form>
 
 			</div>
@@ -49,7 +48,7 @@
 						<a href="javascript:void(0)"  class="dropdown-toggle hvr-radial-out g3c-hvr-radial-out g3c-background-icon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 							<i class="fa fa-user fa-lg"></i><span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu" >
+						<ul class="dropdown-menu g3c-dropdown-menu" >
 							<li ng-hide="loggedIn">{{message}}</li>
 							<li ng-show="loggedIn"><a href="#">Thông tin</a></li>
 							<li ng-show="loggedIn"><a href="#">Hoạt động</a></li>
