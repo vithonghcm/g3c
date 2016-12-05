@@ -1,7 +1,7 @@
 .navbar-brand>.g3c-logo{
   height: 30px;
 }
-.g3c-square-50{
+.g3c-square{
 	height: 50px;
 	width: 50px;
 }
@@ -29,7 +29,7 @@
 .g3c-background-icon:before{
   background-color: #9ECB3C;   
 }
-.g3c-hvr-radial-out:hover>*{
+.g3c-hvr-radial-out:hover *{
   color: #FFFFFF;
 }
 .g3c-hvr-rectangle-out{
@@ -104,6 +104,10 @@
   }
   .container>.g3c-navbar-collapse{
     margin-left: 65%;
+  }
+  .g3c-square{
+    height: 40px;
+    width: 40px;
   }
 }
 
