@@ -6,8 +6,8 @@
 	width: 50px;
 }
 .g3c-navbar-default{
-      background-color: white;
-      border-color: white
+  background-color:white;
+  border-color: white;
 }
 .g3c-hvr-radial-out{
   border-radius: 100%;
@@ -69,7 +69,7 @@
 }
 .g3c-navbar-small-form{
   padding: 15px 0px;
- } 
+} 
 .g3c-navbar-small-form-control{
   border:1px solid #ccc;
   border-right-style:none;
@@ -90,6 +90,23 @@
   min-width: 200px;
   padding: 5px;
 }
+@media (max-width: 767px){
+  .g3c-navbar-default{
+    background-color:transparent;
+    border-color: transparent;
+  }
+  .g3c-navbar-collapse{
+    background-color: white;
+    max-width: 300px
+  }
+  .g3c-navbar-header{
+    background-color: white;
+  }
+  .container>.g3c-navbar-collapse{
+    margin-left: 65%;
+  }
+}
+
 @media (min-width: 768px){
   .g3c-navbar-form .g3c-form-control{
     width: 400px;

@@ -1,0 +1,22 @@
+{"userList":[
+	{
+		"userID":"thong", 
+		"userPassword":"123456",
+	},
+	{
+		"userID":"huong", 
+		"userPassword":"123456",
+	},
+	{
+		"userID":"thuy", 
+		"userPassword":"123456",
+	},
+	{
+		"userID":"loc", 
+		"userPassword":"123456",
+	},
+	{
+		"userID":"hung", 
+		"userPassword":"123456",
+	},
+]}
