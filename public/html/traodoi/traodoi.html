@@ -12,25 +12,110 @@
 		                <th>Số lượng</th>
 		                <th></th>
 		            </tr>
-		            <tr>
-		            	<td class="col1">Name 1</td>
+		            <tr style="display: none;" class="SPtrongGio">
+		            	<td class="col1"></td>
 		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
-		            	<td class="col3"><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio1">
+		            	<td class="col2"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio2">
+		            	<td class="col3"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio3">
+		            	<td class="col4"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio4">
+		            	<td class="col5"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio5">
+		            	<td class="col6"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
 		            </tr>
     			</table>
 			</div>
 		</div>
 		<div class="col-md-8 col-sm-8 col-xs-12">
 			<ul class="vmcarousel-normal">
-			  <li ng-repeat="VP in vpCanTraoDoi">
+			  <!-- <li ng-repeat="VP in vpCanTraoDoi">
 			  	<div class="card">
-				  <img ng-src="{{VP.imgVP}}" alt="Avatar">
+				  <img ng-src="{{VP.imgVatPham}}" alt="Avatar">
 				  <div class="container cardInfo">
-				    <h4><b>{{VP.tenVP}}</b></h4> 
-				    <p>Architect & Engineer</p> 
+				    <h4><b>{{VP.tenVatPham}}</b></h4> 
+				    <p>{{VP.danhMucVatPham}}</p> 
 				  </div>
 				</div>
 				<button type="button" class="btn btn-default" ng-click="addToCart()">Thêm vào giỏ</button>
+			  </li> -->
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/banhkem.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/chuonggio.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP1"><b>Chuông gió lồng đèn</b></h4> 
+				    <p>Đồ trang trí</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart1">Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/hoagiay.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP2"><b>Hoa giấy handmade vintage</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart2" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/khung.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP3"><b>Handmade vintage</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart3" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/h1.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP4"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart4" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/h2.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP5"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart5" >Thêm vào giỏ</button>
 			  </li>
 			</ul>
 		</div>
@@ -49,17 +134,42 @@
 		                <th>Số lượng</th>
 		                <th></th>
 		            </tr>
-		            <tr>
-		            	<td class="col1">Name 1</td>
+		            <tr style="display: none;" class="SPtrongGio7">
+		            	<td class="col7"></td>
 		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
-		            	<td class="col3"><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio8">
+		            	<td class="col8"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio9">
+		            	<td class="col9"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio10">
+		            	<td class="col10"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio11">
+		            	<td class="col11"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
+		            </tr>
+		            <tr style="display: none;" class="SPtrongGio12">
+		            	<td class="col12"></td>
+		            	<td><input type="number" class="soLuong" min="0" max="50" value="0"></td>
+		            	<td><span class="glyphicon glyphicon-remove xoa"></span></td>
 		            </tr>
     			</table>
 			</div>
 		</div>
 		<div class="col-md-8 col-sm-8 col-xs-12">
 			<ul class="vmcarousel-normal">
-			  <li ng-repeat="VPBan in vpDcTraoDoi">
+			  <!-- <li ng-repeat="VPBan in vpDcTraoDoi">
 			  	<div class="card">
 				  <img ng-src="{{VPBan.imgVP}}" alt="Avatar">
 				  <div class="container cardInfo">
@@ -68,6 +178,66 @@
 				  </div>
 				</div>
 				<button type="button" class="btn btn-default" ng-click="addToCart()">Thêm vào giỏ</button>
+			  </li> -->
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/banhkem.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP7"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart7" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/chuonggio.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP8"><b>Chuông gió lồng đèn</b></h4> 
+				    <p>Đồ trang trí</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart8">Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/hoagiay.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP9"><b>Hoa giấy handmade vintage</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart9" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/khung.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP10"><b>Handmade vintage</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart10" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/h1.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP11"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart11" >Thêm vào giỏ</button>
+			  </li>
+			  <li>
+			  	<div class="card">
+				  <img src="../../img/traoDoi/h2.jpg" alt="Avatar">
+				  <div class="container cardInfo">
+				    <h4 class="tenVP12"><b>Bánh kem vải nỉ</b></h4> 
+				    <p>Quà tặng, đồ chơi</p> 
+				  </div>
+				</div>
+				<button type="button" class="btn btn-default addToCart12" >Thêm vào giỏ</button>
 			  </li>
 			</ul>
 		</div>

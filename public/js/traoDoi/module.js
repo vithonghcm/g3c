@@ -9,6 +9,9 @@ angular.module('g3cApp.traoDoi',['ngRoute'])
 		when('/traodoi/xacnhan',{
 			controller:'traoDoiCtrl',
 			templateUrl:'html/traodoi/xacNhanTraoDoi.html'
+		}).
+		when('/anhThuy',{
+			templateUrl:'html/traodoi/aboutMe.html'
 		});
 	}]);
 

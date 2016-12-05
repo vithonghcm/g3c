@@ -1,0 +1,29 @@
+{
+	"data": [
+    {
+      "tenVatPham": "Bánh kem vải nỉ",
+      "imgVatPham": "../../img/banhkem.jpg",
+      "danhMucVatPham": "Quà tặng, đồ chơi"
+    },
+    {
+      "tenVatPham": "Hoa giấy handmade vintage",
+      "imgVatPham": "../../img/hoagiay.jpg",
+      "danhMucVatPham": "Quà tặng, đồ chơi"
+    },
+    {
+      "tenVatPham": "Chuông gió lồng đèn",
+      "imgVatPham": "../../img/chuonggio.jpg",
+      "danhMucVatPham": "Đồ trang trí"
+    },
+    {
+      "tenVatPham": "Khung gỗ cao cấp",
+      "imgVatPham": "../../img/khung.jpg",
+      "danhMucVatPham": "Đồ trang trí"
+    },
+    {
+      "tenVatPham": "Túi thổ cẩm",
+      "imgVatPham": "../../img/h1.jpg",
+      "danhMucVatPham": "Phụ kiện"
+    }
+  ]
+}

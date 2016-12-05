@@ -518,7 +518,67 @@ $(document).ready(function() {
 	$('.vmcarousel-normal').vmcarousel({
 		autoplay: false,
 	});
+	$('.addToCart').click(function(event) {
+		$('.SPtrongGio').show();
+		$('.col1').text($('.tenVP').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart1').click(function(event) {
+		$('.SPtrongGio1').show();
+		$('.col2').text($('.tenVP1').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart2').click(function(event) {
+		$('.SPtrongGio2').show();
+		$('.col3').text($('.tenVP2').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart3').click(function(event) {
+		$('.SPtrongGio3').show();
+		$('.col4').text($('.tenVP3').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart4').click(function(event) {
+		$('.SPtrongGio4').show();
+		$('.col5').text($('.tenVP4').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart5').click(function(event) {
+		$('.SPtrongGio5').show();
+		$('.col6').text($('.tenVP5').text());
+		$('.soLuong').val('1');
+	});
 
+	$('.addToCart7').click(function(event) {
+		$('.SPtrongGio7').show();
+		$('.col7').text($('.tenVP7').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart8').click(function(event) {
+		$('.SPtrongGio8').show();
+		$('.col8').text($('.tenVP8').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart9').click(function(event) {
+		$('.SPtrongGio9').show();
+		$('.col9').text($('.tenVP9').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart10').click(function(event) {
+		$('.SPtrongGio10').show();
+		$('.col10').text($('.tenVP10').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart11').click(function(event) {
+		$('.SPtrongGio11').show();
+		$('.col11').text($('.tenVP11').text());
+		$('.soLuong').val('1');
+	});
+	$('.addToCart12').click(function(event) {
+		$('.SPtrongGio12').show();
+		$('.col12').text($('.tenVP12').text());
+		$('.soLuong').val('1');
+	});
 });
 
 //delete item in cart in Trao Doi page

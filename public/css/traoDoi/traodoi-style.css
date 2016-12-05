@@ -110,9 +110,12 @@ input:checked + .slider:before {
   transition: all 0.5s;
   cursor: pointer;
   margin: 24px;
-  float: right;
+  margin-left: 130px;
 }
-
+.button:hover{
+  color: #fff;
+  text-decoration: none;
+}
 .button span {
   cursor: pointer;
   display: inline-block;
