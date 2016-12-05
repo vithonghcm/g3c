@@ -35,7 +35,7 @@ angular.module('g3cApp.vatPham', [])
             list: function (callback) {
                 $http({
                     method: 'GET',
-                    url: '/vatPhams/',
+                    url: '/ttvatPhams/',
                     cache: true
                 }).success(callback);
 
@@ -44,7 +44,27 @@ angular.module('g3cApp.vatPham', [])
                 $http({
                     method: 'GET',
                     //url: '/data/vatPham/vatPhamChiTiet/' + id + '.json',
-                    url: '/vatPhams?idVatPham=' + id ,
+                    url: '/ttvatPhams?idVatPham=' + id ,
+                    cache: true
+                }).success(callback);
+            }
+        };
+    })
+     .factory('nguoiBans', function ($http) {
+        return {
+            list: function (callback) {
+                $http({
+                    method: 'GET',
+                    url: '/nguoiBans/',
+                    cache: true
+                }).success(callback);
+
+            },
+            find: function (id, callback) {
+                $http({
+                    method: 'GET',
+                    //url: '/data/vatPham/vatPhamChiTiet/' + id + '.json',
+                    url: '/nguoiBans?idNguoiBan=' + id ,
                     cache: true
                 }).success(callback);
             }
@@ -62,7 +82,8 @@ angular.module('g3cApp.vatPham', [])
             find: function (id, callback) {
                 $http({
                     method: 'GET',
-                    url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    //url: '/data/vatPham/danhMucChiTiet/' + id + '.json',
+                    url: '/'+id+'s/',
                     cache: true
                 }).success(callback);
             }

@@ -94,7 +94,7 @@ var cartWrapper = $('.cd-cart-container');
 		//replace productId, productName, price and url with your real product info
 		productId = productId + 1;
 		var productAdded = $('<li class="product"><div class="product-image">'
-            + '<a href="#0"><img src="/img/h1.jpg" alt="placeholder"></a></div>'
+            + '<a href="#0"><img src="/img/vatPham/default-img.jpg" alt="placeholder"></a></div>'
             + '<div class="product-details"><h3><a href="#0">Sản phẩm demo</a>'
             + '</h3><span class="price">6000</span><div class="actions">'
             + '<a href="#0" class="delete-item">Xóa</a><div class="quantity">'

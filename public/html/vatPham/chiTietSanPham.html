@@ -59,11 +59,12 @@
                             <div class="row" id="thongtin_shop">
 
                                 <div class="col-sm-2">
-                                    <img ng-src="{{vatPham.imgNguoiBan}}" alt="Người bán" id="img-nguoiban">
+                                    <img ng-src="{{nguoiBan.imgNguoiBan}}" alt="Người bán" id="img-nguoiban">
                                 </div>
                                 <div class="col-sm-10">
-                                    <h3>{{vatPham.nguoiBan}}</h3>
-                                    <p id="mota_shop">{{vatPham.thongtinNguoiBan}}</p>
+                                    <h3>{{nguoiBan.tenNguoiBan}}</h3>
+                                    <p id="mota_shop">{{nguoiBan.thongTinNguoiBan}}</p>
+                                    <i class="fa fa-map-marker"> </i>{{nguoiBan.diaChi}}
                                 </div>
                             </div>
                         </div>
@@ -106,7 +107,7 @@
                 <hr>
                 <h5>{{vatPham.tenVatPham}}</h5>
                 <!--<p>{{vatPham.moTaSP}} </p>-->
-                <p>{{vatPham.description}} </p>
+                <p>{{vatPham.moTa}} </p>
             </div>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
             <!-- sản phẩm liên quan -->

@@ -4,10 +4,15 @@
       
 
     }])
-    .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
+    .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams,nguoiBans) {
         vatPhams.find($routeParams.idVatPham, function (vatPham) {
             $scope.vatPham = vatPham.data[0];
+            nguoiBans.find($scope.vatPham.idNguoiBan, function (nguoiBans) {
+             $scope.nguoiBan = nguoiBans.data[0];
+
+         });
         });
+        
     })
 .controller('themVatPhamController', ["$scope", function($scope) {
         $scope.load = function(tpl) {
@@ -73,10 +78,12 @@
         }
     };
 })
-    .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams', function vatPhamItemController($scope, $http, vatPhams) {
+    .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams','nguoiBans', function vatPhamItemController($scope, $http, vatPhams,nguoiBans) {
         vatPhams.list(function (vatPhams) {
             $scope.vatPhams = vatPhams.data;
-      
+            nguoiBans.find( $scope.vatPhams[0].idNguoiBan, function (nguoiBans) {
+             $scope.nguoiBans = nguoiBans.data[0];
+         });
                  $scope.itemsPerPage = 8;
                  $scope.currentPage = 0;
                
@@ -141,6 +148,9 @@
 
                  };
         })
+//nguoiBans.list(function (nguoiBans) {
+  //          $scope.nguoiBans = nguoiBans.data;})
+ 
     }])
      
      .filter('pagination', function () {
@@ -192,9 +202,10 @@
    
 }])
 
-     .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http) {
+     .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http,vatPhams) {
+        
          danhMucs.list(function (danhMucs) {
-             $scope.danhMucs = danhMucs.data.all;
+             $scope.danhMucs = danhMucs.data;
             
          })
          $scope.tenDM = "";
