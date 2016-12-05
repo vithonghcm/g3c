@@ -18,16 +18,14 @@
 			<img src="img/logo.png">
 		</div>
 		<div class="col-lg-6 col-sm-6 text-center g3c-team-member" ng-repeat="member in teamMemberList | limitTo:2">
-			<img class="img-circle img-responsive img-center" ng-src="{{member.Image}}" alt="">
-			<h3>{{member.Name}}</h3>
-			<p><small>{{member.Title}}</small></p>
-			<p>{{member.Description}}</p>
+			<img class="img-circle img-responsive img-center" ng-src="{{member.image}}" alt="">
+			<h3>{{member.name}}</h3>
+			<p><small>{{member.role}}</small></p>
 		</div>
 		<div class="col-lg-4 col-sm-6 text-center g3c-team-member" ng-repeat="member in teamMemberList" ng-if="$index > 1">
-			<img class="img-circle img-responsive img-center" ng-src="{{member.Image}}" alt="">
-			<h3>{{member.Name}}</h3>
-			<p><small>{{member.Title}}</small></p>
-			<p>{{member.Description}}</p>
+			<img class="img-circle img-responsive img-center" ng-src="{{member.image}}" alt="">
+			<h3>{{member.name}}</h3>
+			<p><small>{{member.role}}</small></p>
 		</div>
 	</div>
 	<hr>

@@ -1,19 +1,89 @@
 ﻿angular.module('g3cApp.vatPham')
-	.controller('vatPhamController', ['$scope', function vatPhamController($scope) {
-	    $scope.Title = "This is my VatPham";
-	  
-
-	}])
-    .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams) {
-        vatPhams.find($routeParams.idVatPham, function (vatPham) {
-            $scope.vatPham = vatPham;
-        });
-    })
-
-    .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams', function vatPhamItemController($scope, $http, vatPhams) {
-        vatPhams.list(function (vatPhams) {
-            $scope.vatPhams = vatPhams;
+    .controller('vatPhamController', ['$scope', function vatPhamController($scope) {
+        $scope.Title = "This is my VatPham";
       
+
+    }])
+    .controller('vatPhamChiTietController', function ($scope, $routeParams, vatPhams,nguoiBans) {
+        vatPhams.find($routeParams.idVatPham, function (vatPham) {
+            $scope.vatPham = vatPham.data[0];
+            nguoiBans.find($scope.vatPham.idNguoiBan, function (nguoiBans) {
+             $scope.nguoiBan = nguoiBans.data[0];
+
+         });
+        });
+        
+    })
+.controller('themVatPhamController', ["$scope", function($scope) {
+        $scope.load = function(tpl) {
+        $scope.tpl = tpl;
+    };
+
+  $scope.content = "<p> this is custom directive </p>";
+  $scope.content_two = "<p> this is ng-ckeditor directive </p>";
+    $scope.load('one.tpl');
+    }]).directive('fileBrowser', function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        transclude: true,
+        scope: false,
+        template:
+            '<form class="form-inline">'+
+            '<div class="input-prepend extended-date-picker input-group">'+
+            '<input type="text" readonly class="override form-control">'+
+            '<div class="input-group-btn">'+
+                '<input type="button" class="btn btn-default" value="Tải ảnh">'+
+            '</div>'+
+                
+                '<div class="proxied-field-wrap" ng-transclude></div>'+
+            '</div>'+
+            '</form>'
+            ,
+        link: function($scope, $element, $attrs, $controller) {
+            var button, fileField, proxy;
+            fileField = $element.find('[type="file"]').on('change', function() {
+                proxy.val(angular.element(this).val());
+            });
+            proxy = $element.find('[type="text"]').on('click', function() {
+                fileField.trigger('click');
+            });
+            button = $element.find('[type="button"]').on('click', function() {
+                fileField.trigger('click');
+            });
+        }
+    };
+})
+.directive('ckEditor', function () {
+    return {
+        require: '?ngModel',
+        link: function (scope, elm, attr, ngModel) {
+            var ck = CKEDITOR.replace(elm[0]);
+            if (!ngModel) return;
+            ck.on('instanceReady', function () {
+                ck.setData(ngModel.$viewValue);
+            });
+            function updateModel() {
+                scope.$apply(function () {
+                    ngModel.$setViewValue(ck.getData());
+                });
+            }
+            ck.on('change', updateModel);
+            ck.on('key', updateModel);
+            ck.on('dataReady', updateModel);
+
+            ngModel.$render = function (value) {
+                ck.setData(ngModel.$viewValue);
+            };
+        }
+    };
+})
+    .controller('vatPhamItemControllerDemo', ['$scope', '$http', 'vatPhams','nguoiBans', function vatPhamItemController($scope, $http, vatPhams,nguoiBans) {
+        vatPhams.list(function (vatPhams) {
+            $scope.vatPhams = vatPhams.data;
+            nguoiBans.find( $scope.vatPhams[0].idNguoiBan, function (nguoiBans) {
+             $scope.nguoiBans = nguoiBans.data[0];
+         });
                  $scope.itemsPerPage = 8;
                  $scope.currentPage = 0;
                
@@ -78,6 +148,9 @@
 
                  };
         })
+//nguoiBans.list(function (nguoiBans) {
+  //          $scope.nguoiBans = nguoiBans.data;})
+ 
     }])
      
      .filter('pagination', function () {
@@ -89,31 +162,56 @@
              } else return [];
          };
      })
-      .controller('danhMucItemController', ['$scope', '$http', 'danhMucs', function danhMucItemController($scope, $http, danhMucs) {
-          danhMucs.list(function (danhMucs) {
-              danhMuc = danhMucs;
-          $scope.danhMucSPs = danhMuc.danhMucs;
-          $scope.nguyenLieuSPs = danhMuc.nguyenLieus;
-          $scope.doiTuongSPs = danhMuc.doiTuongs;
-          })
+      .controller('danhMucItemController', ['$scope', '$http', 'allDanhMucs', function danhMucItemController($scope, $http, allDanhMucs) {
+          allDanhMucs.list(function (allDanhMucs) {
+              danhMuc = allDanhMucs.data;
+          $scope.danhMuc = danhMuc;
+          });
+
 
       }])
+.controller('doiTuongItemController', ['$scope', '$http', 'doiTuongs', function doiTuongItemController($scope, $http,doiTuongs) {
+          doiTuongs.list(function (doiTuongs) {
+              doiTuong = doiTuongs.data;
+         
+          $scope.doiTuongSPs = doiTuong;
+          });
 
 
+      }])
+.controller('nguyenLieuItemController', ['$scope', '$http', 'nguyenLieus', function nguyenLieuItemController($scope, $http,nguyenLieus) {
+          nguyenLieus.list(function (nguyenLieus) {
+              nguyenLieu = nguyenLieus.data;
+         
+          $scope.nguyenLieuSPs = nguyenLieu;
+          });
+
+
+      }])
+.controller('dMucItemController', ['$scope', '$http', 'danhMucs', function dMucItemController($scope, $http,danhMucs) {
+          danhMucs.list(function (danhMucs) {
+              danhMuc = danhMucs.data;
+         
+          $scope.danhMucSPs = danhMuc;
+          });
+
+
+      }])
 .controller('gioHangController', ['$scope', '$http', function gioHangController($scope, $http) {
 
    
 }])
 
-     .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http) {
+     .controller('vatPhamDanhMucController', function ($scope, $routeParams, danhMucs, vatPhamDMs, $http,vatPhams) {
+        
          danhMucs.list(function (danhMucs) {
-             $scope.danhMucs = danhMucs.all;
+             $scope.danhMucs = danhMucs.data;
             
          })
          $scope.tenDM = "";
         
          vatPhamDMs.find($routeParams.idDanhMuc, function (vatPhams) {
-             $scope.vatPhams = vatPhams;
+             $scope.vatPhams = vatPhams.data;
          });
          danhMucs = $scope.danhMucs;
          $scope.id = $routeParams.idDanhMuc;

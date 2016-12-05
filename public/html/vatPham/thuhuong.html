@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body {
+    background: #efefef;
+    font: 14px/22px "open_sans",Arial,sans-serif;
+    color: #999999;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+}
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.skills-list h4 {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #666666;
+}
+
+.nopr{
+	padding-right: 0;
+
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+.img-profile{
+	position: relative;
+
+}
+/*figure {
+	    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}*/
+.img-profile .name-profile span {
+    color: #ffffff;
+    opacity: .95;
+    font-family: "open_sans",Arial,sans-serif;
+    padding: 0 15px 0px 30px;
+    font-size: 11px;
+    display: block;
+    text-transform: uppercase;
+}
+img{
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-profile .name-profile{
+	left: -18%;
+	position: absolute;
+	top: 23.2%;
+	transform: rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	background:-moz-linear-gradient(left,  rgba(51,55,61,1) 0%, rgba(51,55,61,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,55,61,1)), color-stop(100%,rgba(51,55,61,0)));
+	background: -o-linear-gradient(left,  rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	background: linear-gradient(to left,  rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
+	    background-image: linear-gradient(to left, rgb(51, 55, 61) 0%, rgba(51, 55, 61, 0) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33373d', endColorstr='#0033373d',GradientType=0 );
+;
+}
+a, input[type="text"], textarea, nav.main-nav ul, .lines:before, .contact-form .submit, .reply-form .submit, .item a .desc, .owl-page span {
+    transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+ol, ul {
+    list-style: none;
+}
+/*ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}*/
+.main-nav ul li {
+    position: relative;
+    border-bottom: 1px solid #26292e;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.main-nav li a.active {
+    background: #05668D;
+}
+.main-nav li a.active {
+    color: #ffffff;
+    background: #05668D;
+}
+.main-nav ul li a {
+    font-weight: 600;
+    display: table;
+    text-align: right;
+    background: #33373d;
+    color: #85878b;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-transition-property: color;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100%;
+}
+.main-nav ul li {
+    position: relative;
+    border-bottom: 1px solid #26292e;
+}
+.main-nav ul li a, .info ul.info-list li .inf, .exp .hgroup h4, .block.service .det h3, .block-quote .block-profile, .block-quote .block-profile span, .item a .desc h3, .address-info p, .search-form input[type="text"], .author a, .but {
+    font-family: 'open_sansbold',Arial,sans-serif;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+}
+ol, ul{
+	list-style: none;
+}
+.bgWhite {
+    background: #ffffff;
+}
+.ofsBSmall {
+    padding-bottom: 20px !important;
+}
+.ofsTSmall {
+    padding-top: 20px !important;
+}
+.tCenter {
+    text-align: center;
+}
+.social li a, .timeline:after, .exp:after, .spinner, .spinner:after, .address-info .ico-back, .contact-info li .ico, .contact-info li .ico-back, .spinner, .block-quote .block-img img, .block-quote .block-icon, .block-nav-work li a, .address-info i, .contact-form form input[type="submit"], form, .comments .author-img, .pagination, .get-cv h3, .dt-ico, .tag, .author, .content-title, .contact-form input[type="text"], .contact-form textarea, .reply-form input[type="text"], .reply-form textarea, .map-btn a, .testi img, .title-icon, .dt-ico span.ico, .comments .author-img img, .testi p, .serv-ico .icon, .interest, .column, .top a, .experience .experience-single .date, .info-list h4, .info-list h4:before, .testi-profile img, .testi-profile, .experience .experience-single .exp-icon, .exp-icon:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.social li a, .timeline:after, .exp:after, .spinner, .spinner:after, .address-info .ico-back, .contact-info li .ico, .contact-info li .ico-back, .spinner, .block-quote .block-img img, .block-quote .block-icon, .block-nav-work li a, .address-info i {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.social a {
+    border: 2px solid #33373d;
+    color: #33373d;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+}
+.social li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+}
+.main-nav ul li a i {
+    position: absolute;
+    left: 25px;
+    font-size: 22px;
+}
+.icon-camera:before {
+    content: '\e812';
+}
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    /* font-size: 120%; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-user:before {
+    font-family: 'FontAwesome';
+    content: '\e80d';
+}.icon-chat:before {
+    font-family: 'FontAwesome';
+    content: '\e895';
+}
+.icon-phone:before {
+    content: '\e84b';
+}
+.skill .title.des {
+    border: 1px dashed #efefef;
+}
+.skill .title {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    left: -15px;
+    padding: 5px 25px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+}
+.skill .title.dev {
+    border: 1px dashed #05668D;
+}
+.skill .title.dev {
+    border: 1px dashed #05668D;
+}
+
+.skill .title.prs {
+    border: 1px dashed #33373d;
+}
+
+#wrapper{
+	margin-top: 125px !important;
+}
+.ofsInBottom {
+    padding-bottom: 60px !important;
+}
+.main-title {
+    border-bottom: 1px solid #efefef;
+    padding: 30px 10px 2px 40px;
+    position: relative;
+}
+.content {
+    padding: 40px;
+}
+.main-title {
+    border-bottom: 1px solid #efefef;
+    padding: 30px 10px 2px 40px;
+    position: relative;
+}
+.main-title .divider {
+    left: 30px;
+    position: absolute;
+    top: 50px;
+}
+.margBMedium {
+    margin-bottom: 40px !important;
+}
+.vc {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.skill.dev .progress {
+    border: 1px solid #cd5353;
+}
+.skill.dev .progress {
+    border: 1px solid #05668D;
+}
+.progress {
+    display: block;
+    height: 16px;
+    margin: 8px 0 14px;
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background: #ffffff;
+}
+.skill.dev .progress .percentage {
+    background-color: #05668D;
+}
+.progress .percentage {
+    border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    -webkit-border-radius: 50px 0 0 50px;
+    -ms-border-radius: 50px 0 0 50px;
+    -o-border-radius: 50px 0 0 50px;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+.skill.des .progress .percentage {
+    background-color: #efefef;
+}
+.progress .percentage {
+    border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    -webkit-border-radius: 50px 0 0 50px;
+    -ms-border-radius: 50px 0 0 50px;
+    -o-border-radius: 50px 0 0 50px;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+.skill.prs .progress .percentage {
+    background-color: #33373d;
+}
+.progress .percentage {
+    border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    -webkit-border-radius: 50px 0 0 50px;
+    -ms-border-radius: 50px 0 0 50px;
+    -o-border-radius: 50px 0 0 50px;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+.skill.prs .progress {
+    border: 1px solid #33373d;
+}
+.timeline {
+    position: relative;
+}
+.margTop {
+    margin-top: 60px !important;
+}
+.exp {
+    padding-left: 50px;
+    padding-top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.exp .hgroup {
+    margin-bottom: 5px;
+}
+p {
+    line-height: 22px;
+}
+.about .profile h1 {
+    font-size: 28px;
+    line-height: 25px;
+}
+.about .profile h1, .main-title h1 {
+    font-family: 'open_sansextrabold',Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about .profile h3 {
+    font-size: 22px;
+    color: #777777;
+}
+
+.about .profile h3, .block-single h1.large-title, .post-title h1, .post-title a, span.meta-date {
+    font-family: 'open_sanslight',Arial,sans-serif;
+}
+.info ul.info-list li {
+    border-bottom: 1px solid #efefef;
+    background: #fafafa;
+    font-size: 14px;
+}
+.info ul.info-list {
+    border: 1px solid #efefef;
+    text-align: center;
+}
+.info ul.info-list li .inf {
+    width: 35%;
+    background: #ffffff;
+    left: -1px;
+    position: relative;
+    border-right: 1px solid #efefef;
+    color: #333333;
+}
+.info ul.info-list li .inf, .info ul.info-list li .value {
+    display: inline-block;
+    padding: 8px 0;
+}
+.main-nav ul li a, .info ul.info-list li .inf, .exp .hgroup h4, .block.service .det h3, .block-quote .block-profile, .block-quote .block-profile span, .item a .desc h3, .address-info p, .search-form input[type="text"], .author a, .but {
+    font-family: 'open_sansbold',Arial,sans-serif;
+}
+
+.info ul.info-list li .value {
+    width: 63%;
+    color: #666666;
+}
+.info ul.info-list li .inf, .info ul.info-list li .value {
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.info ul.info-list li .inf {
+    width: 35%;
+    background: #ffffff;
+    left: -1px;
+    position: relative;
+    border-right: 1px solid #efefef;
+    color: #333333;
+    font-weight: 600;
+}
+.info ul.info-list li .inf, .info ul.info-list li .value {
+    display: inline-block;
+    padding: 8px 0;
+}
+.main-nav ul li a, .info ul.info-list li .inf, .exp .hgroup h4, .block.service .det h3, .block-quote .block-profile, .block-quote .block-profile span, .item a .desc h3, .address-info p, .search-form input[type="text"], .author a, .but {
+    font-family: 'open_sansbold',Arial,sans-serif;
+}
+#main-nav{
+	width: 100%;
+}
+.item a .desc {
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    background: none 0px 0px repeat scroll rgba(5, 102, 141, 0.8);
+    height: 180px;
+}
+.item a .desc h3 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    margin: auto;
+}
+.item a .desc:hover {
+    opacity: 1;
+}
+a, input[type="text"], textarea, nav.main-nav ul, .lines::before, .contact-form .submit, .reply-form .submit, .item a .desc, .owl-page span {
+    transition: all 0.3s ease-in-out 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.item a .desc{
+    max-width: 92.5%;
+
+}
+.item{
+    margin-bottom: 20px;
+    height: 180px;
+    overflow: hidden;
+}
+.web{
+    padding-bottom: 50px;    
+    height: 180px;
+}
+.item a .desc h3 span {
+    display: block;
+    font-size: 12px;
+    text-transform: none;
+    position: relative;
+    top: 10px;
+}
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+.main-nav li a:hover, .main-nav li a:focus, .main-nav li a:active {
+    color: #ffffff;
+    cursor: pointer;
+}
+.text-small{
+    color: #3E3E3E;
+    font-size: 0.9em;
+    list-style: url("img/vatPham/icon.png");
+}
+.kqthuchien{
+    margin-left: 50px;
+}
+	</style>
+</head>
+<body>
+	<div class="container" id="wrapper">
+
+		<div class="row">
+		    <div class="col-md-3 nopr left-content">
+		<header id="header">
+					<!--Main header-->
+					<div class="main-header">
+					
+					<!--Profile image-->
+					<figure class="img-profile">
+						<img src="img/aboutHuong/thuhuong.jpg" alt="">
+						
+						<figcaption class="name-profile">
+							<span>Thu Huong<sup>®</sup></span>
+						</figcaption>
+						
+					</figure>
+					<!--End profile image-->
+							<!--Main navigation-->
+								<nav id="main-nav" class="main-nav clearfix tabbed">
+
+								<ul>
+									<li class="active"><a id="btn-about" class="active"><i class="fa fa-user"></i>Thông tin</a></li>
+									<li><a id="btn-portfolio"><i class="fa fa- fa-camera-retro "></i>Thư viện</a></li>
+									<li><a id="btn-blog"><i class="fa fa-bookmark-o "></i>Báo cáo</a></li>
+									<li><a id="btn-contact"><i class="fa fa-phone "></i>Liên hệ</a></li>
+								</ul>
+
+								</nav>
+							<!--End main navigation-->
+				</div>
+				<!--End main header-->
+				
+				<div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+					<ul class="social">
+					<li><a href="https://www.facebook.com/rang.rung.roii" target="_blank"><i class="fa fa-facebook" style=" padding-top: 5px;"></i></a></li>
+					<li><a href="https://www.flickr.com/photos/148058499@N03/" target="_blank"><i class="fa fa-flickr" style=" padding-top: 5px;"></i></a></li>
+					<li><a href="https://www.instagram.com/rangrungroi/" target="_blank"<i class="fa fa-instagram"  style=" padding-top: 5px;"></i></a></li>
+				</ul>
+					
+				</div>
+
+		</header>
+		    </div>
+		    <div class="col-md-9 right-content"><!--About Tab-->
+					<section id="about" class="bgWhite ofsInBottom active" style="display: block;">
+						
+						<!--About -->
+						<div class="about">
+						
+							<!--Main title-->
+							
+								<div class="main-title">
+									<h1>Giới thiệu</h1>
+									<div class="divider">
+										
+									</div>
+								</div>	
+								
+							<!--End main title-->
+						
+						<!--Content-->	
+						<div class="content">
+							
+							<!--Block content-->	
+							<div class="block-content margBSmall">
+								
+							<div class=" profile margBSmall">
+                                <h1>Trần Thị Thu Hương</h1>
+                                <h3>Web designer / Web developer</h3>
+                            </div>
+
+							<!--Row-->	
+							<div class="row"  style="margin-bottom: 20px;">
+								<div class="col-md-6">
+									<p>Tôi là Hương, hiện nay tôi là sinh viên Chuyên ngành Multimedia tại Học viện Công nghệ Bưu chính Viễn thông(thành phố Hồ Chí Minh)</p>
+								</div>
+								
+								
+								<div class="col-md-6">
+									<p></p>
+								</div>
+							
+
+							</div>
+							<!--End row-->	
+							
+							</div>
+							<!--End block content-->	
+							<!--Block content-->	
+							<div class="block-content">
+								
+								<div class="info">
+	                               
+									<!--Row-->	
+									<div class="row" >
+										<div class="col-md-6">
+											
+											<ul class="info-list clearfix">
+												<li><span class="inf">Tên </span>  <span class="value">Trần Thị Thu Hương</span></li>
+												<li><span class="inf">Ngày Sinh</span>  <span class="value"> 20-04-1996 </span></li>
+												<li><span class="inf">Địa chỉ</span>  <span class="value">44 Ng.Cửu Vân,Bình Thạnh </span></li>
+											</ul>
+											
+										</div>
+
+
+										<div class="col-md-6">
+										
+											<ul class="info-list">
+												<li><span class="inf">Email</span>  <span class="value">thuhuong.tran204@gmail.com</span></li>
+												<li><span class="inf">SĐT</span>  <span class="value"> 0986 698 639	</span></li>
+												<li><span class="inf">FaceBook</span>  <span class="value">Huong Thu Tran</span></li>
+											</ul>
+											
+										</div>
+
+
+									</div>
+									<!--End row-->
+	
+	                            </div>
+
+                            </div>
+							<!--End block content-->
+							
+						
+						</div>
+								<!--Main title-->
+
+									<div class="main-title">
+										<h1>kỹ năng chuyên môn</h1>
+										<div class="divider"></div>
+										
+									</div>	
+
+								<!--End main title-->
+							<!--Content-->	
+							<div class="content">
+
+								<!--Block content-->	
+								<div class="block-content margBMedium">
+									
+									
+								<!--Skill design-->
+								<div class=" skill des">
+									
+									
+	                               	<!--Row-->	
+									<div class="row ">
+										
+										<div class="vc">
+										
+										<div class="col-md-11">
+											
+											<ul class="skills-list clearfix">
+											<li>
+												<h4>Photoshop</h4>
+												<div class="progress">
+												<div class="percentage" style="width: 85%;"></div>
+												</div>
+											</li>
+											<li>
+												<h4>Illustrator</h4>
+													<div class="progress">
+													<div class="percentage" style="width: 75%;"></div>
+													</div>
+											</li>
+											<li>
+												<h4>Indesign</h4>
+													<div class="progress">
+													<div class="percentage" style="width: 80%;"></div>
+													</div>
+											</li>
+											
+											
+											
+
+										</ul>
+											
+										</div>
+										
+										
+										<div class="col-md-1">
+											<div class="title des">
+												<span>design</span>
+											</div>
+										</div>
+										
+										</div>
+										
+									</div>
+									<!--End row-->
+	
+	                            </div>
+								<!--End skill design-->
+
+								</div>
+								<!--End block content-->	
+								
+								
+								
+									<!--Block content-->	
+									<div class="block-content margBMedium">
+
+
+									<!--Skill design-->
+									<div class=" skill dev">
+
+
+		                               	<!--Row-->	
+										<div class="row">
+											
+											<div class="vc">
+
+											<div class="col-md-11">
+
+												<ul class="skills-list clearfix">
+												<li>
+													<h4>Html/css</h4>
+													<div class="progress">
+													<div class="percentage" style="width: 90%;"></div>
+													</div>
+												</li>
+												<li>
+													<h4>javascript</h4>
+														<div class="progress">
+														<div class="percentage" style="width: 75%;"></div>
+														</div>
+												</li>
+												<li>
+													<h4>php/mysql</h4>
+														<div class="progress">
+														<div class="percentage" style="width: 30%;"></div>
+														</div>
+												</li>
+
+
+											</ul>
+
+											</div>
+
+
+											<div class="col-md-1">
+												<div class="title dev">
+													<span>Coding </span>
+												</div>
+											</div>
+											
+											</div>
+
+										</div>
+										<!--End row-->
+
+		                            </div>
+									<!--End skill design-->
+
+									</div>
+									<!--End block content-->
+
+
+										<!--Block content-->	
+										<div class="block-content">
+
+
+										<!--Skill design-->
+										<div class=" skill prs">
+
+
+			                               	<!--Row-->	
+											<div class="row ">
+												
+												<div class="vc">
+
+												<div class="col-md-11">
+
+													<ul class="skills-list clearfix">
+													<li>
+														<h4>Trách nhiệm</h4>
+														<div class="progress">
+														<div class="percentage" style="width: 85%;"></div>
+														</div>
+													</li>
+													<li>
+														<h4>Sáng tạo</h4>
+															<div class="progress">
+															<div class="percentage" style="width: 75%;"></div>
+															</div>
+													</li>
+													<li>
+														<h4>Làm việc nhóm</h4>
+															<div class="progress">
+															<div class="percentage" style="width: 90%;"></div>
+															</div>
+													</li>
+													
+												</ul>
+
+												</div>
+
+
+												<div class="col-md-1">
+													<div class="title prs">
+														<span style="">Skill</span>
+													</div>
+												</div>
+												
+												
+												</div>
+											</div>
+											<!--End row-->
+
+			                            </div>
+										<!--End skill design-->
+
+										</div>
+										<!--End block content-->
+							</div>
+							<!--End content-->
+							
+						
+					
+							<!--End content-->
+
+									<!--Button-->
+<div class="button margTop ofsInTop tCenter">
+	
+	<div class="divider">
+			<div class="zigzag large clearfix " data-svg-drawing="yes">
+                <img src="img/aboutHuong/ren.png" alt="">
+		</div>
+		</div>
+
+</div>
+<!--End button-->
+
+
+						
+						</div>
+						<!--End about-->
+
+					</section>
+						<!--End about tab-->
+				
+								<!--Portfolio Tab-->
+<section id="portfolio" class="bgWhite ofsInBottom" style="display: none;">
+
+	<!--Portfolio -->
+	<div class="portfolio">
+
+		<!--Main title-->
+
+			<div class="main-title">
+				<h1>my works</h1>
+					<div class="divider">
+							
+			</div>
+										</div>	
+
+									<!--End main title-->
+
+					<!--Content-->	
+					<div class="content">
+
+						<!--Block content-->	
+						<div class="block-content ">
+
+						<!--Works-->
+						<div class="works">
+						<!--Row-->
+						<div class="row">
+							
+							<div class="divider-m tCenter margTSSmall margBSmall clearfix">
+								<div class="col-md-12">
+							
+								</div>
+							</div>
+						</div>
+						<!--End row-->
+						
+						<!--Row-->	
+						<div class="row">
+							
+							<ul class="work">
+							
+							<li class="col-md-6 ">
+								
+								<!--Item-->	
+								<div class="item web">
+								<a href="http://restaurant-th.esy.es/" target="_blank">
+									<div class="desc">
+									<h3 class="proj-desc">Web nhà hàng<span>web design</span></h3>
+                                    
+									</div>
+									
+									<img alt="" src="img/aboutHuong/web1.png">
+								</a>
+
+							</div>
+							<!--End item-->	
+							
+							</li>
+							
+						
+							<li class="col-md-6">
+
+								<!--Item-->	
+								<div class="item web">
+								<a class="box" href="http://beautyshop-th.esy.es/" target="_blank">
+									<div class="desc">
+									<h3 class="proj-desc">Web bán mỹ phẩm 
+                                      
+                                        <span>web design</span></h3>
+                                   
+									</div>
+
+									<img alt="" src="img/aboutHuong/web2.png">
+								</a>
+
+							</div>
+							<!--End item-->	
+
+							</li>
+                            <li class="col-md-6 ">
+                                
+                                <!--Item--> 
+                                <div class="item mobie">
+                                <a href="https://mockup.io/#projects/129364/mockups" target="_blank">
+                                    <div class="desc">
+                                    <h3 class="proj-desc">App Lover Finder <span>Interactive Design</span></h3>
+                                   
+                                    </div>
+                                    <img alt="" src="img/aboutHuong/mobie1.jpg">
+                                </a>
+
+                            </div>
+                            <!--End item--> 
+                            
+                            </li>
+							
+							</ul>
+							
+							</div>
+							<!--End row-->
+
+                        </div>
+                        <div class="button margTop ofsInTop tCenter">
+    
+    <div class="divider">
+            <div class="zigzag large clearfix " data-svg-drawing="yes">
+                <img src="img/aboutHuong/ren.png" alt="">
+        </div>
+        </div>
+
+</div>
+						<!--End works-->
+						
+
+						</div>
+						<!--End block content-->
+						
+						
+						
+						</div>
+						<!--End content-->
+						<!--Button-->
+						<div class="button ofsInTop tCenter clearfix">
+								
+								<div class="divider">
+							
+							
+								</div>
+								<!--End row-->
+
+
+                            </div>
+							<!--End button-->
+
+							</div>
+							<!--End portfolio-->
+
+						</section>
+							<!--End portfolio tab-->
+							
+							
+			<section id="contact" class="bgWhite ofsInBottom" style="display: none;">
+
+							<div class="main-title">
+								<h1>contact info</h1>
+									<div class="divider"></div></div>
+							<div class="content">
+
+                                <!--Block content-->    
+                                <div class="block-content ">
+
+dsdsdsd
+                                <!--Works-->
+                                <div class="blog">
+
+
+
+                                </div>
+                                <!--End blog-->
+        <div class="button margTop ofsInTop tCenter">
+    
+    <div class="divider">
+            <div class="zigzag large clearfix " data-svg-drawing="yes">
+                <img src="img/aboutHuong/ren.png" alt="">
+        </div>
+        </div>
+
+</div>
+
+                                </div>
+                                <!--End block content-->
+
+
+                                </div>
+
+							</section>
+			
+							<!--Blog Tab-->
+						<section id="blog" class="bgWhite ofsInBottom" style="display: none;">
+
+							<!--Blog -->
+							<div class="blog">
+
+								<!--Main title-->
+
+									<div class="main-title">
+										<h1>Báo cáo</h1>
+											<div class="divider"></div>
+									</div>	
+
+								<!--End main title-->
+
+
+
+
+							<!--Content-->	
+							<div class="content">
+
+								<!--Block content-->	
+								<div class="block-content ">
+
+                                <h3>THÔNG TIN CHUNG</h3>
+                                <ol>
+                                    <li>Tên dự án:G3C</li>
+                                    <li>Cơ quan chủ trì: Green Acadamy</li>
+                                    <li>Chủ nhiệm dự án: Thầy Hải</li>
+                                    <li>Thời gian thực hiện: Từ 11/2016 đến 12/2016</li>
+                                    <li>Mục tiêu dự án: Tạo ra website về đồ handmade (mua bán, trao đổi, hướng dẫn, cộng đồng)</li>
+                                    <li>Tôi thực hiện phần mua bán sản phẩm</li>
+                                </ol>
+                                <h3>KẾT QUẢ THỰC HIỆN</h3>
+                               
+                                <div class="">
+                                <p>Cơ sở thực hiện dự án:<span class="text-small">Vận dụng các kiến thức đã học: HTML, CSS, JavaScrip, Jquery, AngularJs...</span></p>
+                                <p>Nội dung dự án đã  thực hịên</p>
+                                <ul class="text-small kqthuchien">
+                                    <li>Lấy thông tin yêu cầu và nghiên cứu tính khả thi</li>
+                                    <li>Phân tích yêu cầu và lên kế hoạch thiết kế website:Sau khi các yêu cầu cho việc thiết kế website được thu thập đầy đủ,  tôi sẽ tiến hành phân tích yêu cầu để chuyển thành yêu cầu kỹ thuật và lên kế hoạch thiết kế website. Quá trình này nhằm đảm bảo cho website của chúng tôi được thiết kế sẽ tuân thủ theo quy trình và thực hiện đúng theo kế hoạch.</li>
+                                    <li>Thiết kế giao diện:<br>-Giai đoạn 1:Xây dựng SITEMAP <br>
+                                        -Giai đoạn 2: Thiết kế trên Photoshop nhằm phác thảo ra bố cục, màu sắc của trang web.(Giao diện website mẫu)<br>
+                                        -Giai đoạn 3:Giao diện website mẫu này sẽ được đưa ra nhận xét để lấy ý kiến. Trên cơ sở ý kiến phản hồi của mọi người, tôi chỉnh sửa giao diện đáp ứng được các yêu cầu đề ra ban đầu.<br>
+                                        -Giai đoạn 4: Hiện thực giao diện trên HTML/CSS
+                                    </li>
+                                    <li>Xây dựng cơ sở dữ liệu và Lập trình web<br>- Giai đoạn lập trình web bao gồm việc chuyển đổi giao diện sang dạng website hoạt động, đúng theo kịch bản đã đưa ra.( sử dụng Angular Js)</li>
+                                </ul>
+                                <p>Sản phẩm dự án đạt được </p>
+                                    <p>Đánh giá kết quả đạt được so với mục tiêu đề ra</p>
+</div>
+								<!--Works-->
+								<div class="blog">
+
+
+
+	                            </div>
+								<!--End blog-->
+                                <div class="button margTop ofsInTop tCenter">
+    
+    <div class="divider">
+            <div class="zigzag large clearfix " data-svg-drawing="yes">
+                <img src="img/aboutHuong/ren.png" alt="">
+        </div>
+        </div>
+
+</div>
+
+								</div>
+								<!--End block content-->
+
+
+								</div>
+
+		                            </div>
+									<!--End button-->
+									</div>
+									<!--End blog-->
+
+								</section>
+								<!--Contact Tab-->
+							
+											<!--End contact tab-->
+			</div>										
+</div>	
+		</div>
+		</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			 
+                $(document).on('click', '#btn-portfolio', function () {
+			 	$("#blog").css("display", "none");
+			 	$("#portfolio").css("display", "block");
+			 	$("#about").css("display", "none");
+			 	$("#contact").css("display", "none");
+			 	$(this).addClass("active");
+			 	$("#btn-about").removeClass("active");
+			 	$("#btn-blog").removeClass("active");
+			 	$("#btn-contact").removeClass("active");
+			 });
+			$(document).on('click', '#btn-about', function (){
+			 	$("#blog").css("display", "none");
+			 	$("#portfolio").css("display", "none");
+			 	$("#about").css("display", "block");
+			 	$("#contact").css("display", "none");
+			 	$(this).addClass("active");
+			 	$("#btn-portfolio").removeClass("active");
+			 	$("#btn-blog").removeClass("active");
+			 	$("#btn-contact").removeClass("active");
+			 });
+			$(document).on('click', '#btn-blog', function (){
+			 	$("#blog").css("display", "block");
+			 	$("#portfolio").css("display", "none");
+			 	$("#about").css("display", "none");
+			 	$("#contact").css("display", "none");
+			 	$(this).addClass("active");
+			 	$("#btn-portfolio").removeClass("active");
+			 	$("#btn-about").removeClass("active");
+			 	$("#btn-contact").removeClass("active");
+			 });
+			$(document).on('click', '#btn-contact', function (){
+			 	$("#blog").css("display", "none");
+			 	$("#portfolio").css("display", "none");
+			 	$("#about").css("display", "none");
+			 	$("#contact").css("display", "block");
+			 	$(this).addClass("active");
+			 	$("#btn-portfolio").removeClass("active");
+			 	$("#btn-blog").removeClass("active");
+			 	$("#btn-about").removeClass("active");
+			 });
+		});
+		</script>
+</body>
+</html>

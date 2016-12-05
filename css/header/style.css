@@ -1,0 +1,48 @@
+.navbar-brand>.g3c-logo{
+  height: 30px;
+}
+.g3c-square-50{
+	height: 50px;
+	width: 50px;
+}
+.g3c-navbar-default{
+      background-color: white;
+      border-color: white
+}
+.g3c-navbar-default .navbar-nav>li>a{
+}
+.g3c-hvr-radial-out{
+  border-radius: 100%;
+  background: white; 
+  
+}
+.g3c-background-google:before{
+  background: #dd4b39;   
+}
+.g3c-fa-google{
+  color: #dd4b39;
+}
+.g3c-background-facebook:before{
+  background: #3B5998;   
+}
+.g3c-fa-facebook{
+  color: #3B5998;
+}
+.g3c-background-icon:before{
+  background: #9ECB3C;   
+}
+.g3c-hvr-radial-out:hover>*{
+  color: #FFFFFF;
+}
+.g3c-hvr-rectangle-out{
+  background-color: white;
+}
+.g3c-hvr-rectangle-out:before{
+  background-color: #9ECB3C;
+}
+.g3c-nav>li>a:focus, .g3c-nav>li>a:hover{
+  background-color: white;
+}
+.g3c-nav>li>a{
+  color:#9ECB3C;
+}

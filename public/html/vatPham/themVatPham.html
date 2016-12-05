@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.proxied-field-wrap {
+    display:block;
+    position:absolute;
+    height:0;
+    width:0;
+    overflow:hidden;
+
+}
+
+.btn{
+    border-radius: 0px;
+
+}
+.con-addnew{
+    background-color: #fff;
+    padding: 50px;
+}
+
+body {padding:50px}
+.c-red{
+  color: #FF0000;
+}
+li{
+  list-style: none;
+}
+.muc{
+  height: 200px;
+  overflow-y: scroll;
+}
+
+	</style>
+</head>
+<body ng-controller="danhMucItemController">
+	 
+<div class="container con-addnew"style="margin-top:50px;">
+    <h3>Thêm sản phẩm mới</h3>
+        <form><div class="row">
+          <div class="col-sm-9">
+          <div class="row">
+          <div class="form-group col-sm-6">
+        <label for="tenSp">Tên sản phẩm:<span class="c-red">*</span></label>
+        <input type="text"required class="form-control" id="tenSp">
+      </div>
+      <div class="col-sm-6">
+                        <!--<p><a ng-click="load('one.tpl')">One</a> | <a ng-click="load('two.tpl')">Two</a></p>
+              <label for="tenSp">Ảnh sản phẩm:</label>
+                <div ng-include="tpl"></div>
+                <script type="text/ng-template" id="one.tpl">
+
+                <div file-browser>
+                    <input type="file" name="upload-file">
+                </div>
+            </script>
+            <script type="text/ng-template" id="two.tpl">
+               
+            </script>
+            </div>!--> 
+             <label for="tenSp">Ảnh sản phẩm:</label>
+        <input type="file" class="btn" accept="image/jpeg,image/png"name="" />
+        </div>
+
+        </div>
+            <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="giaSp">Giá sản phẩm:<span class="c-red">*</span></label>
+            <input type="number"min="1" required class="form-control" id="giaSp">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="giaSpGiam">Giá giảm:</label>
+            <input type="number" min="0"class="form-control" id="giaGiam">
+          </div>
+          
+          </div>
+          <div class="checkbox">
+            
+            <label><input type="checkbox" checked="checked"> Còn hàng</label>
+          </div>
+          <button type="submit" class="btn btn-default">Đăng bán</button>
+</div>
+<div class="col-sm-3">
+   <label for="tenSp">Danh mục<span class="c-red">*</span></label>
+  <div class="muc">
+
+    <div ng-include="'/html/vatPham/muc.html'"></div>
+  </div>
+  
+</div>
+</div>
+        </form>
+   
+</div>
+</body>
+</html>
