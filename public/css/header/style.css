@@ -110,7 +110,29 @@
     width: 40px;
   }
 }
+.g3c-search-container{
+  background-color: black;
+  
+  height: 34px;
+  width: 100%;
 
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+
+  z-index: 9999;
+}
+.g3c-search-open{
+  top: 0;
+}
+.animate {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 @media (min-width: 768px){
   .g3c-navbar-form .g3c-form-control{
     width: 400px;
