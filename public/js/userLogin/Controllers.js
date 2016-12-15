@@ -28,6 +28,7 @@ angular.module('g3cApp.Home').controller('getUserManController', function($scope
                     currentUser = user;
                     $scope.loggedIn = true;                    
                     console.log(currentUser.loggedIn);
+                    console.log('username' + $scope.userName);
                 }
             }
             );    
