@@ -11,7 +11,7 @@
 
 				<div class="navbar-header navbar-right pull-right">
 					<ul class="nav g3c-nav pull-left">
-						<li class="navbar-text pull-left">User Name</li>
+						<li class="navbar-text pull-left">{{userName}}</li>
 						<!--Search box toggle button-->
 						<li class="pull-left">
 							<button type="button" class="btn navbar-btn g3c-btn hvr-radial-out g3c-hvr-radial-out" id="g3c-search-toogle-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -32,7 +32,7 @@
 											<a href="#" class="btn g3c-btn-google hvr-radial-out g3c-hvr-radial-out-google"><i class="fa fa-google"></i> Google</a>
 										</div>
 										<p>Hoặc</p>
-										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<form class="form" accept-charset="UTF-8" id="login-nav">
 											<div class="form-group">
 												<label class="sr-only" for="username">Tài khỏan</label>
 												<input type="text" class="form-control" id="username" placeholder="Tài khoản" ng-model="user.username" required >

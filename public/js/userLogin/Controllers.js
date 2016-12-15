@@ -5,6 +5,7 @@ angular.module('g3cApp.Home').controller('getUserManController', function($scope
     console.log('ddd');
     $scope.user = {};
     $scope.message = "Bạn chưa đăng nhập";
+    $scope.userName = "";
     $scope.loggedIn = false;
     
     $scope.checkLogin = function(){
@@ -22,7 +23,8 @@ angular.module('g3cApp.Home').controller('getUserManController', function($scope
             console.log($scope.users);
             angular.forEach($scope.users, function(user){
                 if(username == user.userID && password == user.userPassword){
-                    $scope.message = "Xin chào " + username;
+                    $scope.userName = "Xin chào " + username;
+                    $scope.message = "";
                     currentUser = user;
                     $scope.loggedIn = true;                    
                     console.log(currentUser.loggedIn);
