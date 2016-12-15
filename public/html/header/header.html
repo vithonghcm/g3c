@@ -1,83 +1,107 @@
 <div class="container">
-	<nav class="navbar navbar-default navbar-fixed-top g3c-navbar-default">
-		<div class="container">
-			<div class="navbar-header g3c-navbar-header">
+		<nav role="navigation" class="navbar g3c-navbar-white navbar-fixed-top">
+			<div class="container">
+				<!--Logo-->
+				<div class="navbar-header navbar-left pull-left">
+					<a href="#/">
+						<img src="img/logo.png" class="g3c-navbar-logo" alt="">
+					</a>
+				</div>
 				
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
 
-				<a class="navbar-brand" href="#/" id="logo"><img class="g3c-logo" src="img/logo.png"></a>
-
-				<form class="navbar-left visible-xs g3c-navbar-small-form" id="search-Small" ng-controller="searchResultCtrl">
-					<input type="text" class="g3c-navbar-small-form-control" placeholder="Search" ng-model="searchInput"><button type="submit" class="btn btn-default g3c-search-btn-default" ng-click="search()"><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
-				</form>
-
-			</div>
-
-			<div class="collapse navbar-collapse g3c-navbar-collapse" id="navBar">
-				<ul class="nav navbar-nav g3c-nav">
-					<li><a href="#/" class="hvr-rectangle-out g3c-hvr-rectangle-out">G3C.Club<span class="sr-only">(current)</span></a></li>
-					<li><a href="#/vatPham" class="hvr-rectangle-out g3c-hvr-rectangle-out">Vật phẩm</a></li>
-					<li><a href="#/traodoi" class="hvr-rectangle-out g3c-hvr-rectangle-out">Trao đổi</a></li>
-					<li><a href="#" class="hvr-rectangle-out g3c-hvr-rectangle-out">Hướng dẫn</a></li>
-					<li><a href="#/congdong" class="hvr-rectangle-out g3c-hvr-rectangle-out">Cộng đồng</a></li>	
-				</ul>	
-
-				<form class="navbar-form g3c-navbar-form navbar-left hidden-xs" ng-controller="searchResultCtrl">
-					<div class="form-group">
-						<input type="text" class="form-control g3c-form-control" placeholder="Search" ng-model="searchInput"><button type="submit" class="btn btn-default g3c-search-btn-default" ng-click="search()"><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
-					</div>					
-				</form>
-
-
-
-
-			<ul class="nav navbar-nav navbar-right">
-				<li class="g3c-square text-center hvr-radial-out g3c-hvr-radial-out g3c-background-google">
-					<a href="#" class="">
-						<i class="fa fa-google fa-lg g3c-fa-google"></i>
-					</a>
-				</li>
-				<li class="g3c-square text-center hvr-radial-out g3c-hvr-radial-out g3c-background-facebook">
-					<a href="#" class="">
-						<i class="fa fa fa-facebook fa-lg g3c-fa-facebook"></i>
-					</a>
-				</li>
-				<!-- <li><a href="" class="hvr-radial-in">TEST</a></li> -->
-				<li class="dropdown">
-					<a href="javascript:void(0)"  class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-user fa-lg"></i><span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu g3c-dropdown-menu" >
-						<li ng-hide="loggedIn">{{message}}</li>
-						<li ng-show="loggedIn"><a href="#">Thông tin</a></li>
-						<li ng-show="loggedIn"><a href="#">Hoạt động</a></li>
-						<li ng-show="loggedIn"><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li ng-show="loggedIn"><a href="#">Đăng xuất</a></li>
-						<li ng-hide="loggedIn">
-							<form>
-								<div class="form-group">
-									<label class="control-label" for="email">Username:</label>
-									<input type="text" class="form-control" id="username" ng-model="user.username">
+				<div class="navbar-header navbar-right pull-right">
+					<ul class="nav g3c-nav pull-left">
+						<li class="navbar-text pull-left">User Name</li>
+						<!--Search box toggle button-->
+						<li class="pull-left">
+							<button type="button" class="btn navbar-btn g3c-btn hvr-radial-out g3c-hvr-radial-out" id="g3c-search-toogle-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</li>
+						<!--User panel toggle button-->
+						<li class="dropdown pull-right">
+							<a data-toggle="dropdown" class="dropdown-toggle g3c-dropdown-toggle hvr-radial-out g3c-hvr-radial-out">
+								<span class="glyphicon glyphicon-user"></span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu g3c-dropdown-menu">							
+								<!--User Login Panel-->
+								<div class="row" ng-hide="loggedIn">
+									<div class="col-md-12">
+										<p>Đăng nhập bằng</p>
+										<div class="g3c-social-button">
+											<a href="#" class="btn g3c-btn-facebook hvr-radial-out g3c-hvr-radial-out-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+											<a href="#" class="btn g3c-btn-google hvr-radial-out g3c-hvr-radial-out-google"><i class="fa fa-google"></i> Google</a>
+										</div>
+										<p>Hoặc</p>
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+											<div class="form-group">
+												<label class="sr-only" for="username">Tài khỏan</label>
+												<input type="text" class="form-control" id="username" placeholder="Tài khoản" ng-model="user.username" required >
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="password">Mật khẩu</label>
+												<input type="password" class="form-control" id="password" placeholder="Password" ng-model="user.password" required>
+												<div class="help-block text-right"><a href="">Quên mật khẩu ?</a></div>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn g3c-btn btn-block hvr-radial-out g3c-hvr-radial-out " ng-click='checkLogin();'>Đăng nhập</button>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox"> Giữ tôi luôn đăng nhập
+												</label>
+											</div>
+										</form>
+										<p ng-hide="loggedIn">{{message}}</p>
+									</div>
 								</div>
-								<div class="form-group">
-									<label class="control-label" for="email">Password:</label>
-									<input type="password" class="form-control" id="password" ng-model="user.password">
+								<!--End User Login Panel-->
+								<!--User Information Panel-->
+								<div class="row" ng-show="loggedIn">
+									<div class="col-md-12">
+										<li>Thông tin tài khoản</li>
+										<li>Hoạt động <span class="badge g3c-badge">5</span></li>
+										<li><button type="submit" class="btn g3c-btn-logout btn-block hvr-radial-out g3c-hvr-radial-out-logout ">Đăng xuất</button></li>
+									</div>
 								</div>
-								<button type="submit" class="btn btn-default" ng-click='checkLogin();'>Đăng nhập</button>
-							</form>
+								<!--End User Information Panel-->
+							</ul>
 						</li>
 					</ul>
-				</li>
-			</ul>
+					<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="visible-xs navbar-toggle g3c-navbar-toggle g3c-btn hvr-radial-out g3c-hvr-radial-out">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="visible-xs-block clearfix"></div>
+				<div class="collapse navbar-collapse">
+					<!--navigation menu -->
+					<ul class="nav g3c-nav navbar-nav navbar-left">
+						<li><a href="#/" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out">G3C.Club</a></li>
+						<li><a href="#/vatPham" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out">Vật phẩm</a></li>
+						<li><a href="#/traodoi" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out">Trao đổi</a></li>
+						<li><a href="#/" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out">Hướng dẫn</a></li>
+						<li><a href="#/congdong" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out">Cộng đồng</a></li>
+
+					</ul>
+<!--	Navbar-Right 
+					<ul class="nav g3c-nav navbar-nav navbar-right">
+						<li><a href="/locator">Locator</a></li>
+						<li><a href="/extras">Extras</a></li>
+					</ul>
+				-->					
+			</div>
 		</div>
-	</div>
-</nav>
-<div class="g3c-search-container animate" id="g3c-search-container">
-	
-</div>
+		<!--Search box-->
+		<div class="g3c-search-container g3c-ease-in" id="g3c-search-container">
+			<form class="col-md-offset-2 col-md-10 g3c-search-form" ng-controller="searchResultCtrl">
+				<input type="text" class="g3c-search-input" id="search-input" ng-model="searchInput">
+				<button type="button" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out" ng-click="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+				<button type="button" class="btn g3c-btn hvr-radial-out g3c-hvr-radial-out " id="g3c-search-remove-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+			</form>
+		</div>
+
+	</nav>
 </div>
